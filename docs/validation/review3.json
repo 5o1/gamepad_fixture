@@ -1,0 +1,110 @@
+{
+  "round": 3,
+  "images_opened": [
+    "composed/overview.png",
+    "composed/mounted.png",
+    "composed/acrylic.png"
+  ],
+  "accepted": true,
+  "findings": [
+    "All visible CAD bounds inside image margins; no clipped acrylic corner.",
+    "Six distinct print colors and unified purchase gray clearly keyed.",
+    "Mounted controller retains approvedPBR/UV/maps, clear placement, readable buttons.",
+    "Transparent acrylic andall8blue/orangeholepairs readable; diameter/depth legend correct.",
+    "Text and color legends do not overlap geometry."
+  ],
+  "render_record": {
+    "blender": "4.5.9 LTS",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "scene_sha256": "1ff81e02d4d41dc22e59f14b181d2119851e913c3c955628f74f3d2a0aaa210b",
+    "view_transform": "Standard",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "controller_parts": 16,
+    "controller_materials_preserved": true,
+    "world": "Approved Boiler Room, strength1.0; no new light objects",
+    "composition_changes": "New fixture meshes, floor, presentation camera and transparent film; controller materials/UV/maps untouched",
+    "round": 3,
+    "renders": [
+      {
+        "mode": "overview",
+        "eye": [
+          -0.46895915269851685,
+          -0.5594460368156433,
+          0.3878770172595978
+        ],
+        "target": [
+          0.02575763687491417,
+          -0.03784249350428581,
+          0.11363189667463303
+        ],
+        "resolution": [
+          2000,
+          2000
+        ],
+        "samples": 64,
+        "projection_bounds": [
+          0.21598827838897705,
+          0.7605766654014587,
+          0.09946582466363907,
+          0.853759229183197
+        ]
+      },
+      {
+        "mode": "mounted",
+        "eye": [
+          0.4518822133541107,
+          -0.5620704293251038,
+          0.40830540657043457
+        ],
+        "target": [
+          -0.020164854824543,
+          -0.04281865432858467,
+          0.11458723992109299
+        ],
+        "resolution": [
+          2000,
+          2000
+        ],
+        "samples": 64,
+        "projection_bounds": [
+          0.2376323640346527,
+          0.7836858630180359,
+          0.09929148107767105,
+          0.8593874573707581
+        ]
+      },
+      {
+        "mode": "acrylic",
+        "eye": [
+          0.26630285382270813,
+          -0.29960012435913086,
+          0.27758899331092834
+        ],
+        "target": [
+          0.0,
+          -0.0650000050663948,
+          0.008750001899898052
+        ],
+        "resolution": [
+          2000,
+          1440
+        ],
+        "samples": 64,
+        "projection_bounds": [
+          0.1939724087715149,
+          0.8630369901657104,
+          0.10040387511253357,
+          0.7515904903411865
+        ]
+      }
+    ]
+  },
+  "sha256": {
+    "overview": "a8a9ff8567f0c741d2262057ceb71821a353e9b1eed798956a592082ee0fbdcc",
+    "mounted": "e69e777c42564dcfd88527a40ea2104f25ee262c6fb51f4c10fb7047a19b0034",
+    "acrylic": "8a206851c33b15fc7a87fcb10d0f38567844c3a6b873d0cb246a498a0bc7c3c6"
+  }
+}

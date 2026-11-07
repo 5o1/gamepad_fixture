@@ -1,0 +1,14 @@
+{
+  "round": 2,
+  "images_opened": [
+    "composed/overview.png",
+    "composed/mounted.png",
+    "composed/acrylic.png"
+  ],
+  "findings": [
+    "Overview and mounted composition/legends improved; all six print colors and uniform purchase gray retained.",
+    "Acrylic nearest corner is cropped in raw draft; reject it for delivery.",
+    "Draft acrylic compose did not upscale to its final picture panel; fix consistent panel sizing."
+  ],
+  "changes_for_round3": "Fit actual visible-object bounds through Blender camera projection with margins; correct acrylic panel scaling;64samples/highresolution; preserve originalcontrollerPBR/HDR."
+}
