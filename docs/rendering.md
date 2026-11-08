@@ -14,3 +14,5 @@ Three image-review rounds are recorded for the published images. Render inputs a
 For the repository compositor, use `python scripts/compose_renders.py 3 /path/to/render-inputs` after rendering.
 
 The original approved scene and controller references remain CC BY4.0; the packed HDR is CC0. See [notices](../THIRD_PARTY_NOTICES.md).
+
+The v3.2.1 image update redraws titles, the part legend and hole descriptions in English. The reviewed Cycles render pixels, CAD geometry, controller materials and lighting are unchanged.

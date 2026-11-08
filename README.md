@@ -2,15 +2,19 @@
 
 Editable CAD and manufacturing files for an Xbox One S 1708 controller fixture, with height adjustment, a Hirth tilt coupling and a 16 mm acrylic base.
 
+![Assembly overview: printed parts in distinct colors, purchased parts in gray](docs/media/overview.png)
+
 ![Fixture with controller](docs/media/mounted.png)
+
+![Transparent acrylic base with through holes and counterbores highlighted](docs/media/acrylic.png)
 
 ## Download
 
 The [latest release](https://github.com/5o1/gamepad_fixture/releases/latest) includes the complete STEP assembly, six separate PETG printing files, acrylic machining CAD/DXF, dimensioned paper drawings and an itemized purchasing list. Manufacturing instructions and drawings are currently in Chinese.
 
-- [Complete delivery](https://github.com/5o1/gamepad_fixture/releases/download/v3.2.0/gamepad_fixture_v3.2.0.zip)
-- [Printing centre STL bundle](https://github.com/5o1/gamepad_fixture/releases/download/v3.2.0/printing_STL_v3.2.0.zip)
-- [Acrylic manufacturer bundle](https://github.com/5o1/gamepad_fixture/releases/download/v3.2.0/acrylic_manufacturing_v3.2.0.zip)
+- [Complete delivery](https://github.com/5o1/gamepad_fixture/releases/download/v3.2.1/gamepad_fixture_v3.2.1.zip)
+- [Printing centre STL bundle](https://github.com/5o1/gamepad_fixture/releases/download/v3.2.1/printing_STL_v3.2.1.zip)
+- [Acrylic manufacturer bundle](https://github.com/5o1/gamepad_fixture/releases/download/v3.2.1/acrylic_manufacturing_v3.2.1.zip)
 
 The base is 240 × 130 × 16 mm, with eight Ø6.5 through holes and bottom Ø18 counterbores 9.5 mm deep. The upper assembly stays at its original height. Printed parts and purchased hardware are filed separately; consult the purchasing list before ordering.
 

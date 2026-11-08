@@ -14,14 +14,15 @@ def make(out):
  perspective=p/'acrylic_perspective.png';total=9 if perspective.exists() else 8
  m=json.loads((p/'manifest.json').read_text());holes=[(i+1,x+120,y+130) for i,(x,y) in enumerate(m['board']['holes'])]
  def sheet(title,num,scale='1:1'):
+  english=num==9
   fig=plt.figure(figsize=(420/25.4,297/25.4));a=fig.add_axes([0,0,1,1]);a.set(xlim=(0,420),ylim=(0,297));a.set_aspect('equal');a.axis('off')
   a.add_patch(Rectangle((10,10),400,277,fill=False,lw=.8));a.text(18,275,title,fontsize=16)
-  a.text(18,265,'单位 mm · 第三角法（独立视图） · 尺寸数值优先 · 按100%打印保持标注比例',fontsize=9)
+  a.text(18,265,'Units: mm · Independent third-angle view · Dimensions govern · Print at 100%' if english else '单位 mm · 第三角法（独立视图） · 尺寸数值优先 · 按100%打印保持标注比例',fontsize=9)
   a.add_patch(Rectangle((210,10),200,29,fill=False,lw=.6));a.plot([210,410],[22,22],color='k',lw=.5);a.plot([325,325],[10,39],color='k',lw=.5)
-  a.text(214,31,'零件：底板 / 浇铸PMMA / 成品厚16');a.text(329,31,'图号 GP-FIX-PMMA16-A0',fontsize=8)
-  a.text(214,15,f'比例 {scale}    图幅 A3    {num}/{total}    2026-11-07',fontsize=8)
-  a.text(329,15,'几何核对；非承载认证',fontsize=8)
-  a.text(18,15,'基准：左下角为X0/Y0，底面B为Z0；CAD加工坐标同图纸。',fontsize=8)
+  a.text(214,31,'Part: Acrylic base / Cast PMMA / t=16 mm' if english else '零件：底板 / 浇铸PMMA / 成品厚16');a.text(329,31,'Drawing GP-FIX-PMMA16-A0' if english else '图号 GP-FIX-PMMA16-A0',fontsize=8)
+  a.text(214,15,(f'Scale {scale}    A3    {num}/{total}    2026-11-08' if english else f'比例 {scale}    图幅 A3    {num}/{total}    2026-11-07'),fontsize=8)
+  a.text(329,15,'Geometry review; no load certification' if english else '几何核对；非承载认证',fontsize=8)
+  a.text(18,15,'Datum: lower-left X0/Y0; underside B=Z0; same origin as machining CAD.' if english else '基准：左下角为X0/Y0，底面B为Z0；CAD加工坐标同图纸。',fontsize=8)
   return fig,a
  def line(a,p1,p2,hidden=False):a.plot([p1[0],p2[0]],[p1[1],p2[1]],color='#3b4146' if hidden else 'k',lw=.55 if hidden else .8,ls=(0,(3,2)) if hidden else '-')
  def dim(a,p1,p2,text,shift=(0,0)):
@@ -87,11 +88,11 @@ def make(out):
  textlines(a,['名义叠层：螺丝端高于底板底面1.0mm；螺母底面高于底板底面2.8mm；螺丝伸过螺母1.8mm。','尺寸检验：先量成品板厚、法兰厚、垫片厚及螺丝长度，装配后端部不得凸出底面，并保持完整啮合。','以上为名义几何；加工和打印公差不能只看标称值。钢螺丝静力计算不等于PMMA板体或法兰承载合格。'],y=90,size=8.5)
  pages.append((f,'08_连接剖面'))
  if perspective.exists():
-  f,a=sheet('透明透视示意 / 通孔与平底沉孔分色',9,'不按比例')
+  f,a=sheet('Transparent perspective / Through holes and counterbores',9,'NTS')
   image=plt.imread(perspective);height=202;width=height*image.shape[1]/image.shape[0]
   if width>376:width=376;height=width*image.shape[0]/image.shape[1]
   left=(420-width)/2;bottom=55+(202-height)/2;a.imshow(image,extent=(left,left+width,bottom,bottom+height),aspect='equal',zorder=2)
-  a.text(18,45,'蓝色：8×Ø6.5通孔，贯穿16；橙色：8×Ø18平底沉孔，自底面深9.5。颜色仅作孔型说明。',fontsize=8)
+  a.text(18,45,'Blue: 8 × Ø6.5 through holes, full 16 mm; orange: 8 × Ø18 counterbores, 9.5 mm from underside. Illustrative colors.',fontsize=8)
   pages.append((f,'09_透明孔型透视'))
  with PdfPages(folder/'底板_六面与剖面_A3.pdf') as pdf:
   for f,name in pages:

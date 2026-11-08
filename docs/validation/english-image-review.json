@@ -1,0 +1,22 @@
+{
+  "images_visually_opened": 3,
+  "english_text_fits": true,
+  "reviewed_blender_pixels_unchanged": true,
+  "checks": [
+    {
+      "image": "overview",
+      "render_pixels_unchanged": true,
+      "english_overlay_sha256": "fa89d1d60a0dff06b47d3cc39fdebdac0b7987767a33c5e9ffd695d420b566e6"
+    },
+    {
+      "image": "mounted",
+      "render_pixels_unchanged": true,
+      "english_overlay_sha256": "fb54acf3bdd966d07150c81c01575c966654e462798e5587a948bec33cb64295"
+    },
+    {
+      "image": "acrylic",
+      "render_pixels_unchanged": true,
+      "english_overlay_sha256": "572aa5c9b2091b4e86cdaef704044a80f95c07b62cd2cdc0c86d57025b8f6f13"
+    }
+  ]
+}
