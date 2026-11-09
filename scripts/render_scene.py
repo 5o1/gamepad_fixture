@@ -6,7 +6,9 @@ import bpy,json,math,sys,hashlib,itertools
 from pathlib import Path
 import numpy as np
 from mathutils import Matrix,Vector
-root=Path(sys.argv[sys.argv.index('--')+1]);round_id=int(sys.argv[sys.argv.index('--')+2]);data=json.loads((root/'payload.json').read_text());arrays=np.load(root/'meshes.npz');scene=bpy.context.scene
+import argparse
+parser=argparse.ArgumentParser();parser.add_argument('input_dir',type=Path);parser.add_argument('round',type=int,choices=(1,2,3));parser.add_argument('--palette',type=Path,required=True);parser.add_argument('--only',choices=('overview','mounted','acrylic'));args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
+root=args.input_dir;round_id=args.round;palette=json.loads(args.palette.read_text());data=json.loads((root/'payload.json').read_text());arrays=np.load(root/'meshes.npz');scene=bpy.context.scene
 scene.frame_set(0);graph=bpy.context.evaluated_depsgraph_get();originals=list(scene.objects)
 helpers={p.custom_shape for o in originals if o.type=='ARMATURE' for p in o.pose.bones if p.custom_shape}
 objects=sorted((o for o in originals if o.type=='MESH' and o not in helpers),key=lambda o:o.name)
@@ -35,12 +37,12 @@ def material(name,color,rough=.4,metal=0,transparent=0,glass=False):
  if transparent:
   out=n.get('Material Output');tr=n.new('ShaderNodeBsdfTransparent');mix=n.new('ShaderNodeMixShader');mix.inputs[0].default_value=transparent;links.new(p.outputs['BSDF'],mix.inputs[1]);links.new(tr.outputs[0],mix.inputs[2]);links.new(mix.outputs[0],out.inputs['Surface'])
  return m
-purchase=material('Purchased_uniform_gray','#b7bdc4',.36,.15);hero_print=material('PETG_matte_petrol','#447983',.36)
-metal=material('Hardware_satin_steel','#aab3bc',.25,.72)
-glass=material('Acrylic_clear','#e6f3f6',.075,glass=True)
-technicalglass=material('Acrylic_technical_transparency','#b6cbd0',.18,transparent=.76)
-blue=material('Through_hole_blue','#258ec7',.28,transparent=.38);orange=material('Counterbore_orange','#ea9041',.3,transparent=.4)
-colors={k:material('Print_'+k,v,.38) for k,v in data['colors'].items()}
+purchase=material('Purchased_uniform_gray',palette['purchased_parts']['hex'],.36,.15)
+metal=material('Hardware_satin_steel',palette['presentation_materials']['metal_hex'],.25,.72)
+glass=material('Acrylic_clear',palette['presentation_materials']['clear_acrylic_hex'],.075,glass=True)
+technicalglass=material('Acrylic_technical_transparency',palette['presentation_materials']['technical_acrylic_hex'],.18,transparent=.76)
+blue=material('Through_hole_blue',palette['hole_annotations']['through']['hex'],.28,transparent=.38);orange=material('Counterbore_orange',palette['hole_annotations']['counterbore']['hex'],.3,transparent=.4)
+colors={k:material('Print_'+k,v['hex'],.38) for k,v in palette['printed_parts'].items()}
 fixture=[];byname={}
 for row in data['parts']:
  name=row['name'];me=bpy.data.meshes.new(name);me.from_pydata(arrays[name+'_v'].tolist(),[],arrays[name+'_f'].tolist());me.update();me.set_sharp_from_angle(angle=math.radians(35))
@@ -77,13 +79,13 @@ for i,a in enumerate(corners):
   o=bpy.data.objects.new('Acrylic_outline',cu);scene.collection.objects.link(o);o.data.materials.append(outline);markers.append(o)
 out=root/f'round{round_id}';out.mkdir(exist_ok=True)
 records=[]
-for mode in ('overview','mounted','acrylic'):
+for mode in ([args.only] if args.only else ('overview','mounted','acrylic')):
  for o in controller:o.hide_render=mode!='mounted'
  for o in fixture:o.hide_render=mode=='acrylic' and o.name!='base_acrylic'
  for o in markers:o.hide_render=mode!='acrylic'
  for row in data['parts']:
   o=byname[row['name']];o.data.materials.clear()
-  mat=(colors[row['name']] if row['printed'] else purchase) if mode=='overview' else (hero_print if row['printed'] else (glass if row['name']=='base_acrylic' else metal))
+  mat=(colors[row['name']] if row['printed'] else purchase) if mode=='overview' else (colors[row['name']] if row['printed'] else (glass if row['name']=='base_acrylic' else metal))
   if mode=='acrylic':mat=technicalglass
   o.data.materials.append(mat)
  floor.location.z=-.025 if mode=='acrylic' else 0
@@ -118,5 +120,5 @@ for mode in ('overview','mounted','acrylic'):
  eye=list(camera.location);target=list(aim)
  scene.render.filepath=str(out/(mode+'.png'));bpy.ops.render.render(write_still=True)
  records.append(dict(mode=mode,eye=eye,target=target,resolution=[scene.render.resolution_x,scene.render.resolution_y],samples=scene.cycles.samples,projection_bounds=projection_bounds))
-record=dict(blender=bpy.app.version_string,engine=scene.render.engine,device=scene.cycles.device,scene_sha256=hashlib.sha256((root/'approved.blend').read_bytes()).hexdigest(),view_transform=scene.view_settings.view_transform,look=scene.view_settings.look,exposure=scene.view_settings.exposure,gamma=scene.view_settings.gamma,controller_parts=16,controller_materials_preserved=True,world='Approved Boiler Room, strength1.0; no new light objects',composition_changes='New fixture meshes, floor, presentation camera and transparent film; controller materials/UV/maps untouched',round=round_id,renders=records)
+record=dict(blender=bpy.app.version_string,engine=scene.render.engine,device=scene.cycles.device,scene_sha256=hashlib.sha256((root/'approved.blend').read_bytes()).hexdigest(),view_transform=scene.view_settings.view_transform,look=scene.view_settings.look,exposure=scene.view_settings.exposure,gamma=scene.view_settings.gamma,controller_parts=16,controller_materials_preserved=True,printed_part_colors={k:v['hex'] for k,v in palette['printed_parts'].items()},palette_sha256=hashlib.sha256(args.palette.read_bytes()).hexdigest(),world='Approved Boiler Room, strength1.0; no new light objects',composition_changes='New fixture meshes, floor, presentation camera and transparent film; controller materials/UV/maps untouched',round=round_id,renders=records)
 (out/'record.json').write_text(json.dumps(record,indent=2));print('ROUND_COMPLETE',round_id)

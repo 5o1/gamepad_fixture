@@ -3,10 +3,11 @@ import csv,fnmatch,hashlib,json,math,shutil,zipfile
 from pathlib import Path
 from build123d import import_step,Location
 from part_names import export_named_step,repair_step_names
+from palette import load_palette,part_color
 
 
 def package(out):
- p=Path(out).resolve();m=json.loads((p/'manifest.json').read_text());review=json.loads((p/'validation/package_review.json').read_text())
+ p=Path(out).resolve();m=json.loads((p/'manifest.json').read_text());palette=load_palette();review=json.loads((p/'validation/package_review.json').read_text())
  assert review['geometry_pass'] and review['all_names_readback']
  stage=p/'final_package'
  if stage.exists():shutil.rmtree(stage)
@@ -64,19 +65,39 @@ def package(out):
   n=r['name'];title=r['display_name']
   if r['is_printed']:
    rel=cp(p/'print'/(n+'.stl'),'01_打印件/STL/'+n+'.stl');cp(p/'print'/(n+'.step'),'01_打印件/CAD/'+n+'.step')
-   print_rows.append([n,title,1,'PETG',rel,'原已确认打印朝向；托架保留侧放；支撑由打印中心设置'])
+   color=part_color(palette,n,True)
+   print_rows.append([n,title,1,'PETG',rel,'原已确认打印朝向；托架保留侧放；支撑由打印中心设置',color['color_name'],color['hex']])
    file_rows.extend([[rel,title,'正式打印件，1件，STL毫米'],['01_打印件/CAD/'+n+'.step',title,'对应打印方向CAD，非装配坐标']])
   else:
    folder='01_亚克力底板/CAD' if n=='base_acrylic' else ('03_软垫/CAD' if n.startswith('pad_') else '02_五金CAD')
    name=n+'_assembly.step' if n=='base_acrylic' else n+'.step'
    rel=cp(p/'edit_table_up'/(n+'.step'),'02_购买件/'+folder+'/'+name)
    file_rows.append([rel,title,'装配坐标；采购编号 '+part_to_bom[n]])
- table('01_打印件/打印清单.csv',['零件ID','名称', '数量','材料','STL文件','说明'],print_rows)
- write('01_打印件/打印说明.md','# 给打印中心\n\n正式打印件共6件，每件1个STL、数量1。STL单位mm，保持原尺寸。底板改为外购亚克力，不打印。托架保留当前侧放朝向；其余方向沿用已确认版本。\n\n'+mdtable(['零件ID','名称','数量','材料','STL文件','说明'],print_rows)+'\n材料PETG。齿盘齿面向上，沿用0.08–0.12mm层高的齿面计划；其余部件由打印中心按实际设备切片。套筒闭顶/耳孔、托架横孔/侧窗和悬臂、滑块R3下方需要局部可拆支撑。清除支撑，保持导孔、齿面和硅胶垫座面可用。现有文件是几何，不包含切片参数。\n\n钢销配合小样放在04_验证资料/导销配合小样，不属于上述6个正式部件，是否一并加工单独列项。\n')
+ table('01_打印件/打印清单.csv',['零件ID','名称','数量','材料','STL文件','说明','Color name','sRGB HEX'],print_rows)
+ write('01_打印件/打印说明.md','# 给打印中心\n\n正式打印件共6件，每件1个STL、数量1。STL单位mm，保持原尺寸。底板改为外购亚克力，不打印。颜色按print_colors.csv和print_colors.pdf；HEX是显示参考，按实际PETG色卡确认。托架保留当前侧放朝向；其余方向沿用已确认版本。\n\n'+mdtable(['零件ID','名称','数量','材料','STL文件','说明','Color name','sRGB HEX'],print_rows)+'\n材料PETG。齿盘齿面向上，沿用0.08–0.12mm层高的齿面计划；其余部件由打印中心按实际设备切片。套筒闭顶/耳孔、托架横孔/侧窗和悬臂、滑块R3下方需要局部可拆支撑。清除支撑，保持导孔、齿面和硅胶垫座面可用。现有文件是几何，不包含切片参数。\n\n钢销配合小样放在04_验证资料/导销配合小样，不属于上述6个正式部件，是否一并加工单独列项。\n')
  head=['编号','名称','数量','单位','型号及完整规格','用途和位置','采购状态','对应CAD零件ID']
  table('02_购买件/采购清单.csv',head,bom);write('02_购买件/采购清单.md','# 采购清单\n\n安装CAD含50个外购/加工实体；采购按商品合并，另列未建模桌夹、底垫及可选件。下表尺寸单位mm。标准件以标准、尺寸及等级作为订货型号；只有已确认厂家型号的项目写品牌，未确定厂商品号的如实标注。\n\n'+mdtable(head,bom)+'\n原底板8个M5热熔螺母和4颗M5×16取消；本版使用4套M5×25通孔连接。备用4孔暂不装五金。不要把采购50个CAD实体理解为50种商品。\n')
  write('02_购买件/装配工具清单.md','# 装配工具（已有则无需重复采购）\n\n|工具|数量|用途|\n|---|---:|---|\n|8mm薄壁套筒或螺母起子，外径≤16mm|1|进入Ø18底面沉孔，握持M5螺母；购买时核对实际外径|\n|4mm内六角工具|1|M5底座圆柱头螺丝|\n|2.5mm内六角工具|1|M3齿盘安装螺丝|\n|10mm扳手|2|M6调高螺栓与防松螺母|\n|13mm扭矩扳手/适配头|1|M8转轴头侧；沿用目标1.2N·m，不适用于M5底板螺丝|\n|卡尺、直尺|各1|核对厚度、孔径和端部内凹|\n\nM5底座没有已验证的拧紧扭矩；不可直接照搬全金属连接的扭矩表压紧亚克力和PETG法兰。\n')
  cp(Path(__file__).resolve().parents[1]/'design/source/pad_templates_A4.svg','02_购买件/03_软垫/pad_templates_A4.svg')
+ # Derived manufacturing and visual references share the repository palette.
+ from printing_colors import make as print_colors
+ from reference_validation import check as check_color_reference
+ print_colors(p)
+ check_color_reference(p)
+ cp(p/'validation/color_reference.json','04_验证资料/color_reference.json')
+ for f in (p/'color_reference').iterdir():
+  if f.is_file():cp(f,'01_打印件/'+f.name)
+ for f in (p/'simulation_reference').rglob('*'):
+  if f.is_file():cp(f,'05_simulation_and_rendering/URDF/'+f.relative_to(p/'simulation_reference').as_posix())
+ repo=Path(__file__).resolve().parents[1]
+ cp(repo/'config/colors.json','05_simulation_and_rendering/colors.json')
+ for name in ('render_scene.py','compose_renders.py'):
+  cp(repo/'scripts'/name,'05_simulation_and_rendering/'+name)
+ for name in ('palette-render-record.json',):
+  if (repo/'docs/validation'/name).exists():cp(repo/'docs/validation'/name,'05_simulation_and_rendering/'+name)
+ for name in ('color_reference.md','rendering.md'):
+  write('05_simulation_and_rendering/'+name,(repo/'docs'/name).read_text().replace('../config/colors.json','colors.json'))
+ write('05_simulation_and_rendering/README.md','# Color and rendering references\n\n1. `colors.json` is the authoritative sRGB palette copied from the repository.\n2. `URDF/fixture.urdf` plus its meshes is a fixed visual assembly in metres; it is not a dynamics/contact model. Use the production STLs in `01_打印件/STL` for printing.\n3. `rendering.md` and the scripts describe the approved Cycles presentation. Download `render_inputs_v3.3.0.zip` from the Release for the packed approved Blender scene, CAD meshes and matching palette.\n4. Printed parts use the same six colors in the print order, URDF, overview and mounted image. Purchased parts are gray in the reference view; the mounted view retains metal/clear-acrylic surface properties.\n')
  # All requested display and grouped assemblies retain original positions.
  for n in ('assembly_with_controller.step','assembly.step','assembly_printed_parts.step','assembly_purchased_parts.step'):cp(p/n,'03_总装展示/'+n)
  if (p/'assembly_with_controller.png').exists():cp(p/'assembly_with_controller.png','03_总装展示/assembly_with_controller.png')
@@ -110,6 +131,9 @@ def package(out):
  for name in ('overview','mounted','acrylic'):
   f=repo/'docs/media'/(name+'.png')
   if f.exists():cp(f,'03_总装展示/'+name+'.png')
+ with zipfile.ZipFile(stage/'simulation_URDF.zip','w',zipfile.ZIP_DEFLATED) as z:
+  for f in sorted((stage/'05_simulation_and_rendering/URDF').rglob('*')):
+   if f.is_file():z.write(f,f.relative_to(stage/'05_simulation_and_rendering/URDF').as_posix())
  # Make one ready-to-send bundle for each service, without mixing the display
  # assembly into production STL files.
  for archive,folder in [('给打印中心_STL.zip','01_打印件'),('给亚克力加工商.zip','02_购买件/01_亚克力底板')]:
@@ -138,6 +162,12 @@ def package(out):
   if not f.is_file():continue
   rel=f.relative_to(stage).as_posix()
   if rel in descriptions:title,use=descriptions[rel]
+  elif rel.startswith('05_simulation_and_rendering/URDF/meshes/'):
+   title=f.stem;use='URDF visual mesh in metres and local link coordinates; not a production STL'
+  elif rel.startswith('05_simulation_and_rendering/'):
+   title=f.stem;use='Shared palette, fixed visual URDF or reproducible rendering reference'
+  elif f.name.startswith('print_colors'):
+   title='Printing color reference';use='Part/STL, PETG, quantity and shared sRGB color; supplier swatch confirmation required'
   elif '/纸面图纸/' in rel:
    title='底板9页A3图册' if f.name.startswith('底板_') else ('孔位表' if f.suffix=='.csv' else '底板面视图/剖面 '+f.stem)
    use='标准图幅PDF，按100%打印' if f.suffix=='.pdf' else ('8孔坐标/孔型/深度' if f.suffix=='.csv' else '对应纸面图的PNG预览')

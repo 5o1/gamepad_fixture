@@ -1,0 +1,12 @@
+{
+  "actual_URDF_consumer": "yourdfpy",
+  "consumer_version": "0.0.60",
+  "urdf_sha256": "1308447b04977c3ef06c59932d8f43eb7e9ed08501aeab60a25750057f898ac3",
+  "links": 57,
+  "fixed_joints": 56,
+  "loaded_meshes": 56,
+  "checked_materials": 56,
+  "all_colors_and_transforms_match": true,
+  "base_link": "fixture_root",
+  "loaded_visual_color_channel_error_max": 0.0
+}

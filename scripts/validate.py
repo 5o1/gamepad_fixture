@@ -76,3 +76,9 @@ result=dict(pass_=True,requirements_all_5_delivered=True,files=len(files),hashed
  paper_sheets=9,paper_format='A3',physical_strength_certified=False,physical_test_executed=False)
 (p/'final_review.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps({k:v for k,v in result.items() if k not in ('pose_measurements','measured_cylindrical_faces')},indent=2))
+
+# Verify the new manufacturing and URDF color references against one palette.
+import sys
+sys.path.insert(0,str(ROOT/"cad"))
+from reference_validation import check as check_color_reference
+check_color_reference(p,render_record=ROOT/"docs/validation/palette-render-record.json")

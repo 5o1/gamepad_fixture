@@ -1,0 +1,50 @@
+{
+  "blender": "4.5.9 LTS",
+  "engine": "CYCLES",
+  "device": "CPU",
+  "scene_sha256": "1ff81e02d4d41dc22e59f14b181d2119851e913c3c955628f74f3d2a0aaa210b",
+  "view_transform": "Standard",
+  "look": "None",
+  "exposure": 0.0,
+  "gamma": 1.0,
+  "controller_parts": 16,
+  "controller_materials_preserved": true,
+  "printed_part_colors": {
+    "column_lower": "#329d94",
+    "column_sleeve": "#588ac5",
+    "cradle_lower_jaw": "#dba165",
+    "slider_upper_jaw": "#d67e79",
+    "hirth_fixed": "#9a80b5",
+    "hirth_moving": "#d9bd5f"
+  },
+  "palette_sha256": "ed61a80ff2e0d06815d4ae211c2cffe412f3b5064f27f62bc41ef1112ac82b19",
+  "world": "Approved Boiler Room, strength1.0; no new light objects",
+  "composition_changes": "New fixture meshes, floor, presentation camera and transparent film; controller materials/UV/maps untouched",
+  "round": 3,
+  "renders": [
+    {
+      "mode": "mounted",
+      "eye": [
+        0.4518822133541107,
+        -0.5620704293251038,
+        0.40830540657043457
+      ],
+      "target": [
+        -0.020164854824543,
+        -0.04281865432858467,
+        0.11458723992109299
+      ],
+      "resolution": [
+        2000,
+        2000
+      ],
+      "samples": 64,
+      "projection_bounds": [
+        0.2376323640346527,
+        0.7836858630180359,
+        0.09929148107767105,
+        0.8593874573707581
+      ]
+    }
+  ]
+}

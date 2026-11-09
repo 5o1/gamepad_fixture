@@ -18,5 +18,6 @@
       "render_pixels_unchanged": true,
       "english_overlay_sha256": "572aa5c9b2091b4e86cdaef704044a80f95c07b62cd2cdc0c86d57025b8f6f13"
     }
-  ]
+  ],
+  "applies_to_release": "v3.2.1 (before mounted palette unification)"
 }

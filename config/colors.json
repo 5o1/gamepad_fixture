@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "color_space": "sRGB",
+  "printed_parts": {
+    "column_lower": {
+      "name": "Column base",
+      "color_name": "Teal",
+      "hex": "#329d94"
+    },
+    "column_sleeve": {
+      "name": "Sleeve and fork ears",
+      "color_name": "Blue",
+      "hex": "#588ac5"
+    },
+    "cradle_lower_jaw": {
+      "name": "Cradle",
+      "color_name": "Warm orange",
+      "hex": "#dba165"
+    },
+    "slider_upper_jaw": {
+      "name": "Upper jaw slider",
+      "color_name": "Coral",
+      "hex": "#d67e79"
+    },
+    "hirth_fixed": {
+      "name": "Fixed Hirth disc",
+      "color_name": "Muted purple",
+      "hex": "#9a80b5"
+    },
+    "hirth_moving": {
+      "name": "Moving Hirth disc",
+      "color_name": "Golden yellow",
+      "hex": "#d9bd5f"
+    }
+  },
+  "purchased_parts": {
+    "name": "Purchased parts",
+    "color_name": "Neutral gray",
+    "hex": "#b7bdc4"
+  },
+  "hole_annotations": {
+    "through": {
+      "hex": "#258ec7",
+      "description": "Through holes; illustrative highlight, not a printed material"
+    },
+    "counterbore": {
+      "hex": "#ea9041",
+      "description": "Bottom counterbores; illustrative highlight, not a printed material"
+    }
+  },
+  "manufacturing_note": "Reference colors only. Match PETG against the print centre's actual swatch. HEX/RGB values are display references, not filament SKUs or a guarantee of printed color.",
+  "rendering_note": "The overview, mounted printed parts and URDF use these same base colors. The mounted view retains realistic steel/clear-acrylic surface properties and the approved controller PBR materials. Lighting and color management affect the final appearance.",
+  "presentation_materials": {
+    "metal_hex": "#aab3bc",
+    "clear_acrylic_hex": "#e6f3f6",
+    "technical_acrylic_hex": "#b6cbd0"
+  }
+}

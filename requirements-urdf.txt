@@ -1,0 +1,2 @@
+# Optional: actual URDF consumer checks; not required for CAD generation.
+yourdfpy==0.0.60

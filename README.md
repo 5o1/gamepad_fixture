@@ -12,11 +12,26 @@ Editable CAD and manufacturing files for an Xbox One S 1708 controller fixture, 
 
 The [latest release](https://github.com/5o1/gamepad_fixture/releases/latest) includes the complete STEP assembly, six separate PETG printing files, acrylic machining CAD/DXF, dimensioned paper drawings and an itemized purchasing list. Manufacturing instructions and drawings are currently in Chinese.
 
-- [Complete delivery](https://github.com/5o1/gamepad_fixture/releases/download/v3.2.1/gamepad_fixture_v3.2.1.zip)
-- [Printing centre STL bundle](https://github.com/5o1/gamepad_fixture/releases/download/v3.2.1/printing_STL_v3.2.1.zip)
-- [Acrylic manufacturer bundle](https://github.com/5o1/gamepad_fixture/releases/download/v3.2.1/acrylic_manufacturing_v3.2.1.zip)
+- [Complete delivery](https://github.com/5o1/gamepad_fixture/releases/download/v3.3.0/gamepad_fixture_v3.3.0.zip)
+- [Printing centre STL bundle](https://github.com/5o1/gamepad_fixture/releases/download/v3.3.0/printing_STL_v3.3.0.zip)
+- [Acrylic manufacturer bundle](https://github.com/5o1/gamepad_fixture/releases/download/v3.3.0/acrylic_manufacturing_v3.3.0.zip)
 
 The base is 240 × 130 × 16 mm, with eight Ø6.5 through holes and bottom Ø18 counterbores 9.5 mm deep. The upper assembly stays at its original height. Printed parts and purchased hardware are filed separately; consult the purchasing list before ordering.
+
+## Shared colors and rendering references
+
+[`config/colors.json`](config/colors.json) defines the six printed-part colors.
+The printing reference, URDF materials and both assembly images read that same
+palette. The mounted view preserves the approved controller PBR materials and
+Boiler Room illumination.
+
+- **Printing centre:** [color swatch PDF](https://github.com/5o1/gamepad_fixture/releases/download/v3.3.0/printing_colors.pdf), with per-STL color names, sRGB HEX/RGB and PETG quantities in the printing bundle. Confirm the actual supplier swatch before production.
+- **Simulation rendering:** [URDF and all meshes](https://github.com/5o1/gamepad_fixture/releases/download/v3.3.0/simulation_URDF_v3.3.0.zip). This is a fixed visual assembly in metres, not a dynamics/contact model.
+- **Presentation rendering:** [approved Blender inputs](https://github.com/5o1/gamepad_fixture/releases/download/v3.3.0/render_inputs_v3.3.0.zip) and [rendering instructions](docs/rendering.md).
+
+See [the color reference guide](docs/color_reference.md) for file locations,
+color-space conventions and the update workflow. Production STL files remain
+in millimetres; do not use the URDF's metre-scale meshes for printing.
 
 ## Build
 
