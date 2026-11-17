@@ -44,7 +44,8 @@ def make(out):
 
     machining_notes = [
         '8 x drill diameter 5.2 THROUGH, then M5 x 0.8 STI (HELICOIL holding-thread tap) THROUGH.',
-        'Install 8 HELICOIL Tangfree Free Running M5 x 0.8, 1.5D (7.5 long), or equivalent, from top; recess 0.4.',
+        'Install 8 tangless wire thread inserts (JP: helisert) M5 x 0.8, 1.5D = 7.5 long, from top; recess 0.4.',
+        'Equivalents: Bollhoff HELICOIL Tangfree 5130 005 0075; Advanex TNM-M5-0.8X1.5D. Do NOT substitute 1.0D.',
         'CAD bore diameter 6.04 is the installed outer envelope, NOT the drill diameter. No helical threads modeled.',
         'Flat underside: no counterbores, nuts or bottom washers. Deburr; do not add flat-bottom pockets.',
         'Aluminum alloy, temper and finish are left to the buyer/supplier. All dimensions are finished dimensions.',
@@ -87,7 +88,7 @@ def make(out):
     notes(a, ['Section uses simplified diameter 6.04 receiving envelopes and ring inserts ID5 / OD6.04.',
               'Insert top: machining Z9.6; bottom Z2.1; length 7.5. Drill 5.2 then STI tap through.',
               'H01/H02/H05/H06 are active. H03/H04/H07/H08: rear-shift spare, inserts installed.',
-              'Supplier reference: Bollhoff HELICOIL Tangfree catalog 0150/19-V1-GB, pages 16, 18-19.'], y=135)
+              'Inserts: tangless M5 x 0.8 1.5D (7.5), e.g. Bollhoff 5130 005 0075 or Advanex TNM-M5-0.8X1.5D; not 1.0D.'], y=135)
     a = sheet('Nominal M5 joint - table-up assembly Z', '08_joint_section', '4:1', part='M5 base joint (reference)', datum='Assembly frame: Z0 = tabletop.'); ox, oy, s = 95, 95, 4
     for x0, w, z0, h, color in [(-11,22,.75,10,'#c9d0d5'),(-10,20,10.75,14,'#8dc6be')]:
         a.add_patch(Rectangle((ox+x0*s, oy+z0*s), w*s, h*s, fc=color, ec='black'))
@@ -128,7 +129,7 @@ def make(out):
     ms.add_lwpolyline([(0,0),(240,0),(240,130),(0,130)],close=True,dxfattribs={'layer':'OUTLINE'})
     for n,x,y,raw_y in holes: ms.add_circle((x,y),2.6,dxfattribs={'layer':'STI_DRILL_D5_2_THROUGH'})
     for i,text in enumerate(['ALUMINUM PLATE 240x130x10; ALLOY/TEMPER/FINISH LEFT TO BUYER/SUPPLIER',
-        '8x DRILL 5.2 THROUGH; M5x0.8 STI TAP THROUGH; INSTALL TANGFREE 1.5D FROM TOP, RECESS 0.4',
+        '8x DRILL 5.2 THROUGH; M5x0.8 STI TAP THROUGH; INSTALL TANGLESS 1.5D INSERT FROM TOP, RECESS 0.4; NOT 1.0D',
         'CAD BORE 6.04 IS INSTALLED ENVELOPE, NOT DRILL SIZE; FLAT UNDERSIDE; NO COUNTERBORES']):
         ms.add_text(text,dxfattribs={'height':2.5,'insert':(0,150-i*6),'layer':'NOTES'})
     d.saveas(out/'machining/base_aluminum_10.dxf')

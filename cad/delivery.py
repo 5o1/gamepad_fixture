@@ -68,7 +68,7 @@ def package(out):
         ('B01','Aluminum base plate',1,'Custom GP-FIX-ALU10-B; 240x130x10; 8 M5x0.8 STI through; alloy, temper and finish left to buyer/supplier','Base; flat underside','base_aluminum'),
         ('B02','Column mounting bolts',4,'ISO 4762 M5x20 class 8.8, socket head, fully threaded','Front two mounting rows; no bottom nuts','hardware_base_M5_*'),
         ('B03','Column mounting washers',12,'ISO 7089 M5, steel, ID5.3 / OD10 / thickness1','Three per bolt inside flange counterbores','hardware_base_top_washer_*'),
-        ('B04','Wire thread inserts',8,'Bollhoff HELICOIL Tangfree Free Running 5130 005 0075; M5x0.8; 1.5D=7.5; stainless steel; tangless','All eight holes; install from top, recess0.4; no tang removal required','hardware_base_insert_*'),
+        ('B04','Wire thread inserts (JP: helisert)',8,'Tangless, free running, stainless; M5x0.8; 1.5D = 7.5 mm. Equivalents: Bollhoff HELICOIL Tangfree 5130 005 0075; Advanex TNM-M5-0.8X1.5D. Do not substitute 1.0D','All eight holes; install from top, recess 0.4; no tang removal required','hardware_base_insert_*'),
         ('B06','Steel guide rods',2,'ISO 2338 diameter6 h8 x100, unhardened; source example KILLICH 23381006100','Guide rods through cap, springs and slider','guide_rod_*'),
         ('B07','Compression springs',2,'OD11 / wire1.1 / free length40; target k=2 N/mm; solid length<=13; supplier SKU unselected','Installed length30; target20 N each; supplier to confirm force/displacement','hardware_compression_spring_*'),
         ('B08','Pivot bolt',1,'ISO 4017 M8x100 class8.8 fully threaded steel; AF13; head5.3','Through clevis lugs, Hirth discs and cradle','hardware_M8_axis_bolt'),
@@ -150,7 +150,7 @@ Use print_colors.csv and print_colors.pdf; confirm actual PETG supplier swatches
 
 Make one 240 x 130 x 10 mm aluminum plate. Alloy, temper and finish are left to the buyer/supplier. The machining STEP has bounds X0..240, Y0..130, Z0..10; the assembly STEP is translated by (-120,-130,+0.75). Use the hole table and drawings. DXF circles are the 5.2 mm STI drill size; CAD cylinders are simplified 6.04 mm installed envelopes and are NOT the drilling instruction.
 
-At all eight positions, drill diameter5.2 through and cut an M5x0.8 STI HELICOIL holding thread through using the system-specific tap. An ordinary M5 tap is not suitable. Install eight Bollhoff HELICOIL Tangfree Free Running 5130 005 0075 inserts, nominal 7.5 mm (1.5D), from the top with 0.4 mm recess. This is 0.5 pitch within the catalog range 0.25-0.5 pitch. Tangless inserts need no tang removal. Gauge the STI and installed M5 threads with the supplier's appropriate tooling.
+At all eight positions, drill diameter5.2 through and cut an M5x0.8 STI HELICOIL holding thread through using the system-specific tap. An ordinary M5 tap is not suitable. Install eight tangless, free-running stainless wire thread inserts (Japanese: helisert), M5x0.8, nominal length 7.5 mm (1.5D), from the top with 0.4 mm recess. Equivalent parts: Bollhoff HELICOIL Tangfree 5130 005 0075 or Advanex TNM-M5-0.8X1.5D. Do not substitute 1.0D (5 mm) inserts: the bolt engagement and the drawing stack assume 7.5 mm. If no part number is specified, some online services install 1.0D by default, so quote this note. This is 0.5 pitch within the catalog range 0.25-0.5 pitch. Tangless inserts need no tang removal. Gauge the STI and installed M5 threads with the supplier's appropriate tooling.
 
 The 6.04 mm nominal envelope follows the catalog DHC minimum holding-thread outside diameter; free-state insert OD6.25..6.80 is not used. A ring envelope ID5.0 / OD6.04 represents each insert without threads. Confirm actual STI tolerances and installation process with the supplier. The underside is flat, without counterbores; no bottom washers or nuts. Deburr without adding flat-bottom pockets. Drawing tolerance targets require supplier confirmation.
 
@@ -168,7 +168,7 @@ Measure stock thickness, printed flange, counterbore floors, washer stack, bolt 
 
 Fit the nominal 1 mm anti-slip pad and verify its actual compression; the CAD offset is 0.75 mm. Use two table clamps as specified in the BOM. Upper parts, M6 teardrop height holes, controller pose and table-from-pad transform retain the accepted arrangement. Do not substitute new hole shapes.
 
-Tools: 4 mm hex key (M5), 2.5 mm hex key (M3), two 10 mm wrenches (M6), 13 mm wrench/torque adapter (M8), calipers, STI tap and gauges, and the Tangfree installation tool. The prior 1.2 N m M8 target is not an M5 base torque instruction.
+Tools: 4 mm hex key (M5), 2.5 mm hex key (M3), two 10 mm wrenches (M6), 13 mm wrench/torque adapter (M8), calipers, STI tap and gauges, and the installation tool for the chosen tangless insert. The prior 1.2 N m M8 target is not an M5 base torque instruction.
 ''')
     for archive_name,folder,exclude in [('printing_STL_'+RELEASE+'.zip','01_printed',True),('aluminum_manufacturing_'+RELEASE+'.zip','02_purchased/base_plate',False),('simulation_URDF_'+RELEASE+'.zip','05_simulation_and_rendering/URDF',False),('render_inputs_'+RELEASE+'.zip','05_simulation_and_rendering/render_inputs',False)]:
         archive(stage/folder,out/archive_name,exclude)
