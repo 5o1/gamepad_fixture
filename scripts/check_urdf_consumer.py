@@ -4,9 +4,10 @@ from pathlib import Path
 import numpy as np
 from yourdfpy import URDF
 root=Path(sys.argv[1]);model=URDF.load(str(root/'fixture.urdf'),build_scene_graph=True,load_meshes=True)
-assert len(model.robot.links)==57 and len(model.robot.joints)==56
-assert len(model.scene.geometry)==56
-expected=json.loads((root/'parts.json').read_text());checked=[];materials={m.name:m for m in model.robot.materials}
+expected=json.loads((root/'parts.json').read_text())
+assert len(model.robot.links)==len(expected)+1 and len(model.robot.joints)==len(expected)
+assert len(model.scene.geometry)==len(expected)
+checked=[];materials={m.name:m for m in model.robot.materials}
 for row in expected:
  link=model.link_map[row['part_id']];visual=link.visuals[0]
  material=visual.material

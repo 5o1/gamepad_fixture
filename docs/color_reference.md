@@ -1,39 +1,11 @@
 # One fixture palette
 
-`config/colors.json` is the source of truth for all six printed-part colors.
-Change that file, then rebuild the delivery and render images using the same file.
+`config/colors.json` defines the six printed-part colors and their unchanged per-part assignments. The printing color CSV/PDF, visual URDF and rendering scripts consume the same palette. HEX/RGB values are sRGB display references; confirm actual PETG supplier swatches before production.
 
-## Printing centre
+The current English delivery uses `01_printed/print_colors.csv` and `.pdf`. Production STL files are in mm. The column sleeve is described as having **clevis lugs**; panels beside the inner column are **gusset plates**.
 
-`01_打印件/print_colors.csv` lists the STL filename, quantity, PETG, English color
-name and sRGB HEX/RGB. `print_colors.pdf` and `.png` provide six labeled swatches.
-The existing printing list also includes the color name and HEX reference.
+`05_simulation_and_rendering/URDF/fixture.urdf` and `meshes/` form a fixed visual assembly with 60 part links, one root and 60 fixed joints. Meshes and translations are in meters; do not print these meshes. RGBA uses normalized sRGB from the palette. No collision geometry, inertias, masses or articulated adjustment behavior is supplied.
 
-HEX is a display reference, not a filament SKU or a calibrated physical target.
-The print centre should select an available PETG swatch and confirm its supplier
-color code before production. STL geometry does not carry this order information.
+Purchased parts are gray in the overview and URDF. The mounted and base presentation views use the opaque aluminum material in `presentation_materials.aluminum`: color #bfc5cb, roughness0.32, metallic0.8, opacity1. This is a presentation default, not a production alloy, temper or finish specification. The approved controller PBR materials, UV maps and Boiler Room illumination remain authoritative. Lighting and color management can change visible colors; palette numbers govern.
 
-## URDF rendering reference
-
-`05_simulation_and_rendering/URDF/fixture.urdf` and `meshes/` form a self-contained
-fixed visual assembly: 56 part links plus a root, and 56 fixed joints. Meshes
-and link translations are in metres. Its material RGBA is normalized sRGB from
-the same palette. Keep the mesh directory with the URDF. A ROS 2 package-URI
-variant and package metadata are included as `fixture_ros.urdf`.
-
-This reference freezes the current assembly. It supplies no collision geometry,
-inertias, masses or articulated height/tilt behavior. Do not treat it as a
-validated dynamics model or send its metre-scale meshes for printing.
-
-## Presentation rendering
-
-The overview and mounted image use identical printed-part base colors and
-roughness. Purchased parts use gray in the overview/URDF, while the mounted view
-retains realistic metal and clear-acrylic surfaces. The controller retains the
-approved upstream PBR materials, UV maps and Boiler Room illumination.
-Different renderer lights and transfer functions can change apparent color;
-the palette numbers are authoritative. Hole highlight colors are annotations,
-not material/filament requests.
-
-URDF material and mesh interpretation follows the ROS URDF visual model and
-[the yourdfpy loader API](https://yourdfpy.readthedocs.io/en/latest/api/yourdfpy.html).
+No aluminum images have been rendered for this revision. The repository's existing images and recorded rendering checks describe the previous acrylic design. Rebuild meshes and references before a separate rendering task; inspect the resulting images before publication.

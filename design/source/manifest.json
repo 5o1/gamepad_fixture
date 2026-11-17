@@ -1,19 +1,40 @@
 {
-  "design_revision": "v3.2-source-snapshot",
+  "design_revision": "v3.4-alu10",
   "parts": [
     {
-      "name": "base_printed",
+      "name": "base_aluminum",
+      "display_name": "Base plate (10 mm aluminum) [base_aluminum]",
+      "is_printed": false,
+      "material": "aluminum plate; alloy, temper and finish left to buyer/supplier",
+      "solid_volume_mm3": 309707.79346897604,
+      "bounds_mm": [
+        [
+          -120.0,
+          -130.0,
+          0.75
+        ],
+        [
+          120.0,
+          0.0,
+          10.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "column_lower",
       "material": "PETG",
       "is_printed": true,
       "fixed_in_base_frame": true,
       "print_rotation_deg": [
-        45.0,
-        0,
-        0
+        -0.0,
+        0.0,
+        -0.0
       ],
-      "note": "Flat underside down. Entire 30 mm edge band uses one 100% infill modifier; no fixed clamp locations.",
-      "display_name": "底板 [base_printed]",
-      "solid_volume_mm3": 496883.76656836143,
+      "note": "Option B: flange extended downward 6 mm, four top counterbores; source updated by explicit owner authorization",
+      "display_name": "Column base (flange, gusset plates, inner column) [column_lower]",
+      "solid_volume_mm3": 141386.69645264538,
       "valid_solid": true,
       "solid_count": 1,
       "print_transform": [
@@ -21,19 +42,19 @@
           1.0,
           0.0,
           0.0,
-          120.0
+          45.0
         ],
         [
           0.0,
-          0.7071067811865475,
-          -0.7071067811865476,
-          76.56222271614959
+          1.0,
+          0.0,
+          55.0
         ],
         [
           0.0,
-          0.7071067811865476,
-          0.7071067811865475,
-          219.91086534926927
+          0.0,
+          1.0,
+          -10.75
         ],
         [
           0.0,
@@ -43,44 +64,185 @@
         ]
       ],
       "print_bounds_mm": [
-        240.0,
-        130.0,
-        16.00000000000003
+        90.0,
+        50.00000000000003,
+        76.0
+      ],
+      "bounds_mm": [
+        [
+          -45.0,
+          -55.000000000000014,
+          10.75
+        ],
+        [
+          45.0,
+          -4.999999999999986,
+          86.75
+        ]
+      ],
+      "derived": {
+        "rev": "v3.4-B",
+        "source_sha256": "ee5a93280780f4f56bc1ec0b9929fdb92a9a93829d28abaca966640be255e18b",
+        "operations": [
+          "Union box X -45..45, Y -55..-5, Z 10.75..16.75",
+          "Extend four diameter 5.5 holes through Z 10.75..16.75",
+          "Cut four diameter 10.4 flat counterbores Z 18.75..24.75"
+        ],
+        "source_volume_mm3": 116425.46439426384,
+        "expected_volume_mm3": 141386.6964257902,
+        "exported_volume_mm3": 141386.69645264538,
+        "volume_error_mm3": 2.6855181204155087e-05,
+        "bounds_mm": [
+          [
+            -45.0,
+            -55.000000000000014,
+            10.75
+          ],
+          [
+            45.0,
+            -4.999999999999986,
+            86.75
+          ]
+        ],
+        "sections": [
+          {
+            "z_mm": 24.8,
+            "source_area_mm2": 2574.0862714890477,
+            "revised_area_mm2": 2574.0862714890472
+          },
+          {
+            "z_mm": 31.677777777777777,
+            "source_area_mm2": 1839.0327813271072,
+            "revised_area_mm2": 1839.0327813271072
+          },
+          {
+            "z_mm": 38.55555555555556,
+            "source_area_mm2": 1544.4839292094496,
+            "revised_area_mm2": 1544.4839292094496
+          },
+          {
+            "z_mm": 45.43333333333334,
+            "source_area_mm2": 1424.3957457879487,
+            "revised_area_mm2": 1424.395745787949
+          },
+          {
+            "z_mm": 52.31111111111112,
+            "source_area_mm2": 1304.3075623664479,
+            "revised_area_mm2": 1304.3075623664479
+          },
+          {
+            "z_mm": 59.1888888888889,
+            "source_area_mm2": 1184.219378944947,
+            "revised_area_mm2": 1184.219378944947
+          },
+          {
+            "z_mm": 66.06666666666666,
+            "source_area_mm2": 1064.1356613755836,
+            "revised_area_mm2": 1064.1356613755836
+          },
+          {
+            "z_mm": 72.94444444444444,
+            "source_area_mm2": 1018.7204938270684,
+            "revised_area_mm2": 1018.7204938270684
+          },
+          {
+            "z_mm": 79.82222222222222,
+            "source_area_mm2": 847.1204566439735,
+            "revised_area_mm2": 847.1204566439735
+          },
+          {
+            "z_mm": 86.7,
+            "source_area_mm2": 927.8901587300381,
+            "revised_area_mm2": 927.8901587300381
+          }
+        ],
+        "source_minus_revised_above_flange_mm3": 0.0,
+        "revised_minus_source_above_flange_mm3": 0.0,
+        "registered_source_print_transform": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              45.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              55.000000000000014
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -16.75
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_error_mm": 0.0,
+          "volume_error_mm3": 0.0,
+          "symmetric_difference_mm3": 0.0,
+          "method": "Translation fitted to bounds; full bidirectional Boolean feature comparison"
+        },
+        "revised_print_translation_mm": [
+          45.0,
+          55.000000000000014,
+          -10.75
+        ],
+        "print_note": "Axes unchanged; bed origin reset by +6 mm Z after flange extension. Counterbores open upward, floor at print Z 8; no counterbore roof bridging. Confirm toolpath and floor quality in slicer; no physical print test."
+      },
+      "print_aabb_mm": [
+        [
+          0.0,
+          -1.4210854715203998e-14,
+          0.0
+        ],
+        [
+          90.0,
+          50.000000000000014,
+          76.0
+        ]
       ]
     },
     {
-      "name": "hirth_fixed",
+      "name": "column_sleeve",
       "material": "PETG",
       "is_printed": true,
-      "fixed_in_base_frame": false,
+      "fixed_in_base_frame": true,
       "print_rotation_deg": [
-        0,
-        -90,
-        0
+        -0.0,
+        0.0,
+        -0.0
       ],
-      "note": "Toothed face UP, 0.08-0.12 mm layers. Constant 60 deg flank; fixed tip/root 1.1/.9 mm; .2 mm tip/root relief, touching loaded flanks.",
-      "display_name": "固定齿盘 [hirth_fixed]",
-      "solid_volume_mm3": 16046.932093758762,
+      "note": "AH v3.2",
+      "display_name": "Column sleeve (clevis lugs) [column_sleeve]",
+      "solid_volume_mm3": 104854.53030517725,
       "valid_solid": true,
       "solid_count": 1,
       "print_transform": [
         [
-          2.220446049250313e-16,
-          -0.0,
-          -1.0,
-          -46.85670062535611
+          1.0,
+          0.0,
+          0.0,
+          29.0
         ],
         [
           0.0,
           1.0,
-          -0.0,
-          81.71067811865476
+          0.0,
+          64.00000000000001
         ],
         [
-          1.0,
           0.0,
-          2.220446049250313e-16,
-          21.000000000000018
+          0.0,
+          1.0,
+          -26.7499999
         ],
         [
           0.0,
@@ -90,56 +252,33 @@
         ]
       ],
       "print_bounds_mm": [
+        58.000000000000014,
         68.0,
-        68.00000000000001,
-        6.796694430741528
-      ]
-    },
-    {
-      "name": "hirth_moving",
-      "material": "PETG",
-      "is_printed": true,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        90,
-        0
+        137.0000001
       ],
-      "note": "Toothed face UP, 0.08-0.12 mm layers. Constant 60 deg flank; fixed tip/root 1.1/.9 mm; .2 mm tip/root relief, touching loaded flanks.",
-      "display_name": "转动齿盘 [hirth_moving]",
-      "solid_volume_mm3": 17646.662733577716,
-      "valid_solid": true,
-      "solid_count": 1,
-      "print_transform": [
+      "bounds_mm": [
         [
-          2.220446049250313e-16,
-          0.0,
-          1.0,
-          114.85670062535611
+          -29.000000000000007,
+          -64.00000000000001,
+          26.7499999
         ],
         [
-          0.0,
-          1.0,
-          0.0,
-          81.71067811865476
-        ],
-        [
-          -1.0,
-          0.0,
-          2.220446049250313e-16,
-          -8.999999999999968
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
+          29.000000000000007,
+          3.999999999999986,
+          163.75
         ]
       ],
-      "print_bounds_mm": [
-        68.0,
-        67.99470547011697,
-        7.800000000000023
+      "print_aabb_mm": [
+        [
+          -7.54951656745e-15,
+          0.0,
+          1.1686097468332243e-15
+        ],
+        [
+          58.00000000000001,
+          68.0,
+          137.0000001
+        ]
       ]
     },
     {
@@ -148,33 +287,33 @@
       "is_printed": true,
       "fixed_in_base_frame": false,
       "print_rotation_deg": [
-        0,
-        90,
-        0
+        -90.0,
+        45.0,
+        90.0
       ],
       "note": "Regular planar lower/back contacts. Print X side down; supports under jaw overhangs, keep contact pockets clean.",
-      "display_name": "托架（背托、下夹爪、一体导轨盖） [cradle_lower_jaw]",
-      "solid_volume_mm3": 142020.62394929124,
+      "display_name": "Cradle (back support, lower jaw, integrated guide cap) [cradle_lower_jaw]",
+      "solid_volume_mm3": 142020.62394929188,
       "valid_solid": true,
       "solid_count": 1,
       "print_transform": [
         [
-          2.220446049250313e-16,
-          0.0,
-          1.0,
-          112.85670062535611
+          2.22044604925e-16,
+          -0.7071067811865476,
+          0.7071067811865476,
+          -80.96030829455022
         ],
         [
           0.0,
-          1.0,
-          0.0,
-          79.71067811865476
+          0.7071067811865476,
+          0.7071067811865476,
+          -38.53390142335165
         ],
         [
           -1.0,
-          0.0,
-          2.220446049250313e-16,
-          32.75
+          -1.5700924586835538e-16,
+          1.5700924586835538e-16,
+          32.74999999999996
         ],
         [
           0.0,
@@ -184,56 +323,33 @@
         ]
       ],
       "print_bounds_mm": [
-        138.85670062535613,
-        154.71067821865475,
+        138.85670062535002,
+        154.71067821865,
         65.5
-      ]
-    },
-    {
-      "name": "slider_upper_jaw",
-      "material": "PETG",
-      "is_printed": true,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        -90,
-        0,
-        0
       ],
-      "note": "40 mm upper jaw; relieved Pair/USB zones. Two springs preload lower datum; M4 set screw locks slide against frame.",
-      "display_name": "上夹爪滑块 [slider_upper_jaw]",
-      "solid_volume_mm3": 48634.822098525015,
-      "valid_solid": true,
-      "solid_count": 1,
-      "print_transform": [
+      "bounds_mm": [
         [
-          1.0,
-          -0.0,
-          0.0,
-          20.0000001
+          -32.75,
+          -93.69436902514067,
+          97.74999999999841
         ],
         [
-          0.0,
-          2.220446049250313e-16,
-          1.0,
-          50.00000000000682
-        ],
-        [
-          -0.0,
-          -1.0,
-          2.220446049250313e-16,
-          55.6233801089388
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
+          32.75,
+          36.364783926841554,
+          256.72331118977394
         ]
       ],
-      "print_bounds_mm": [
-        40.0000002,
-        76.0,
-        63.62338010894501
+      "print_aabb_mm": [
+        [
+          0.0,
+          4.988010005035903e-12,
+          0.0
+        ],
+        [
+          138.85670062535002,
+          154.710678218655,
+          65.5
+        ]
       ]
     },
     {
@@ -246,9 +362,833 @@
         0,
         0
       ],
-      "note": "ISO2338 Ø6h8x100, KILLICH23381006100; not printed",
-      "display_name": "钢销导杆 1 [guide_rod_1]",
-      "solid_volume_mm3": 2827.4333882308138,
+      "note": "ISO2338 \u00d86h8x100, KILLICH23381006100; not printed",
+      "display_name": "Steel guide rod 1 [guide_rod_1]",
+      "solid_volume_mm3": 2827.4333882308147,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -13.0,
+          -43.538282347239026,
+          171.163390666203
+        ],
+        [
+          -7.0,
+          31.41503645853502,
+          246.116709471977
+        ]
+      ]
+    },
+    {
+      "name": "guide_rod_2",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        -90,
+        0,
+        0
+      ],
+      "note": "ISO2338 \u00d86h8x100, KILLICH23381006100; not printed",
+      "display_name": "Steel guide rod 2 [guide_rod_2]",
+      "solid_volume_mm3": 2827.4333882308147,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          7.0,
+          -43.538282347239026,
+          171.163390666203
+        ],
+        [
+          13.0,
+          31.41503645853502,
+          246.116709471977
+        ]
+      ]
+    },
+    {
+      "name": "hardware_M6_height_bolt",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": true,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "AH v3.2",
+      "display_name": "Height-lock bolt M6x70 [hardware_M6_height_bolt]",
+      "solid_volume_mm3": 2325.6135332753884,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -31.6,
+          -35.000000000000014,
+          70.97649730810281
+        ],
+        [
+          42.4,
+          -25.000000000000014,
+          82.52350269189719
+        ]
+      ]
+    },
+    {
+      "name": "hardware_M6_locknut",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": true,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "AH v3.2",
+      "display_name": "Height-lock nut M6 [hardware_M6_locknut]",
+      "solid_volume_mm3": 349.9692389767607,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          27.6,
+          -35.000000000000014,
+          70.97649730810281
+        ],
+        [
+          33.6,
+          -25.000000000000014,
+          82.52350269189719
+        ]
+      ]
+    },
+    {
+      "name": "hardware_M6_washer_-1",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": true,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "AH v3.2",
+      "display_name": "Height-lock washer M6 left [hardware_M6_washer_-1]",
+      "solid_volume_mm3": 355.6785538688301,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -27.600000000000005,
+          -39.000000000000014,
+          67.75
+        ],
+        [
+          -25.999999999999996,
+          -21.000000000000014,
+          85.75
+        ]
+      ]
+    },
+    {
+      "name": "hardware_M6_washer_1",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": true,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "AH v3.2",
+      "display_name": "Height-lock washer M6 right [hardware_M6_washer_1]",
+      "solid_volume_mm3": 355.67855386883014,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          25.999999999999996,
+          -39.000000000000014,
+          67.75
+        ],
+        [
+          27.600000000000005,
+          -21.000000000000014,
+          85.75
+        ]
+      ]
+    },
+    {
+      "name": "hardware_M8_axis_bolt",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "display_name": "Pivot bolt M8x100 [hardware_M8_axis_bolt]",
+      "solid_volume_mm3": 5802.247199913511,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -36.3,
+          -37.249807965726355,
+          122.50019203427254
+        ],
+        [
+          69.0,
+          -22.75019203427002,
+          136.99980796572427
+        ]
+      ]
+    },
+    {
+      "name": "hardware_M8_hub_washer",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "AH v3.2",
+      "display_name": "Cradle hub washer M8 [hardware_M8_hub_washer]",
+      "solid_volume_mm3": 793.9432954152303,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          8.999999999999998,
+          -42.0000000000005,
+          117.74999999999841
+        ],
+        [
+          11.000000000000002,
+          -18.000000000000497,
+          141.7499999999984
+        ]
+      ]
+    },
+    {
+      "name": "hardware_M8_sliding_sleeve",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "12 OD x 8.4 ID x 22 mm metal tube, axial slide >=4 mm; right ear double-shear support.",
+      "display_name": "Pivot sliding steel sleeve [hardware_M8_sliding_sleeve]",
+      "solid_volume_mm3": 1268.9521046380169,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          10.999999999999998,
+          -36.0000000000005,
+          123.74999999999841
+        ],
+        [
+          33.0,
+          -24.000000000000497,
+          135.7499999999984
+        ]
+      ]
+    },
+    {
+      "name": "hardware_M8_star_knob_envelope",
+      "material": "PA_Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "Ganter DIN6336-KT-40-M8-D: PA with steel threaded-through bushing, D40 h25 neckD18; not printed",
+      "display_name": "Through-thread star knob M8 (purchase envelope) [hardware_M8_star_knob_envelope]",
+      "solid_volume_mm3": 30159.28947446269,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          34.99999999999999,
+          -50.0000000000005,
+          109.74999999999841
+        ],
+        [
+          60.00000000000001,
+          -10.000000000000497,
+          149.7499999999984
+        ]
+      ]
+    },
+    {
+      "name": "hardware_M8_washer_1",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "display_name": "Pivot washer M8 1 [hardware_M8_washer_1]",
+      "solid_volume_mm3": 793.9432954152304,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -31.000000000000004,
+          -42.0000000000005,
+          117.74999999999841
+        ],
+        [
+          -28.999999999999996,
+          -18.000000000000497,
+          141.7499999999984
+        ]
+      ]
+    },
+    {
+      "name": "hardware_M8_washer_2",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "display_name": "Pivot washer M8 2 [hardware_M8_washer_2]",
+      "solid_volume_mm3": 793.9432954152304,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          33.0,
+          -42.0000000000005,
+          117.74999999999841
+        ],
+        [
+          35.0,
+          -18.000000000000497,
+          141.7499999999984
+        ]
+      ]
+    },
+    {
+      "name": "hardware_base_M5_0",
+      "display_name": "Column mounting bolt M5x20 ISO 4762 class 8.8 0 [hardware_base_M5_0]",
+      "is_printed": false,
+      "material": "steel class 8.8",
+      "solid_volume_mm3": 676.4241682260523,
+      "bounds_mm": [
+        [
+          -39.25,
+          -50.250000000000014,
+          1.75
+        ],
+        [
+          -30.75,
+          -41.750000000000014,
+          26.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_M5_1",
+      "display_name": "Column mounting bolt M5x20 ISO 4762 class 8.8 1 [hardware_base_M5_1]",
+      "is_printed": false,
+      "material": "steel class 8.8",
+      "solid_volume_mm3": 676.4241682260524,
+      "bounds_mm": [
+        [
+          -39.25,
+          -18.250000000000014,
+          1.75
+        ],
+        [
+          -30.75,
+          -9.750000000000014,
+          26.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_M5_2",
+      "display_name": "Column mounting bolt M5x20 ISO 4762 class 8.8 2 [hardware_base_M5_2]",
+      "is_printed": false,
+      "material": "steel class 8.8",
+      "solid_volume_mm3": 676.4241682260523,
+      "bounds_mm": [
+        [
+          30.75,
+          -50.250000000000014,
+          1.75
+        ],
+        [
+          39.25,
+          -41.750000000000014,
+          26.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_M5_3",
+      "display_name": "Column mounting bolt M5x20 ISO 4762 class 8.8 3 [hardware_base_M5_3]",
+      "is_printed": false,
+      "material": "steel class 8.8",
+      "solid_volume_mm3": 676.4241682260524,
+      "bounds_mm": [
+        [
+          30.75,
+          -18.250000000000014,
+          1.75
+        ],
+        [
+          39.25,
+          -9.750000000000014,
+          26.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_insert_0",
+      "display_name": "Wire thread insert M5x0.8 1.5D tangless 0 [hardware_base_insert_0]",
+      "is_printed": false,
+      "material": "stainless steel wire thread insert",
+      "solid_volume_mm3": 67.63220664648107,
+      "bounds_mm": [
+        [
+          -38.02,
+          -17.02,
+          2.8499999999999996
+        ],
+        [
+          -31.98,
+          -10.98,
+          10.35
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_insert_1",
+      "display_name": "Wire thread insert M5x0.8 1.5D tangless 1 [hardware_base_insert_1]",
+      "is_printed": false,
+      "material": "stainless steel wire thread insert",
+      "solid_volume_mm3": 67.63220664648107,
+      "bounds_mm": [
+        [
+          -38.02,
+          -49.02,
+          2.8499999999999996
+        ],
+        [
+          -31.98,
+          -42.98,
+          10.35
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_insert_2",
+      "display_name": "Wire thread insert M5x0.8 1.5D tangless 2 [hardware_base_insert_2]",
+      "is_printed": false,
+      "material": "stainless steel wire thread insert",
+      "solid_volume_mm3": 67.63220664648095,
+      "bounds_mm": [
+        [
+          -38.02,
+          -81.02,
+          2.8499999999999996
+        ],
+        [
+          -31.98,
+          -74.98,
+          10.35
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_insert_3",
+      "display_name": "Wire thread insert M5x0.8 1.5D tangless 3 [hardware_base_insert_3]",
+      "is_printed": false,
+      "material": "stainless steel wire thread insert",
+      "solid_volume_mm3": 67.63220664648095,
+      "bounds_mm": [
+        [
+          -38.02,
+          -113.02,
+          2.8499999999999996
+        ],
+        [
+          -31.98,
+          -106.98,
+          10.35
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_insert_4",
+      "display_name": "Wire thread insert M5x0.8 1.5D tangless 4 [hardware_base_insert_4]",
+      "is_printed": false,
+      "material": "stainless steel wire thread insert",
+      "solid_volume_mm3": 67.63220664648107,
+      "bounds_mm": [
+        [
+          31.98,
+          -17.02,
+          2.8499999999999996
+        ],
+        [
+          38.02,
+          -10.98,
+          10.35
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_insert_5",
+      "display_name": "Wire thread insert M5x0.8 1.5D tangless 5 [hardware_base_insert_5]",
+      "is_printed": false,
+      "material": "stainless steel wire thread insert",
+      "solid_volume_mm3": 67.63220664648107,
+      "bounds_mm": [
+        [
+          31.98,
+          -49.02,
+          2.8499999999999996
+        ],
+        [
+          38.02,
+          -42.98,
+          10.35
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_insert_6",
+      "display_name": "Wire thread insert M5x0.8 1.5D tangless 6 [hardware_base_insert_6]",
+      "is_printed": false,
+      "material": "stainless steel wire thread insert",
+      "solid_volume_mm3": 67.63220664648095,
+      "bounds_mm": [
+        [
+          31.98,
+          -81.02,
+          2.8499999999999996
+        ],
+        [
+          38.02,
+          -74.98,
+          10.35
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_insert_7",
+      "display_name": "Wire thread insert M5x0.8 1.5D tangless 7 [hardware_base_insert_7]",
+      "is_printed": false,
+      "material": "stainless steel wire thread insert",
+      "solid_volume_mm3": 67.63220664648095,
+      "bounds_mm": [
+        [
+          31.98,
+          -113.02,
+          2.8499999999999996
+        ],
+        [
+          38.02,
+          -106.98,
+          10.35
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_0_0",
+      "display_name": "Column mounting washer M5 ISO 7089 0_0 [hardware_base_top_washer_0_0]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.4779819299105,
+      "bounds_mm": [
+        [
+          -40.0,
+          -51.000000000000014,
+          18.75
+        ],
+        [
+          -30.0,
+          -41.000000000000014,
+          19.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_0_1",
+      "display_name": "Column mounting washer M5 ISO 7089 0_1 [hardware_base_top_washer_0_1]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.4779819299105,
+      "bounds_mm": [
+        [
+          -40.0,
+          -51.000000000000014,
+          19.75
+        ],
+        [
+          -30.0,
+          -41.000000000000014,
+          20.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_0_2",
+      "display_name": "Column mounting washer M5 ISO 7089 0_2 [hardware_base_top_washer_0_2]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.4779819299105,
+      "bounds_mm": [
+        [
+          -40.0,
+          -51.000000000000014,
+          20.75
+        ],
+        [
+          -30.0,
+          -41.000000000000014,
+          21.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_1_0",
+      "display_name": "Column mounting washer M5 ISO 7089 1_0 [hardware_base_top_washer_1_0]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.4779819299105,
+      "bounds_mm": [
+        [
+          -40.0,
+          -19.000000000000014,
+          18.75
+        ],
+        [
+          -30.0,
+          -9.000000000000014,
+          19.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_1_1",
+      "display_name": "Column mounting washer M5 ISO 7089 1_1 [hardware_base_top_washer_1_1]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.4779819299105,
+      "bounds_mm": [
+        [
+          -40.0,
+          -19.000000000000014,
+          19.75
+        ],
+        [
+          -30.0,
+          -9.000000000000014,
+          20.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_1_2",
+      "display_name": "Column mounting washer M5 ISO 7089 1_2 [hardware_base_top_washer_1_2]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.4779819299105,
+      "bounds_mm": [
+        [
+          -40.0,
+          -19.000000000000014,
+          20.75
+        ],
+        [
+          -30.0,
+          -9.000000000000014,
+          21.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_2_0",
+      "display_name": "Column mounting washer M5 ISO 7089 2_0 [hardware_base_top_washer_2_0]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.477981929910484,
+      "bounds_mm": [
+        [
+          30.0,
+          -51.000000000000014,
+          18.75
+        ],
+        [
+          40.0,
+          -41.000000000000014,
+          19.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_2_1",
+      "display_name": "Column mounting washer M5 ISO 7089 2_1 [hardware_base_top_washer_2_1]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.477981929910484,
+      "bounds_mm": [
+        [
+          30.0,
+          -51.000000000000014,
+          19.75
+        ],
+        [
+          40.0,
+          -41.000000000000014,
+          20.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_2_2",
+      "display_name": "Column mounting washer M5 ISO 7089 2_2 [hardware_base_top_washer_2_2]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.477981929910484,
+      "bounds_mm": [
+        [
+          30.0,
+          -51.000000000000014,
+          20.75
+        ],
+        [
+          40.0,
+          -41.000000000000014,
+          21.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_3_0",
+      "display_name": "Column mounting washer M5 ISO 7089 3_0 [hardware_base_top_washer_3_0]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.477981929910484,
+      "bounds_mm": [
+        [
+          30.0,
+          -19.000000000000014,
+          18.75
+        ],
+        [
+          40.0,
+          -9.000000000000014,
+          19.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_3_1",
+      "display_name": "Column mounting washer M5 ISO 7089 3_1 [hardware_base_top_washer_3_1]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.477981929910484,
+      "bounds_mm": [
+        [
+          30.0,
+          -19.000000000000014,
+          19.75
+        ],
+        [
+          40.0,
+          -9.000000000000014,
+          20.75
+        ]
+      ],
+      "valid_solid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "hardware_base_top_washer_3_2",
+      "display_name": "Column mounting washer M5 ISO 7089 3_2 [hardware_base_top_washer_3_2]",
+      "is_printed": false,
+      "material": "steel",
+      "solid_volume_mm3": 56.477981929910484,
+      "bounds_mm": [
+        [
+          30.0,
+          -19.000000000000014,
+          20.75
+        ],
+        [
+          40.0,
+          -9.000000000000014,
+          21.75
+        ]
+      ],
       "valid_solid": true,
       "solid_count": 1
     },
@@ -263,26 +1203,22 @@
         0
       ],
       "note": "",
-      "display_name": "压簧 1 [hardware_compression_spring_1]",
-      "solid_volume_mm3": 223.3722944740828,
+      "display_name": "Compression spring 1 [hardware_compression_spring_1]",
+      "solid_volume_mm3": 223.37229447408473,
       "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "guide_rod_2",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        -90,
-        0,
-        0
-      ],
-      "note": "ISO2338 Ø6h8x100, KILLICH23381006100; not printed",
-      "display_name": "钢销导杆 2 [guide_rod_2]",
-      "solid_volume_mm3": 2827.4333882308138,
-      "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -15.500003294483387,
+          -2.7565052325937014,
+          210.58280985572443
+        ],
+        [
+          -4.499996705516492,
+          23.10831564122298,
+          236.44763072954453
+        ]
+      ]
     },
     {
       "name": "hardware_compression_spring_2",
@@ -295,74 +1231,22 @@
         0
       ],
       "note": "",
-      "display_name": "压簧 2 [hardware_compression_spring_2]",
-      "solid_volume_mm3": 223.37229447408274,
+      "display_name": "Compression spring 2 [hardware_compression_spring_2]",
+      "solid_volume_mm3": 223.37229447408467,
       "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_M8_sliding_sleeve",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "12 OD x 8.4 ID x 22 mm metal tube, axial slide >=4 mm; right ear double-shear support.",
-      "display_name": "转轴滑动钢套管 [hardware_M8_sliding_sleeve]",
-      "solid_volume_mm3": 1268.9521046379887,
-      "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_M8_axis_bolt",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "",
-      "display_name": "转轴螺栓 M8×100 [hardware_M8_axis_bolt]",
-      "solid_volume_mm3": 5802.24719991339,
-      "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_M8_washer_1",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "",
-      "display_name": "转轴大垫圈 M8 1 [hardware_M8_washer_1]",
-      "solid_volume_mm3": 793.9432954152126,
-      "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_M8_washer_2",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "",
-      "display_name": "转轴大垫圈 M8 2 [hardware_M8_washer_2]",
-      "solid_volume_mm3": 793.9432954152126,
-      "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          4.4999967055166135,
+          -2.7565052325937014,
+          210.58280985572443
+        ],
+        [
+          15.500003294483506,
+          23.10831564122298,
+          236.44763072954453
+        ]
+      ]
     },
     {
       "name": "hardware_fixed_ring_M3_0",
@@ -375,26 +1259,22 @@
         0
       ],
       "note": "",
-      "display_name": "固定齿盘螺丝 M3 0° [hardware_fixed_ring_M3_0]",
-      "solid_volume_mm3": 156.09788497524292,
+      "display_name": "Fixed Hirth disc bolt M3 0 deg [hardware_fixed_ring_M3_0]",
+      "solid_volume_mm3": 156.09788497524198,
       "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_fixed_ring_nut_0",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "",
-      "display_name": "固定齿盘螺母 M3 0° [hardware_fixed_ring_nut_0]",
-      "solid_volume_mm3": 45.90884398536537,
-      "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -29.0,
+          -24.264718625761926,
+          135.485281374237
+        ],
+        [
+          -14.0,
+          -18.764718625761926,
+          140.985281374237
+        ]
+      ]
     },
     {
       "name": "hardware_fixed_ring_M3_120",
@@ -407,26 +1287,22 @@
         0
       ],
       "note": "",
-      "display_name": "固定齿盘螺丝 M3 120° [hardware_fixed_ring_M3_120]",
-      "solid_volume_mm3": 156.09788497524292,
+      "display_name": "Fixed Hirth disc bolt M3 120 deg [hardware_fixed_ring_M3_120]",
+      "solid_volume_mm3": 156.09788497524212,
       "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_fixed_ring_nut_120",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "",
-      "display_name": "固定齿盘螺母 M3 120° [hardware_fixed_ring_nut_120]",
-      "solid_volume_mm3": 45.90884398536537,
-      "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -29.0,
+          -44.34110991546701,
+          130.10582854122634
+        ],
+        [
+          -14.0,
+          -38.84110991546701,
+          135.60582854122634
+        ]
+      ]
     },
     {
       "name": "hardware_fixed_ring_M3_240",
@@ -439,10 +1315,78 @@
         0
       ],
       "note": "",
-      "display_name": "固定齿盘螺丝 M3 240° [hardware_fixed_ring_M3_240]",
-      "solid_volume_mm3": 156.09788497524286,
+      "display_name": "Fixed Hirth disc bolt M3 240 deg [hardware_fixed_ring_M3_240]",
+      "solid_volume_mm3": 156.09788497524212,
       "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -29.0,
+          -29.644171458772554,
+          115.40889008453189
+        ],
+        [
+          -14.0,
+          -24.144171458772554,
+          120.90889008453189
+        ]
+      ]
+    },
+    {
+      "name": "hardware_fixed_ring_nut_0",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "display_name": "Fixed Hirth disc nut M3 0 deg [hardware_fixed_ring_nut_0]",
+      "solid_volume_mm3": 45.90884398529909,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -28.8,
+          -24.581945072799524,
+          135.1680549271994
+        ],
+        [
+          -26.4,
+          -18.44749217872434,
+          141.3025078212746
+        ]
+      ]
+    },
+    {
+      "name": "hardware_fixed_ring_nut_120",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "display_name": "Fixed Hirth disc nut M3 120 deg [hardware_fixed_ring_nut_120]",
+      "solid_volume_mm3": 45.90884398529911,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -28.8,
+          -44.6583363625046,
+          129.78860209418878
+        ],
+        [
+          -26.4,
+          -38.523883468429425,
+          135.92305498826394
+        ]
+      ]
     },
     {
       "name": "hardware_fixed_ring_nut_240",
@@ -455,42 +1399,22 @@
         0
       ],
       "note": "",
-      "display_name": "固定齿盘螺母 M3 240° [hardware_fixed_ring_nut_240]",
-      "solid_volume_mm3": 45.90884398536537,
+      "display_name": "Fixed Hirth disc nut M3 240 deg [hardware_fixed_ring_nut_240]",
+      "solid_volume_mm3": 45.90884398543102,
       "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_moving_ring_M3_60",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "",
-      "display_name": "转动齿盘螺丝 M3 60° [hardware_moving_ring_M3_60]",
-      "solid_volume_mm3": 212.64655273985923,
-      "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_moving_ring_nut_60",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "",
-      "display_name": "转动齿盘螺母 M3 60° [hardware_moving_ring_nut_60]",
-      "solid_volume_mm3": 45.90884398536537,
-      "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -28.8,
+          -29.961397905810145,
+          115.09166363748723
+        ],
+        [
+          -26.4,
+          -23.826945011727894,
+          121.2261165315695
+        ]
+      ]
     },
     {
       "name": "hardware_moving_ring_M3_180",
@@ -503,26 +1427,22 @@
         0
       ],
       "note": "",
-      "display_name": "转动齿盘螺丝 M3 180° [hardware_moving_ring_M3_180]",
-      "solid_volume_mm3": 212.64655273985923,
+      "display_name": "Moving Hirth disc bolt M3 180 deg [hardware_moving_ring_M3_180]",
+      "solid_volume_mm3": 212.64655273985719,
       "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_moving_ring_nut_180",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "",
-      "display_name": "转动齿盘螺母 M3 180° [hardware_moving_ring_nut_180]",
-      "solid_volume_mm3": 45.90884398536537,
-      "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -15.0,
+          -41.235281374239065,
+          118.51471862575984
+        ],
+        [
+          8.0,
+          -35.735281374239065,
+          124.01471862575984
+        ]
+      ]
     },
     {
       "name": "hardware_moving_ring_M3_300",
@@ -535,10 +1455,78 @@
         0
       ],
       "note": "",
-      "display_name": "转动齿盘螺丝 M3 300° [hardware_moving_ring_M3_300]",
-      "solid_volume_mm3": 212.64655273985917,
+      "display_name": "Moving Hirth disc bolt M3 300 deg [hardware_moving_ring_M3_300]",
+      "solid_volume_mm3": 212.64655273985753,
       "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -15.0,
+          -21.158890084533986,
+          123.89417145877047
+        ],
+        [
+          8.0,
+          -15.658890084533986,
+          129.39417145877047
+        ]
+      ]
+    },
+    {
+      "name": "hardware_moving_ring_M3_60",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "display_name": "Moving Hirth disc bolt M3 60 deg [hardware_moving_ring_M3_60]",
+      "solid_volume_mm3": 212.64655273985753,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -15.0,
+          -35.85582854122844,
+          138.59110991546493
+        ],
+        [
+          8.0,
+          -30.35582854122844,
+          144.09110991546493
+        ]
+      ]
+    },
+    {
+      "name": "hardware_moving_ring_nut_180",
+      "material": "Steel",
+      "is_printed": false,
+      "fixed_in_base_frame": false,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "display_name": "Moving Hirth disc nut M3 180 deg [hardware_moving_ring_nut_180]",
+      "solid_volume_mm3": 45.90884398529903,
+      "valid_solid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          4.999999999999999,
+          -41.55250782127666,
+          118.19749217872224
+        ],
+        [
+          7.400000000000001,
+          -35.41805492720148,
+          124.33194507279744
+        ]
+      ]
     },
     {
       "name": "hardware_moving_ring_nut_300",
@@ -551,74 +1539,192 @@
         0
       ],
       "note": "",
-      "display_name": "转动齿盘螺母 M3 300° [hardware_moving_ring_nut_300]",
-      "solid_volume_mm3": 45.90884398536537,
+      "display_name": "Moving Hirth disc nut M3 300 deg [hardware_moving_ring_nut_300]",
+      "solid_volume_mm3": 45.908843985430956,
       "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          4.999999999999999,
+          -21.476116531571574,
+          123.5769450117258
+        ],
+        [
+          7.400000000000001,
+          -15.341663637489326,
+          129.71139790580804
+        ]
+      ]
     },
     {
-      "name": "hardware_base_M5_0",
+      "name": "hardware_moving_ring_nut_60",
       "material": "Steel",
       "is_printed": false,
-      "fixed_in_base_frame": true,
+      "fixed_in_base_frame": false,
       "print_rotation_deg": [
         0,
         0,
         0
       ],
-      "note": "M5x16 top-down into8mm heat-set insert",
-      "display_name": "立柱底座固定螺丝 M5 1 [hardware_base_M5_0]",
-      "solid_volume_mm3": 597.8843518863075,
+      "note": "",
+      "display_name": "Moving Hirth disc nut M3 60 deg [hardware_moving_ring_nut_60]",
+      "solid_volume_mm3": 45.90884398529906,
       "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          4.999999999999999,
+          -36.17305498826603,
+          138.27388346842736
+        ],
+        [
+          7.400000000000001,
+          -30.038602094190857,
+          144.4083363625025
+        ]
+      ]
     },
     {
-      "name": "hardware_base_M5_1",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": true,
+      "name": "hirth_fixed",
+      "material": "PETG",
+      "is_printed": true,
+      "fixed_in_base_frame": false,
       "print_rotation_deg": [
-        0,
-        0,
-        0
+        -90.0,
+        -45.0,
+        -90.0
       ],
-      "note": "M5x16 top-down into8mm heat-set insert",
-      "display_name": "立柱底座固定螺丝 M5 2 [hardware_base_M5_1]",
-      "solid_volume_mm3": 597.8843518863077,
+      "note": "Toothed face UP, 0.08-0.12 mm layers. Constant 60 deg flank; fixed tip/root 1.1/.9 mm; .2 mm tip/root relief, touching loaded flanks.",
+      "display_name": "Fixed Hirth disc [hirth_fixed]",
+      "solid_volume_mm3": 16046.932093766336,
       "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "print_transform": [
+        [
+          2.22044604925e-16,
+          0.7071067811865476,
+          -0.7071067811865476,
+          146.9603082945502
+        ],
+        [
+          0.0,
+          0.7071067811865476,
+          0.7071067811865476,
+          -36.53390142335165
+        ],
+        [
+          1.0,
+          -1.5700924586835538e-16,
+          1.5700924586835538e-16,
+          20.999999999999957
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_bounds_mm": [
+        68.0,
+        68.0,
+        6.796694430760516
+      ],
+      "bounds_mm": [
+        [
+          -21.000000000000007,
+          -64.0000000000005,
+          95.74999999999841
+        ],
+        [
+          -14.203305569239484,
+          3.9999999999995026,
+          163.7499999999984
+        ]
+      ],
+      "print_aabb_mm": [
+        [
+          0.0,
+          4.995115432393504e-12,
+          -2.4868995751603507e-14
+        ],
+        [
+          68.0,
+          68.000000000005,
+          6.796694430760491
+        ]
+      ]
     },
     {
-      "name": "hardware_base_M5_2",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": true,
+      "name": "hirth_moving",
+      "material": "PETG",
+      "is_printed": true,
+      "fixed_in_base_frame": false,
       "print_rotation_deg": [
-        0,
-        0,
-        0
+        -90.0,
+        45.0,
+        90.0
       ],
-      "note": "M5x16 top-down into8mm heat-set insert",
-      "display_name": "立柱底座固定螺丝 M5 3 [hardware_base_M5_2]",
-      "solid_volume_mm3": 597.8843518863075,
+      "note": "Toothed face UP, 0.08-0.12 mm layers. Constant 60 deg flank; fixed tip/root 1.1/.9 mm; .2 mm tip/root relief, touching loaded flanks.",
+      "display_name": "Moving Hirth disc [hirth_moving]",
+      "solid_volume_mm3": 17646.6627335564,
       "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_base_M5_3",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": true,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
+      "solid_count": 1,
+      "print_transform": [
+        [
+          2.22044604925e-16,
+          -0.7071067811865476,
+          0.7071067811865476,
+          -78.96030829455022
+        ],
+        [
+          0.0,
+          0.7071067811865476,
+          0.7071067811865476,
+          -36.53390142335165
+        ],
+        [
+          -1.0,
+          -1.5700924586835538e-16,
+          1.5700924586835538e-16,
+          -9.000000000000043
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
       ],
-      "note": "M5x16 top-down into8mm heat-set insert",
-      "display_name": "立柱底座固定螺丝 M5 4 [hardware_base_M5_3]",
-      "solid_volume_mm3": 597.8843518863077,
-      "valid_solid": true,
-      "solid_count": 1
+      "print_bounds_mm": [
+        68.0,
+        67.99470547012001,
+        7.8000000000105265
+      ],
+      "bounds_mm": [
+        [
+          -16.800000000010517,
+          -64.0000000000005,
+          95.74999999999841
+        ],
+        [
+          -8.999999999999993,
+          3.9999999999995026,
+          163.7499999999984
+        ]
+      ],
+      "print_aabb_mm": [
+        [
+          0.0,
+          4.995115432393504e-12,
+          -3.28626015289025e-14
+        ],
+        [
+          68.0,
+          67.994705470125,
+          7.800000000010494
+        ]
+      ]
     },
     {
       "name": "pad_back",
@@ -631,10 +1737,22 @@
         0
       ],
       "note": "",
-      "display_name": "背托软垫 [pad_back]",
-      "solid_volume_mm3": 1479.9999999999998,
+      "display_name": "Back support pad [pad_back]",
+      "solid_volume_mm3": 1479.9999999999993,
       "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -20.0,
+          -36.929791844401535,
+          221.25841258553
+        ],
+        [
+          20.0,
+          -21.73643660977705,
+          236.9595759232492
+        ]
+      ]
     },
     {
       "name": "pad_lower_jaw",
@@ -647,10 +1765,22 @@
         0
       ],
       "note": "",
-      "display_name": "下夹爪软垫 [pad_lower_jaw]",
-      "solid_volume_mm3": 2116.4000000000015,
+      "display_name": "Lower jaw pad [pad_lower_jaw]",
+      "solid_volume_mm3": 2116.3999999999996,
       "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -26.0,
+          -81.56748772779405,
+          196.77379559244
+        ],
+        [
+          26.0,
+          -64.70299099649489,
+          213.63829232373917
+        ]
+      ]
     },
     {
       "name": "pad_upper_jaw",
@@ -663,24 +1793,36 @@
         0
       ],
       "note": "",
-      "display_name": "上夹爪软垫 [pad_upper_jaw]",
-      "solid_volume_mm3": 580.6237139339801,
+      "display_name": "Upper jaw pad [pad_upper_jaw]",
+      "solid_volume_mm3": 580.6237139339796,
       "valid_solid": true,
-      "solid_count": 1
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -18.0,
+          -31.076670764775205,
+          259.2854278356254
+        ],
+        [
+          18.0,
+          -21.990348626528064,
+          268.37174997387257
+        ]
+      ]
     },
     {
-      "name": "column_sleeve",
+      "name": "slider_upper_jaw",
       "material": "PETG",
       "is_printed": true,
-      "fixed_in_base_frame": true,
+      "fixed_in_base_frame": false,
       "print_rotation_deg": [
-        45,
-        0,
-        0
+        -135.0,
+        0.0,
+        -0.0
       ],
-      "note": "AH v3.2",
-      "display_name": "套筒（叉形耳板） [column_sleeve]",
-      "solid_volume_mm3": 104854.53030516747,
+      "note": "40 mm upper jaw; relieved Pair/USB zones. Two springs preload lower datum; M4 set screw locks slide against frame.",
+      "display_name": "Upper jaw slider [slider_upper_jaw]",
+      "solid_volume_mm3": 48634.82209852536,
       "valid_solid": true,
       "solid_count": 1,
       "print_transform": [
@@ -688,19 +1830,19 @@
           1.0,
           0.0,
           0.0,
-          29.000000000000007
+          20.0000001
         ],
         [
           0.0,
-          0.7071067811865475,
-          -0.7071067811865476,
-          10.562222716149606
+          -0.7071067811865475,
+          0.7071067811865477,
+          -143.81700891990022
         ],
         [
           0.0,
-          0.7071067811865476,
-          0.7071067811865475,
-          193.9108654492692
+          -0.7071067811865477,
+          -0.7071067811865475,
+          173.8679596509516
         ],
         [
           0.0,
@@ -710,153 +1852,34 @@
         ]
       ],
       "print_bounds_mm": [
-        58.000000000000014,
-        68.0,
-        137.00000009999994
-      ]
-    },
-    {
-      "name": "column_lower",
-      "material": "PETG",
-      "is_printed": true,
-      "fixed_in_base_frame": true,
-      "print_rotation_deg": [
-        45,
-        0,
-        0
+        40.0000002,
+        76.0,
+        63.62338010894501
       ],
-      "note": "AH v3.2",
-      "display_name": "立柱底座（法兰、斜板、内立柱） [column_lower]",
-      "solid_volume_mm3": 116425.46471123683,
-      "valid_solid": true,
-      "solid_count": 1,
-      "print_transform": [
+      "bounds_mm": [
         [
-          1.0,
-          0.0,
-          0.0,
-          45.0
+          -20.0000001,
+          -38.23498148833923,
+          179.64867204044026
         ],
         [
-          0.0,
-          0.7071067811865475,
-          -0.7071067811865476,
-          1.5622227161495914
-        ],
-        [
-          0.0,
-          0.7071067811865476,
-          0.7071067811865475,
-          203.91086534926922
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
+          20.0000001,
+          10.642629325231113,
+          278.3773109276622
         ]
       ],
-      "print_bounds_mm": [
-        90.0,
-        50.0,
-        70.0
+      "print_aabb_mm": [
+        [
+          1.1686097468332243e-15,
+          0.0,
+          -7.105427357601002e-15
+        ],
+        [
+          40.0000002,
+          76.0,
+          63.623380108945
+        ]
       ]
-    },
-    {
-      "name": "hardware_M8_hub_washer",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "AH v3.2",
-      "display_name": "托架凸台大垫圈 M8 [hardware_M8_hub_washer]",
-      "solid_volume_mm3": 793.9432954152126,
-      "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_M8_star_knob_envelope",
-      "material": "PA_Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": false,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "Ganter DIN6336-KT-40-M8-D: PA with steel threaded-through bushing, D40 h25 neckD18; not printed",
-      "display_name": "标准星形把手 M8（采购包络） [hardware_M8_star_knob_envelope]",
-      "solid_volume_mm3": 30159.289474462013,
-      "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_M6_washer_-1",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": true,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "AH v3.2",
-      "display_name": "调高大垫圈 M6 左 [hardware_M6_washer_-1]",
-      "solid_volume_mm3": 355.67855386882206,
-      "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_M6_washer_1",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": true,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "AH v3.2",
-      "display_name": "调高大垫圈 M6 右 [hardware_M6_washer_1]",
-      "solid_volume_mm3": 355.67855386882206,
-      "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_M6_height_bolt",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": true,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "AH v3.2",
-      "display_name": "调高螺栓 M6×70 [hardware_M6_height_bolt]",
-      "solid_volume_mm3": 2325.613533275345,
-      "valid_solid": true,
-      "solid_count": 1
-    },
-    {
-      "name": "hardware_M6_locknut",
-      "material": "Steel",
-      "is_printed": false,
-      "fixed_in_base_frame": true,
-      "print_rotation_deg": [
-        0,
-        0,
-        0
-      ],
-      "note": "AH v3.2",
-      "display_name": "调高防松螺母 M6 [hardware_M6_locknut]",
-      "solid_volume_mm3": 349.96923897681455,
-      "valid_solid": true,
-      "solid_count": 1
     }
   ],
   "parameters": {
@@ -921,7 +1944,7 @@
       "battery_seam_y_max": 8.0
     },
     "installation": {
-      "layout_revision": "v3.2-AH4",
+      "layout_revision": "v3.4-alu10",
       "table_edge_x": 718.4,
       "table_center_y": 625.2,
       "tabletop_z": 767.0,
@@ -929,20 +1952,13 @@
       "table_edge_to_apron": 30.0,
       "base_width": 240.0,
       "base_depth": 130.0,
-      "printed_base_thickness": 16.0,
-      "aluminum_base": false,
-      "aluminum_thickness": 8.0,
       "clamp_band_depth": 30.0,
       "flange_width": 90.0,
       "flange_depth": 50.0,
-      "flange_thickness": 8.0,
       "column_center_y": -30.0,
       "column_width": 36.0,
       "column_depth": 32.0,
       "column_height_to_axis": 105.0,
-      "ear_inner_x": 21.0,
-      "ear_outer_x": 29.0,
-      "ear_radius": 34.0,
       "gusset_width": 8.0,
       "gusset_height": 62.0,
       "bolt_x": 35.0,
@@ -991,7 +2007,16 @@
       "upper_outer_chamfer_mm": 2.0,
       "keep_USB_cable": false,
       "USB_cable_back_z": -10.0,
-      "pair_slot_extra_z": 1.0
+      "pair_slot_extra_z": 1.0,
+      "clevis_lug_inner_x": 21.0,
+      "clevis_lug_outer_x": 29.0,
+      "clevis_lug_radius": 34.0,
+      "base_thickness_mm": 10,
+      "base_material": "aluminum plate",
+      "flange_thickness": 14,
+      "flange_bottom_z_mm": 10.75,
+      "flange_top_z_mm": 24.75,
+      "aluminum_alloy_temper_finish": "left to buyer/supplier"
     },
     "hardware": {
       "pivot_bolt_d": 8.0,
@@ -1008,13 +2033,6 @@
       "moving_ring_bolt_length": 20.0,
       "design_pivot_torque_Nm": 4.0,
       "base_bolt_d": 5.0,
-      "base_insert_pilot": 6.4,
-      "base_insert_od": 7.0,
-      "base_insert_length": 8.0,
-      "base_insert_pilot_depth": 9.0,
-      "aluminum_tap_drill_d": 4.2,
-      "aluminum_tap_depth": 6.5,
-      "aluminum_base_bolt_length": 12.0,
       "cap_bolt_d": 3.0,
       "cap_insert_pilot": 4.1,
       "cap_insert_od": 4.6,
@@ -1032,7 +2050,25 @@
       "pad_friction": 0.6,
       "pad_effective_E_MPa": 0.6,
       "clamp_force_max": 2000.0,
-      "clamp_foot_d_min": 15.0
+      "clamp_foot_d_min": 15.0,
+      "base_bolt_length": 20,
+      "base_bolt_standard": "ISO 4762 class 8.8",
+      "base_top_washers_per_bolt": 3,
+      "base_wire_insert": {
+        "manufacturer": "Bollhoff",
+        "product": "HELICOIL Tangfree Free Running",
+        "part_number": "5130 005 0075",
+        "thread": "M5x0.8 STI (HELICOIL holding thread)",
+        "length_mm": 7.5,
+        "recess_mm": 0.4,
+        "installed_envelope_od_mm": 6.04,
+        "id_mm": 5.0,
+        "sti_drill_mm": 5.2,
+        "source": "https://media.boellhoff.com/files/pdf1/helicoil-tangfree-en-0150.pdf",
+        "source_pages": "16, 18-19",
+        "envelope_basis": "DHC minimum holding-thread outside diameter, used as nominal installed outer envelope; not free-state diameter 6.25..6.80",
+        "recess_basis": "0.5 pitch selected from manufacturer 0.25..0.5 pitch range"
+      }
     },
     "printing": {
       "nozzle_mm": 0.4,
@@ -1053,6 +2089,73 @@
       "material_E_MPa": 1500.0,
       "tooth_shear_allow_MPa": 5.0,
       "effective_loaded_teeth": 4
+    },
+    "historical_v3_2": {
+      "status": "Historical source assumptions; not active manufacturing instructions",
+      "values": {
+        "installation.printed_base_thickness": 16.0,
+        "installation.aluminum_base": false,
+        "installation.aluminum_thickness": 8.0,
+        "installation.flange_thickness": 8.0,
+        "hardware.base_insert_pilot": 6.4,
+        "hardware.base_insert_od": 7.0,
+        "hardware.base_insert_length": 8.0,
+        "hardware.base_insert_pilot_depth": 9.0,
+        "hardware.aluminum_tap_drill_d": 4.2,
+        "hardware.aluminum_tap_depth": 6.5,
+        "hardware.aluminum_base_bolt_length": 12.0,
+        "installation.ear_inner_x": 21.0,
+        "installation.ear_outer_x": 29.0,
+        "installation.ear_radius": 34.0
+      },
+      "retired_base_part": {
+        "name": "base_printed",
+        "material": "PETG",
+        "is_printed": true,
+        "fixed_in_base_frame": true,
+        "print_rotation_deg": [
+          45.0,
+          0,
+          0
+        ],
+        "note": "Flat underside down. Entire 30 mm edge band uses one 100% infill modifier; no fixed clamp locations.",
+        "display_name": "Base plate (retired printed snapshot) [base_printed]",
+        "solid_volume_mm3": 496883.76656836143,
+        "valid_solid": true,
+        "solid_count": 1,
+        "print_transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.7071067811865475,
+            -0.7071067811865476,
+            76.56222271614959
+          ],
+          [
+            0.0,
+            0.7071067811865476,
+            0.7071067811865475,
+            219.91086534926927
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "print_bounds_mm": [
+          240.0,
+          130.0,
+          16.00000000000003
+        ]
+      },
+      "retired_base_id": "base_acrylic"
     }
   },
   "v3_2_table_from_pad": [
@@ -1080,5 +2183,64 @@
       0.0,
       1.0
     ]
-  ]
+  ],
+  "board": {
+    "width": 240,
+    "depth": 130,
+    "thickness": 10,
+    "bottom_z": 0.75,
+    "top_z": 10.75,
+    "hole_d": 6.04,
+    "holes": [
+      [
+        -35.0,
+        -14.0
+      ],
+      [
+        -35.0,
+        -46.0
+      ],
+      [
+        -35.0,
+        -78.0
+      ],
+      [
+        -35.0,
+        -110.0
+      ],
+      [
+        35.0,
+        -14.0
+      ],
+      [
+        35.0,
+        -46.0
+      ],
+      [
+        35.0,
+        -78.0
+      ],
+      [
+        35.0,
+        -110.0
+      ]
+    ],
+    "bottom_counterbores": 0,
+    "insert": {
+      "manufacturer": "Bollhoff",
+      "product": "HELICOIL Tangfree Free Running",
+      "part_number": "5130 005 0075",
+      "thread": "M5x0.8 STI (HELICOIL holding thread)",
+      "length_mm": 7.5,
+      "recess_mm": 0.4,
+      "installed_envelope_od_mm": 6.04,
+      "id_mm": 5.0,
+      "sti_drill_mm": 5.2,
+      "source": "https://media.boellhoff.com/files/pdf1/helicoil-tangfree-en-0150.pdf",
+      "source_pages": "16, 18-19",
+      "envelope_basis": "DHC minimum holding-thread outside diameter, used as nominal installed outer envelope; not free-state diameter 6.25..6.80",
+      "recess_basis": "0.5 pitch selected from manufacturer 0.25..0.5 pitch range"
+    }
+  },
+  "revision_note": "Reviewer Ruling 1: owner authorizes STEP changes; English source is authoritative; column option B is derived once by script, not in the build"
 }

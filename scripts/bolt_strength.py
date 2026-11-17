@@ -9,7 +9,9 @@ from build123d import import_step
 
 ROOT=Path(__file__).resolve().parents[1]
 SRC=ROOT/'design/source'
-OUT=ROOT/'build/bolt_strength';OUT.mkdir(parents=True,exist_ok=True)
+import argparse
+parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path,default=ROOT/'build/alu10/bolt_strength');args=parser.parse_args()
+OUT=args.out;OUT.mkdir(parents=True,exist_ok=True)
 m=json.loads((SRC/'manifest.json').read_text())
 T=np.asarray(m['v3_2_table_from_pad'])
 xy=[];hashes={}
@@ -26,22 +28,16 @@ hashes[p.name]=hashlib.sha256(p.read_bytes()).hexdigest()
 assert np.allclose(np.sort(np.unique(offset[:,0])),[-35,35])
 assert np.allclose(np.sort(np.unique(offset[:,1])),[-16,16])
 lo,hi=controller.bounds
-base_top=16.75
+base_top=10.75
 rbox=np.array([lo-[*centre,base_top],hi-[*centre,base_top]])
 rbox[:,2]+=30 # Highest height, +30mm, explicit common worst-case envelope.
 corners=np.array(list(itertools.product(*zip(*rbox))))
 At=14.2;Ashear=math.pi*4.0**2/4
 proof_N=8230.;ultimate_N=11350.;proof_MPa=proof_N/At
 cases=[]
-# Same 16mm thickness for all three options isolates material choice. The 8mm
-# aluminum option only translates the assembled parts; lever arm over the
-# flange remains unchanged. It does NOT lower the above-flange force lever.
-variants=[('printed_PETG_16',16,'existing heat-set joint'),
-          ('cast_PMMA_16',16,'concept: through-bolt/nut; fastener length and counterbore not yet designed'),
-          ('aluminum_6061_8',8,'concept: tapped blind holes; old M5x12 has nominal4mm entry, not qualified')]
+# Active joint plane is the extended flange bottom; upper load geometry is unchanged.
+variants=[('aluminum_plate_10_option_B',10,'M5x20, three top washers, M5 wire thread inserts; joint capacity unqualified')]
 for name,t,note in variants:
- # All upper bodies translate t-16 in table coordinates. Both force point and
- # interface translate equally, so rbox is identical: no artificial advantage.
  normal_coefficients=[]
  shear_coefficients=[]
  for r in corners:
@@ -81,22 +77,22 @@ assert equilibrium_error<1e-8
 result=dict(executed=True,method='Python closed-form elastic bolt group; nominal axial and shear stress; no FEA or physical loading',
  source_sha256=hashes,bolt_centres_table_mm=xy.tolist(),bolt_group_centre_table_mm=centre.tolist(),
  spacing_mm=dict(left_right=70,front_back=32),relative_force_box_highest_mm=rbox.tolist(),
- nominal_thread='M5x0.8',assumed_property_class='8.8; NOT previously specified or verified as purchased',
+ nominal_thread='M5x0.8',assumed_property_class='8.8 specified; actual purchased grade not verified',
  stress_area_mm2=At,assumed_shear_core_diameter_mm=4.,shear_area_mm2=Ashear,
  proof_load_N=proof_N,minimum_tensile_fracture_load_N=ultimate_N,
  maximum_elastic_tension_per_force=cn,maximum_elastic_shear_per_force=cs,
  variants=[dict(name=n,thickness_mm=t,note=note) for n,t,note in variants],
  force_cases_are_assumptions=True,assumed_preload_is_not_tightening_instruction=True,
  results=cases,equilibrium_residual_max_N_or_Nmm=equilibrium_error,
- all_three_variants_identical_bolt_body_results=True,
+ joint_plane_z_mm=base_top,
  limitations=['Single quasi-static force within axis-aligned controller envelope, highest height, default45deg tilt; not arbitrary tilt or pure external applied torque.',
  'Unknown operating forces and self-weight resultants must be added;20/50/100N are screening scenarios, not measured operating limits.',
  'Elastic distribution assumes intact seated flange;1/3/6 multipliers are sensitivity inputs, not a certified bound on prying or failed supports.',
  'Preloads0/1000/3000N are assumptions. No approved assembly torque, clamp force, residual tightening torsion, transverse bolt bending, fatigue, impact, defects or corrosion are modelled.',
- 'No pass decision for female threads, heat-set inserts, acrylic counterbores, printed flange, base plate or desk clamps. No overall joint certification.'],
+ 'No pass decision for wire inserts, aluminum threads, printed flange, base plate or desk clamps. No overall joint certification.'],
  sources=[dict(title='Bossard: metric screw mechanical properties, ISO898-1',url='https://assets.eu.ctfassets.net/0vp0u5uh75zd/1VPwGxSRcAQdDRArMtTqeY/8fe01cf6ef692e134b45f895fb69fe97/012_016_Screws_property_class46_Fastening_EN_01_2025.pdf',used='M5 stress area14.2mm2; class8.8 proof8230N, minimum tensile11350N')])
 (OUT/'results.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
 for F in (20.,50.,100.):
  row=next(v for v in cases if v['variant']==variants[0][0] and v['force_N']==F and v['assumed_preload_each_N']==3000 and v['assumed_tension_amplification']==6)
  print(json.dumps(row,ensure_ascii=False))
-print('same results all3 variants; equilibrium residual',equilibrium_error,'; coefficient',cn['value'],'; shear',cs)
+print('Active nominal steel bolt screening; equilibrium residual',equilibrium_error,'; coefficient',cn['value'],'; shear',cs)
