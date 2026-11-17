@@ -12,8 +12,6 @@ Editable CAD and manufacturing files for an Xbox One S 1708 controller fixture, 
 
 The [latest release](https://github.com/5o1/gamepad_fixture/releases/latest) includes the complete STEP assembly, six separate PETG printing files, aluminum plate machining CAD/DXF, dimensioned drawings and an itemized BOM. All part names and delivery documents are in English.
 
-- [Assembly STEP with controller reference](https://github.com/5o1/gamepad_fixture/releases/download/v3.4.0/assembly_with_controller_v3.4.0.step)
-- [Fixture-only assembly STEP](https://github.com/5o1/gamepad_fixture/releases/download/v3.4.0/assembly_v3.4.0.step)
 - [Complete delivery](https://github.com/5o1/gamepad_fixture/releases/download/v3.4.0/gamepad_fixture_v3.4.0.zip)
 - [Printing center STL bundle](https://github.com/5o1/gamepad_fixture/releases/download/v3.4.0/printing_STL_v3.4.0.zip)
 - [Aluminum plate manufacturing bundle](https://github.com/5o1/gamepad_fixture/releases/download/v3.4.0/aluminum_manufacturing_v3.4.0.zip)
