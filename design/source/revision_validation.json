@@ -1,0 +1,4855 @@
+{
+  "baseline_git_commit": "30dabeaffc83a60826fb489351427f33939e70ff",
+  "ruling_1": "Owner explicitly permits modifying accepted STEP assets; source relabeled in place; no dual active copy design",
+  "initial_all_47_name_only_proofs": [
+    {
+      "file": "design/source/coupons/guide_pin/guide_pin_coupon.step",
+      "baseline_sha256": "36a36071417baddb328d9eb814bb9b8a0274d561010682404832e9b2cb5a0537",
+      "labeled_sha256": "d443c288c5d9eb2118833ed06ef4bd022c3bf5baa6e2fc52a557e940d2bfddd1",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 8154.150068427702,
+        "bounds_mm": [
+          [
+            -3.552713678800501e-15,
+            -4.930380657631324e-32,
+            0.0
+          ],
+          [
+            16.000000000000004,
+            14.0,
+            40.0
+          ]
+        ],
+        "face_count": 15
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 8154.150068427702,
+        "bounds_mm": [
+          [
+            -3.552713678800501e-15,
+            -4.930380657631324e-32,
+            0.0
+          ],
+          [
+            16.000000000000004,
+            14.0,
+            40.0
+          ]
+        ],
+        "face_count": 15
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/column_lower.step",
+      "baseline_sha256": "ee5a93280780f4f56bc1ec0b9929fdb92a9a93829d28abaca966640be255e18b",
+      "labeled_sha256": "110a263d49ebe1042105298fa36de522e60514609469a5be825a654900ff7074",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 116425.46439426384,
+        "bounds_mm": [
+          [
+            -45.0,
+            -55.000000000000014,
+            16.75
+          ],
+          [
+            45.0,
+            -5.000000000000014,
+            86.75
+          ]
+        ],
+        "face_count": 55
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 116425.46439426384,
+        "bounds_mm": [
+          [
+            -45.0,
+            -55.000000000000014,
+            16.75
+          ],
+          [
+            45.0,
+            -5.000000000000014,
+            86.75
+          ]
+        ],
+        "face_count": 55
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/column_sleeve.step",
+      "baseline_sha256": "ea44fcf1547a4a3306b73b8cbd0afdd2f02237f4bc34973373c1befb620b38ed",
+      "labeled_sha256": "c88a444dfccb64b1adc35deb6e4d74ff6e6cf8426e76cf77a288e75eb2df8d7a",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 104854.53030517725,
+        "bounds_mm": [
+          [
+            -29.000000000000007,
+            -64.00000000000001,
+            26.7499999
+          ],
+          [
+            29.000000000000007,
+            3.999999999999986,
+            163.75
+          ]
+        ],
+        "face_count": 382
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 104854.53030517725,
+        "bounds_mm": [
+          [
+            -29.000000000000007,
+            -64.00000000000001,
+            26.7499999
+          ],
+          [
+            29.000000000000007,
+            3.999999999999986,
+            163.75
+          ]
+        ],
+        "face_count": 382
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/cradle_lower_jaw.step",
+      "baseline_sha256": "3063ed87f3862e9c1e7b32631a4676a973b75f1d714409ec8c5584cd89429822",
+      "labeled_sha256": "a286df40f914f095755073f7b6422f660fdfe6303b066658fab0d820e62b51f4",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 142020.62394929188,
+        "bounds_mm": [
+          [
+            -32.75,
+            -93.69436902514067,
+            97.74999999999841
+          ],
+          [
+            32.75,
+            36.364783926841554,
+            256.72331118977394
+          ]
+        ],
+        "face_count": 101
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 142020.62394929188,
+        "bounds_mm": [
+          [
+            -32.75,
+            -93.69436902514067,
+            97.74999999999841
+          ],
+          [
+            32.75,
+            36.364783926841554,
+            256.72331118977394
+          ]
+        ],
+        "face_count": 101
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/guide_rod_1.step",
+      "baseline_sha256": "73a4112297d346d46f5ebe6dc39b7e593de9ab937501137e58efadc1df41baad",
+      "labeled_sha256": "11adb9cf3302124f1dbbdfb178add3ae7bb46e275a6f67209bb2bb5385370b31",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 2827.4333882308147,
+        "bounds_mm": [
+          [
+            -13.0,
+            -43.538282347239026,
+            171.163390666203
+          ],
+          [
+            -7.0,
+            31.41503645853502,
+            246.116709471977
+          ]
+        ],
+        "face_count": 3
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 2827.4333882308147,
+        "bounds_mm": [
+          [
+            -13.0,
+            -43.538282347239026,
+            171.163390666203
+          ],
+          [
+            -7.0,
+            31.41503645853502,
+            246.116709471977
+          ]
+        ],
+        "face_count": 3
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/guide_rod_2.step",
+      "baseline_sha256": "64cbda905273a8db8347b1b0a3027db5b07ee757731f2e00540a8f24a6890e81",
+      "labeled_sha256": "20b73f02a779db09afbdeb0f0038da55f3c4f9fdeec44a72599f2b063d39f622",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 2827.4333882308147,
+        "bounds_mm": [
+          [
+            7.0,
+            -43.538282347239026,
+            171.163390666203
+          ],
+          [
+            13.0,
+            31.41503645853502,
+            246.116709471977
+          ]
+        ],
+        "face_count": 3
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 2827.4333882308147,
+        "bounds_mm": [
+          [
+            7.0,
+            -43.538282347239026,
+            171.163390666203
+          ],
+          [
+            13.0,
+            31.41503645853502,
+            246.116709471977
+          ]
+        ],
+        "face_count": 3
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M6_height_bolt.step",
+      "baseline_sha256": "64a242e3d5ef59b16c3d32a3d5988997ea17aa0dcea07dd971074207de70abca",
+      "labeled_sha256": "9355e3bb14c8a33a07f07bb795db7f72fbece2be79258d708afbbfdd66b650e7",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 2325.6135332753884,
+        "bounds_mm": [
+          [
+            -31.6,
+            -35.000000000000014,
+            70.97649730810281
+          ],
+          [
+            42.4,
+            -25.000000000000014,
+            82.52350269189719
+          ]
+        ],
+        "face_count": 10
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 2325.6135332753884,
+        "bounds_mm": [
+          [
+            -31.6,
+            -35.000000000000014,
+            70.97649730810281
+          ],
+          [
+            42.4,
+            -25.000000000000014,
+            82.52350269189719
+          ]
+        ],
+        "face_count": 10
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M6_locknut.step",
+      "baseline_sha256": "a43b0a3be1cd76cc5809af65fdf29cf278efacb3fb28fa2446a59441321a50e8",
+      "labeled_sha256": "6a98a406c29f25b60920d5266339a4b30489e769c272e71b369a2bf3937b0f79",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 349.9692389767607,
+        "bounds_mm": [
+          [
+            27.6,
+            -35.000000000000014,
+            70.97649730810281
+          ],
+          [
+            33.6,
+            -25.000000000000014,
+            82.52350269189719
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 349.9692389767607,
+        "bounds_mm": [
+          [
+            27.6,
+            -35.000000000000014,
+            70.97649730810281
+          ],
+          [
+            33.6,
+            -25.000000000000014,
+            82.52350269189719
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M6_washer_-1.step",
+      "baseline_sha256": "13c4977d58585f174148d3a072114f70f758c39367162648bb63009ed5e0a6c2",
+      "labeled_sha256": "00831d96b6d740ab10026a45303f3778cddbd16ab73ebdd434dd2a9d60878dcf",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 355.6785538688301,
+        "bounds_mm": [
+          [
+            -27.600000000000005,
+            -39.000000000000014,
+            67.75
+          ],
+          [
+            -25.999999999999996,
+            -21.000000000000014,
+            85.75
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 355.6785538688301,
+        "bounds_mm": [
+          [
+            -27.600000000000005,
+            -39.000000000000014,
+            67.75
+          ],
+          [
+            -25.999999999999996,
+            -21.000000000000014,
+            85.75
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M6_washer_1.step",
+      "baseline_sha256": "c42a518d7ae4c5a3de6a189fdc3cec20af15988adb92bdaca6ecd6001eb4732a",
+      "labeled_sha256": "d4740d1fb0fc675246ca95decdeb8cdbb4c0d4840182e06f32a2f51a4f3b2a67",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 355.67855386883014,
+        "bounds_mm": [
+          [
+            25.999999999999996,
+            -39.000000000000014,
+            67.75
+          ],
+          [
+            27.600000000000005,
+            -21.000000000000014,
+            85.75
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 355.67855386883014,
+        "bounds_mm": [
+          [
+            25.999999999999996,
+            -39.000000000000014,
+            67.75
+          ],
+          [
+            27.600000000000005,
+            -21.000000000000014,
+            85.75
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_axis_bolt.step",
+      "baseline_sha256": "78769d6f9825fbc13ca8eed9b50e26f14d7ea0baae95e8d9925f9ad99e521fec",
+      "labeled_sha256": "7869f3eab690e8ebee03a6afc6d817b9c8efef0464ea94fd6a1cca3e7c7eb478",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 5802.247199913511,
+        "bounds_mm": [
+          [
+            -36.3,
+            -37.249807965726355,
+            122.50019203427254
+          ],
+          [
+            69.0,
+            -22.75019203427002,
+            136.99980796572427
+          ]
+        ],
+        "face_count": 10
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 5802.247199913511,
+        "bounds_mm": [
+          [
+            -36.3,
+            -37.249807965726355,
+            122.50019203427254
+          ],
+          [
+            69.0,
+            -22.75019203427002,
+            136.99980796572427
+          ]
+        ],
+        "face_count": 10
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_hub_washer.step",
+      "baseline_sha256": "9be6229b82548846a8919410b75eeb7b90f7a40764a4b3ae5591885411037ea1",
+      "labeled_sha256": "9d9ceafdf9fafcf3ce0f5b58b93b724416996e9f2725fe92d0052e25ed11e00d",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152303,
+        "bounds_mm": [
+          [
+            8.999999999999998,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            11.000000000000002,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152303,
+        "bounds_mm": [
+          [
+            8.999999999999998,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            11.000000000000002,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_sliding_sleeve.step",
+      "baseline_sha256": "fa4c01dec273be864584b50ae287268480d4369bfd9f50be28fc94ffeaf7b2e5",
+      "labeled_sha256": "11af918333d31e6ecb163c43f505bf203ea7aa4f95e236a50be786affe379dbc",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 1268.9521046380169,
+        "bounds_mm": [
+          [
+            10.999999999999998,
+            -36.0000000000005,
+            123.74999999999841
+          ],
+          [
+            33.0,
+            -24.000000000000497,
+            135.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 1268.9521046380169,
+        "bounds_mm": [
+          [
+            10.999999999999998,
+            -36.0000000000005,
+            123.74999999999841
+          ],
+          [
+            33.0,
+            -24.000000000000497,
+            135.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_star_knob_envelope.step",
+      "baseline_sha256": "43c64dd08472296cb27ed115f9f1294e499573d198b5f1e0a67223d6c045df60",
+      "labeled_sha256": "28b6c733ea1bd4d5a4ccfac1bfcdc198471aaf250849ec6c5055a336af509d00",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 30159.28947446269,
+        "bounds_mm": [
+          [
+            34.99999999999999,
+            -50.0000000000005,
+            109.74999999999841
+          ],
+          [
+            60.00000000000001,
+            -10.000000000000497,
+            149.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 30159.28947446269,
+        "bounds_mm": [
+          [
+            34.99999999999999,
+            -50.0000000000005,
+            109.74999999999841
+          ],
+          [
+            60.00000000000001,
+            -10.000000000000497,
+            149.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_washer_1.step",
+      "baseline_sha256": "6a3a3d3958f7a448dc3feba5eeeebfc4ab5add34839053ce2a608d2e9c90dac5",
+      "labeled_sha256": "d2b402d29a1b212b376c86f0e02f489bd4794da0cb8f33ce54688c6b56938b7b",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152304,
+        "bounds_mm": [
+          [
+            -31.000000000000004,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            -28.999999999999996,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152304,
+        "bounds_mm": [
+          [
+            -31.000000000000004,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            -28.999999999999996,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_washer_2.step",
+      "baseline_sha256": "0ace982bfac783ea5c58164de5c499a4700a5d61e0f37ac2ed96f9998f98c3af",
+      "labeled_sha256": "8d4ec49d2200a1f556f66604179f1e1183697ba28ef1aab18569145d27cd2e95",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152304,
+        "bounds_mm": [
+          [
+            33.0,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            35.0,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152304,
+        "bounds_mm": [
+          [
+            33.0,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            35.0,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_base_M5_0.step",
+      "baseline_sha256": "cddd30023e10d41e53617c396eeb40bcad42e735f4993043e8811cbc01641dce",
+      "labeled_sha256": "f3eb92875fd569ca90e4c366a5cf73a13aa5b875c616a0da622fefa662911f5d",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 597.8843518863052,
+        "bounds_mm": [
+          [
+            -39.25,
+            -50.250000000000014,
+            8.749999999999943
+          ],
+          [
+            -30.75,
+            -41.750000000000014,
+            29.749999999999943
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 597.8843518863052,
+        "bounds_mm": [
+          [
+            -39.25,
+            -50.250000000000014,
+            8.749999999999943
+          ],
+          [
+            -30.75,
+            -41.750000000000014,
+            29.749999999999943
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_base_M5_1.step",
+      "baseline_sha256": "facbb89d71b27ab2c90315970eb6c6c9f958724df793f08ccfdaa64d6ac3cb81",
+      "labeled_sha256": "7b8f4d937c711d67e636ce2f26bca01040d020204364a646aa15116cc6b47ff0",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 597.8843518863052,
+        "bounds_mm": [
+          [
+            -39.25,
+            -18.250000000000014,
+            8.749999999999943
+          ],
+          [
+            -30.75,
+            -9.750000000000014,
+            29.749999999999943
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 597.8843518863052,
+        "bounds_mm": [
+          [
+            -39.25,
+            -18.250000000000014,
+            8.749999999999943
+          ],
+          [
+            -30.75,
+            -9.750000000000014,
+            29.749999999999943
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_base_M5_2.step",
+      "baseline_sha256": "3f574072ae930e757b3e7aa98637b090062555aaf0f95e9524c98987264e15de",
+      "labeled_sha256": "9af080c3e56ef965cdc8c328d994cea70a27f2ffd85b1e0f3ec04a753a840c52",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 597.8843518863052,
+        "bounds_mm": [
+          [
+            30.75,
+            -50.250000000000014,
+            8.749999999999943
+          ],
+          [
+            39.25,
+            -41.750000000000014,
+            29.749999999999943
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 597.8843518863052,
+        "bounds_mm": [
+          [
+            30.75,
+            -50.250000000000014,
+            8.749999999999943
+          ],
+          [
+            39.25,
+            -41.750000000000014,
+            29.749999999999943
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_base_M5_3.step",
+      "baseline_sha256": "b94e6a47404ead2365b3772287a420181bba70f75f050b9b525f781934285841",
+      "labeled_sha256": "572c5786e45f3f9ce5143a6b20a252bb795f09f6091bca21af66bc2f01c03592",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 597.8843518863052,
+        "bounds_mm": [
+          [
+            30.75,
+            -18.250000000000014,
+            8.749999999999943
+          ],
+          [
+            39.25,
+            -9.750000000000014,
+            29.749999999999943
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 597.8843518863052,
+        "bounds_mm": [
+          [
+            30.75,
+            -18.250000000000014,
+            8.749999999999943
+          ],
+          [
+            39.25,
+            -9.750000000000014,
+            29.749999999999943
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_compression_spring_1.step",
+      "baseline_sha256": "141a44daa57952faa455e0d08760bfac076582fc757698f790b746b88bd7327d",
+      "labeled_sha256": "0f76e45972aaef370ba7f9b9c43bdd644c56dfb0645821b448544bf82be83898",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 223.37229447408473,
+        "bounds_mm": [
+          [
+            -15.500003294483387,
+            -2.7565052325937014,
+            210.58280985572443
+          ],
+          [
+            -4.499996705516492,
+            23.10831564122298,
+            236.44763072954453
+          ]
+        ],
+        "face_count": 3
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 223.37229447408473,
+        "bounds_mm": [
+          [
+            -15.500003294483387,
+            -2.7565052325937014,
+            210.58280985572443
+          ],
+          [
+            -4.499996705516492,
+            23.10831564122298,
+            236.44763072954453
+          ]
+        ],
+        "face_count": 3
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_compression_spring_2.step",
+      "baseline_sha256": "00f63a66ece7ff8aa2250d9c62d36f5318b3cd92fd4f5eb8bdf256752700485e",
+      "labeled_sha256": "bab3b3072d7d1a0695db8e95d6006e597ea9726df25b519a5a0fef68cc1e7c4f",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 223.37229447408467,
+        "bounds_mm": [
+          [
+            4.4999967055166135,
+            -2.7565052325937014,
+            210.58280985572443
+          ],
+          [
+            15.500003294483506,
+            23.10831564122298,
+            236.44763072954453
+          ]
+        ],
+        "face_count": 3
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 223.37229447408467,
+        "bounds_mm": [
+          [
+            4.4999967055166135,
+            -2.7565052325937014,
+            210.58280985572443
+          ],
+          [
+            15.500003294483506,
+            23.10831564122298,
+            236.44763072954453
+          ]
+        ],
+        "face_count": 3
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_M3_0.step",
+      "baseline_sha256": "c80ba4b0b6482e5ed565eb859d3a98bf80f13d215545e33b95e506f8fd61a9db",
+      "labeled_sha256": "48d8dfa603b58e22c00e272660716a414afe41a20ffb488f781a531fc2ab94ae",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524198,
+        "bounds_mm": [
+          [
+            -29.0,
+            -24.264718625761926,
+            135.485281374237
+          ],
+          [
+            -14.0,
+            -18.764718625761926,
+            140.985281374237
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524198,
+        "bounds_mm": [
+          [
+            -29.0,
+            -24.264718625761926,
+            135.485281374237
+          ],
+          [
+            -14.0,
+            -18.764718625761926,
+            140.985281374237
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_M3_120.step",
+      "baseline_sha256": "9c7487b1cb32b73957b5ef236d79e17ac9ea167f93160e895139069bea4ad0e5",
+      "labeled_sha256": "8dc5e3403b21d3114e9c0e3bf014f854127f8eb7992c8c66b3d522122635adfa",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524212,
+        "bounds_mm": [
+          [
+            -29.0,
+            -44.34110991546701,
+            130.10582854122634
+          ],
+          [
+            -14.0,
+            -38.84110991546701,
+            135.60582854122634
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524212,
+        "bounds_mm": [
+          [
+            -29.0,
+            -44.34110991546701,
+            130.10582854122634
+          ],
+          [
+            -14.0,
+            -38.84110991546701,
+            135.60582854122634
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_M3_240.step",
+      "baseline_sha256": "a55ba15dac54c623f1536255c1d6a3acdacdc83fc4a0a5fb5718a9a40ec39777",
+      "labeled_sha256": "fd736d4de5464fa4616356c8b36ceb707eba933247d7a9a8a07451e7531c1759",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524212,
+        "bounds_mm": [
+          [
+            -29.0,
+            -29.644171458772554,
+            115.40889008453189
+          ],
+          [
+            -14.0,
+            -24.144171458772554,
+            120.90889008453189
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524212,
+        "bounds_mm": [
+          [
+            -29.0,
+            -29.644171458772554,
+            115.40889008453189
+          ],
+          [
+            -14.0,
+            -24.144171458772554,
+            120.90889008453189
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_nut_0.step",
+      "baseline_sha256": "c535e700071e4987352f207b20509ca1f249b2f060c919746e3893bd03252fcc",
+      "labeled_sha256": "57f54959fdc6d20eb61c797919b66d8bc4bbb1db029a5e8ff388c982f6c3eaed",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529909,
+        "bounds_mm": [
+          [
+            -28.8,
+            -24.581945072799524,
+            135.1680549271994
+          ],
+          [
+            -26.4,
+            -18.44749217872434,
+            141.3025078212746
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529909,
+        "bounds_mm": [
+          [
+            -28.8,
+            -24.581945072799524,
+            135.1680549271994
+          ],
+          [
+            -26.4,
+            -18.44749217872434,
+            141.3025078212746
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_nut_120.step",
+      "baseline_sha256": "689d4be4635105f005e5b63430d222f5222638b4c307d2eb4d4f6c03c4d4165d",
+      "labeled_sha256": "78c0ffad8b1fa5bc9579a9663e2704f78bb6951158774790517f7a7afeb0f571",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529911,
+        "bounds_mm": [
+          [
+            -28.8,
+            -44.6583363625046,
+            129.78860209418878
+          ],
+          [
+            -26.4,
+            -38.523883468429425,
+            135.92305498826394
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529911,
+        "bounds_mm": [
+          [
+            -28.8,
+            -44.6583363625046,
+            129.78860209418878
+          ],
+          [
+            -26.4,
+            -38.523883468429425,
+            135.92305498826394
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_nut_240.step",
+      "baseline_sha256": "bbc3f504faeb515e03b4a73e2ac399ee1479a38a3d72103e7576d1cf85134951",
+      "labeled_sha256": "7ea283d1068c4956df954042c5f96713367256cc2d157405d7aa6ab1bd3b704d",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398543102,
+        "bounds_mm": [
+          [
+            -28.8,
+            -29.961397905810145,
+            115.09166363748723
+          ],
+          [
+            -26.4,
+            -23.826945011727894,
+            121.2261165315695
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398543102,
+        "bounds_mm": [
+          [
+            -28.8,
+            -29.961397905810145,
+            115.09166363748723
+          ],
+          [
+            -26.4,
+            -23.826945011727894,
+            121.2261165315695
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_M3_180.step",
+      "baseline_sha256": "3b6b6aa51755bf661b63c90c38cd0de4ecc85bd40eac7419536dbc3e03a6e5d3",
+      "labeled_sha256": "1c4132abac955f8d8078dcd12891fc148dd64f4bec14cab2c558543e0c48c831",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985719,
+        "bounds_mm": [
+          [
+            -15.0,
+            -41.235281374239065,
+            118.51471862575984
+          ],
+          [
+            8.0,
+            -35.735281374239065,
+            124.01471862575984
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985719,
+        "bounds_mm": [
+          [
+            -15.0,
+            -41.235281374239065,
+            118.51471862575984
+          ],
+          [
+            8.0,
+            -35.735281374239065,
+            124.01471862575984
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_M3_300.step",
+      "baseline_sha256": "aeea03f7d63c18ad8ce6a6ee22bfdcde495de2606663d98d36fe93bb5f92f971",
+      "labeled_sha256": "21ec934be350bebe361787ffcebc0e2a64d69f789a6ac4bf9945b4b268d6ef5e",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985753,
+        "bounds_mm": [
+          [
+            -15.0,
+            -21.158890084533986,
+            123.89417145877047
+          ],
+          [
+            8.0,
+            -15.658890084533986,
+            129.39417145877047
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985753,
+        "bounds_mm": [
+          [
+            -15.0,
+            -21.158890084533986,
+            123.89417145877047
+          ],
+          [
+            8.0,
+            -15.658890084533986,
+            129.39417145877047
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_M3_60.step",
+      "baseline_sha256": "7f3192ec38f22f67c914394bbca52feb78227f74d3b4a3a9c384801a840906a5",
+      "labeled_sha256": "5f27eeecf87c272319c491705332ec78f1b1dbc63b505934b1854cb553255c1c",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985753,
+        "bounds_mm": [
+          [
+            -15.0,
+            -35.85582854122844,
+            138.59110991546493
+          ],
+          [
+            8.0,
+            -30.35582854122844,
+            144.09110991546493
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985753,
+        "bounds_mm": [
+          [
+            -15.0,
+            -35.85582854122844,
+            138.59110991546493
+          ],
+          [
+            8.0,
+            -30.35582854122844,
+            144.09110991546493
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_nut_180.step",
+      "baseline_sha256": "995f1b5ee25953af278f3336367613e7d6c14be911bb18205f7a9089edabbb1c",
+      "labeled_sha256": "24b353c0e0210ffbb6731dd1519618e5efd21c9198f9625d716626fad50e90f6",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529903,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -41.55250782127666,
+            118.19749217872224
+          ],
+          [
+            7.400000000000001,
+            -35.41805492720148,
+            124.33194507279744
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529903,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -41.55250782127666,
+            118.19749217872224
+          ],
+          [
+            7.400000000000001,
+            -35.41805492720148,
+            124.33194507279744
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_nut_300.step",
+      "baseline_sha256": "8854f52df4ca1649a879d6c27c4f3b68dedbf01eed6c56ca4a71e0322c72501a",
+      "labeled_sha256": "b5113f902a51277829b6b9e82396da2706fad8a425b1f7ea6da8299425c2cfd7",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.908843985430956,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -21.476116531571574,
+            123.5769450117258
+          ],
+          [
+            7.400000000000001,
+            -15.341663637489326,
+            129.71139790580804
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.908843985430956,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -21.476116531571574,
+            123.5769450117258
+          ],
+          [
+            7.400000000000001,
+            -15.341663637489326,
+            129.71139790580804
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_nut_60.step",
+      "baseline_sha256": "6b42d0d8f0ea6c5dee3bd30dcab878a71c216dc0a2a16f2a700fa940ab18c78b",
+      "labeled_sha256": "eb4735ed915e299d753fe10a92cbc9a636e90f5a588dba0cc80d93bef39acb9b",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529906,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -36.17305498826603,
+            138.27388346842736
+          ],
+          [
+            7.400000000000001,
+            -30.038602094190857,
+            144.4083363625025
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529906,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -36.17305498826603,
+            138.27388346842736
+          ],
+          [
+            7.400000000000001,
+            -30.038602094190857,
+            144.4083363625025
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hirth_fixed.step",
+      "baseline_sha256": "26dbaa952ebe94178f36d30f3ac6445fc6b5467f1aae1f158264f4be39dca0bf",
+      "labeled_sha256": "326ca506f7f9c701938d96aa4b786eb908ae5e94394d75cfbf4882f3cf64a0bb",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 16046.932093766336,
+        "bounds_mm": [
+          [
+            -21.000000000000007,
+            -64.0000000000005,
+            95.74999999999841
+          ],
+          [
+            -14.203305569239484,
+            3.9999999999995026,
+            163.7499999999984
+          ]
+        ],
+        "face_count": 943
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 16046.932093766336,
+        "bounds_mm": [
+          [
+            -21.000000000000007,
+            -64.0000000000005,
+            95.74999999999841
+          ],
+          [
+            -14.203305569239484,
+            3.9999999999995026,
+            163.7499999999984
+          ]
+        ],
+        "face_count": 943
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/hirth_moving.step",
+      "baseline_sha256": "2ea9ae4301d2b52ca1cf4a795cdd2c93284e23f9a034c5f11e26026837ba8938",
+      "labeled_sha256": "d7875f5e975c1c8519fcb1cfd9089b6b2728392d611891389ac92c4915a24dd7",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 17646.6627335564,
+        "bounds_mm": [
+          [
+            -16.800000000010517,
+            -64.0000000000005,
+            95.74999999999841
+          ],
+          [
+            -8.999999999999993,
+            3.9999999999995026,
+            163.7499999999984
+          ]
+        ],
+        "face_count": 984
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 17646.6627335564,
+        "bounds_mm": [
+          [
+            -16.800000000010517,
+            -64.0000000000005,
+            95.74999999999841
+          ],
+          [
+            -8.999999999999993,
+            3.9999999999995026,
+            163.7499999999984
+          ]
+        ],
+        "face_count": 984
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/pad_back.step",
+      "baseline_sha256": "f0a8fc7bd1290a7cec6f8bd64a462cf062ec530cf119a91fa343f1dd2a0e9ba8",
+      "labeled_sha256": "a4ac9f76bb13f6cc245e127b6c372ca8c8dd875e6d5f0d9dbfdfed0af7f8e79f",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 1479.9999999999993,
+        "bounds_mm": [
+          [
+            -20.0,
+            -36.929791844401535,
+            221.25841258553
+          ],
+          [
+            20.0,
+            -21.73643660977705,
+            236.9595759232492
+          ]
+        ],
+        "face_count": 6
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 1479.9999999999993,
+        "bounds_mm": [
+          [
+            -20.0,
+            -36.929791844401535,
+            221.25841258553
+          ],
+          [
+            20.0,
+            -21.73643660977705,
+            236.9595759232492
+          ]
+        ],
+        "face_count": 6
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/pad_lower_jaw.step",
+      "baseline_sha256": "68f29f4cf9d9e60792786648a92e9897b5e6d4347e35f6cb5b05ed83f93e068f",
+      "labeled_sha256": "1e83d6d11f832f14b9fea1afabbb35224e9f435d4088922aaa240ad5f02fdcdd",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 2116.3999999999996,
+        "bounds_mm": [
+          [
+            -26.0,
+            -81.56748772779405,
+            196.77379559244
+          ],
+          [
+            26.0,
+            -64.70299099649489,
+            213.63829232373917
+          ]
+        ],
+        "face_count": 6
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 2116.3999999999996,
+        "bounds_mm": [
+          [
+            -26.0,
+            -81.56748772779405,
+            196.77379559244
+          ],
+          [
+            26.0,
+            -64.70299099649489,
+            213.63829232373917
+          ]
+        ],
+        "face_count": 6
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/pad_upper_jaw.step",
+      "baseline_sha256": "f3686192321a7eaa1640bb209830a1d5523c8ccb7561290906c98724bb9c636d",
+      "labeled_sha256": "f264d630c758a43b3e89597f6ed723279f4638f1a5097af71c0203cc73dc5037",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 580.6237139339796,
+        "bounds_mm": [
+          [
+            -18.0,
+            -31.076670764775205,
+            259.2854278356254
+          ],
+          [
+            18.0,
+            -21.990348626528064,
+            268.37174997387257
+          ]
+        ],
+        "face_count": 8
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 580.6237139339796,
+        "bounds_mm": [
+          [
+            -18.0,
+            -31.076670764775205,
+            259.2854278356254
+          ],
+          [
+            18.0,
+            -21.990348626528064,
+            268.37174997387257
+          ]
+        ],
+        "face_count": 8
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/edit_table_up/slider_upper_jaw.step",
+      "baseline_sha256": "b2a8c6ff57642f755af411eac81b9aa7102fceb8065efc4157dd51e0655e80af",
+      "labeled_sha256": "ab00582c19356b069f5d9932779e45963e4566e7da2f2f28804fa96d7816ca3f",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 48634.82209852536,
+        "bounds_mm": [
+          [
+            -20.0000001,
+            -38.23498148833923,
+            179.64867204044026
+          ],
+          [
+            20.0000001,
+            10.642629325231113,
+            278.3773109276622
+          ]
+        ],
+        "face_count": 41
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 48634.82209852536,
+        "bounds_mm": [
+          [
+            -20.0000001,
+            -38.23498148833923,
+            179.64867204044026
+          ],
+          [
+            20.0000001,
+            10.642629325231113,
+            278.3773109276622
+          ]
+        ],
+        "face_count": 41
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/print/column_lower.step",
+      "baseline_sha256": "476c71aef6cb1451c58cf0d93a3e79e525e5bf2138dc052403771a3ec205b2c9",
+      "labeled_sha256": "f605e1a261d4009e9facd789504f685bb6738c77d7ac0eaea8a7a6c26f2ad708",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 116425.4643942638,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            90.0,
+            50.0,
+            70.0
+          ]
+        ],
+        "face_count": 55
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 116425.4643942638,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            90.0,
+            50.0,
+            70.0
+          ]
+        ],
+        "face_count": 55
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/print/column_sleeve.step",
+      "baseline_sha256": "0d2f31112b19d2c35b98196ed16b6a662069c928b619040870a0cbb70e0a8e30",
+      "labeled_sha256": "428fbbaec11ca467194fee9d812ab42e569653b7711f8a572171ca448999574b",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 104854.53030517722,
+        "bounds_mm": [
+          [
+            -7.54951656745e-15,
+            0.0,
+            1.1686097468332243e-15
+          ],
+          [
+            58.00000000000001,
+            68.0,
+            137.0000001
+          ]
+        ],
+        "face_count": 382
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 104854.53030517722,
+        "bounds_mm": [
+          [
+            -7.54951656745e-15,
+            0.0,
+            1.1686097468332243e-15
+          ],
+          [
+            58.00000000000001,
+            68.0,
+            137.0000001
+          ]
+        ],
+        "face_count": 382
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/print/cradle_lower_jaw.step",
+      "baseline_sha256": "386d9141df8494feb770210290e14ebffd3f9e30215ee3da6b6770f1f6dc3203",
+      "labeled_sha256": "db88646501c0d516712864682fca1d2a8366c7e41532c19c5e77afa05565c65f",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 142020.62394929194,
+        "bounds_mm": [
+          [
+            0.0,
+            4.988010005035903e-12,
+            0.0
+          ],
+          [
+            138.85670062535002,
+            154.710678218655,
+            65.5
+          ]
+        ],
+        "face_count": 101
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 142020.62394929194,
+        "bounds_mm": [
+          [
+            0.0,
+            4.988010005035903e-12,
+            0.0
+          ],
+          [
+            138.85670062535002,
+            154.710678218655,
+            65.5
+          ]
+        ],
+        "face_count": 101
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/print/hirth_fixed.step",
+      "baseline_sha256": "697fa96d2dc1f7576e8b8736e1460940baef7217c954f6bd196af93c88f83d83",
+      "labeled_sha256": "13d7898272a56415f178dc7b8b3a03e557fa9dbe65942554001caee195133ebe",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 16046.932093766347,
+        "bounds_mm": [
+          [
+            0.0,
+            4.995115432393504e-12,
+            -2.4868995751603507e-14
+          ],
+          [
+            68.0,
+            68.000000000005,
+            6.796694430760491
+          ]
+        ],
+        "face_count": 943
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 16046.932093766347,
+        "bounds_mm": [
+          [
+            0.0,
+            4.995115432393504e-12,
+            -2.4868995751603507e-14
+          ],
+          [
+            68.0,
+            68.000000000005,
+            6.796694430760491
+          ]
+        ],
+        "face_count": 943
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/print/hirth_moving.step",
+      "baseline_sha256": "dbc7b2df1d5a2d8500509ae823125d333cd24a4e92acd5c8f9295b21eac4c33d",
+      "labeled_sha256": "8d1945293d330973a809f0372c7dbbeb598a5774526e02179df86cec98a7b122",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 17646.662733556386,
+        "bounds_mm": [
+          [
+            0.0,
+            4.995115432393504e-12,
+            -3.28626015289025e-14
+          ],
+          [
+            68.0,
+            67.994705470125,
+            7.800000000010494
+          ]
+        ],
+        "face_count": 984
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 17646.662733556386,
+        "bounds_mm": [
+          [
+            0.0,
+            4.995115432393504e-12,
+            -3.28626015289025e-14
+          ],
+          [
+            68.0,
+            67.994705470125,
+            7.800000000010494
+          ]
+        ],
+        "face_count": 984
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/print/slider_upper_jaw.step",
+      "baseline_sha256": "b440ade95aa53f49bbc4d2510b7d84862f82f4606c0088f289cbb14d9700674e",
+      "labeled_sha256": "febcca5d8f7f319d8cd002c4f8b842f47beaad32e5e8c9b13ec52116389f6eb6",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 48634.822098525365,
+        "bounds_mm": [
+          [
+            1.1686097468332243e-15,
+            0.0,
+            -7.105427357601002e-15
+          ],
+          [
+            40.0000002,
+            76.0,
+            63.623380108945
+          ]
+        ],
+        "face_count": 41
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 48634.822098525365,
+        "bounds_mm": [
+          [
+            1.1686097468332243e-15,
+            0.0,
+            -7.105427357601002e-15
+          ],
+          [
+            40.0000002,
+            76.0,
+            63.623380108945
+          ]
+        ],
+        "face_count": 41
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    },
+    {
+      "file": "design/source/reference/controller_table_up.step",
+      "baseline_sha256": "ebacf151b2f9ca672a4ab924c747b8386d89593efa5235e882dbd15ccb77b195",
+      "labeled_sha256": "505df751838482e27b8a07261b7a0deb0c380be948350bc5a78131afe7a7810b",
+      "name_tokens_changed": 3,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 0,
+        "volume_mm3": 246.01201508408866,
+        "bounds_mm": [
+          [
+            -76.63578033447,
+            -83.90810394287,
+            165.57754516600926
+          ],
+          [
+            76.36421966552871,
+            0.663839161396,
+            269.25640869140295
+          ]
+        ],
+        "face_count": 6846
+      },
+      "current": {
+        "solid_count": 0,
+        "volume_mm3": 246.01201508408866,
+        "bounds_mm": [
+          [
+            -76.63578033447,
+            -83.90810394287,
+            165.57754516600926
+          ],
+          [
+            76.36421966552871,
+            0.663839161396,
+            269.25640869140295
+          ]
+        ],
+        "face_count": 6846
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0
+    }
+  ],
+  "final_name_only_geometry_proofs": [
+    {
+      "file": "design/source/coupons/guide_pin/guide_pin_coupon.step",
+      "baseline_sha256": "36a36071417baddb328d9eb814bb9b8a0274d561010682404832e9b2cb5a0537",
+      "labeled_sha256": "d443c288c5d9eb2118833ed06ef4bd022c3bf5baa6e2fc52a557e940d2bfddd1",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 8154.150068427702,
+        "bounds_mm": [
+          [
+            -3.552713678800501e-15,
+            -4.930380657631324e-32,
+            0.0
+          ],
+          [
+            16.000000000000004,
+            14.0,
+            40.0
+          ]
+        ],
+        "face_count": 15
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 8154.150068427702,
+        "bounds_mm": [
+          [
+            -3.552713678800501e-15,
+            -4.930380657631324e-32,
+            0.0
+          ],
+          [
+            16.000000000000004,
+            14.0,
+            40.0
+          ]
+        ],
+        "face_count": 15
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "d443c288c5d9eb2118833ed06ef4bd022c3bf5baa6e2fc52a557e940d2bfddd1"
+    },
+    {
+      "file": "design/source/edit_table_up/column_sleeve.step",
+      "baseline_sha256": "ea44fcf1547a4a3306b73b8cbd0afdd2f02237f4bc34973373c1befb620b38ed",
+      "labeled_sha256": "c88a444dfccb64b1adc35deb6e4d74ff6e6cf8426e76cf77a288e75eb2df8d7a",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 104854.53030517725,
+        "bounds_mm": [
+          [
+            -29.000000000000007,
+            -64.00000000000001,
+            26.7499999
+          ],
+          [
+            29.000000000000007,
+            3.999999999999986,
+            163.75
+          ]
+        ],
+        "face_count": 382
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 104854.53030517725,
+        "bounds_mm": [
+          [
+            -29.000000000000007,
+            -64.00000000000001,
+            26.7499999
+          ],
+          [
+            29.000000000000007,
+            3.999999999999986,
+            163.75
+          ]
+        ],
+        "face_count": 382
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "c88a444dfccb64b1adc35deb6e4d74ff6e6cf8426e76cf77a288e75eb2df8d7a"
+    },
+    {
+      "file": "design/source/edit_table_up/cradle_lower_jaw.step",
+      "baseline_sha256": "3063ed87f3862e9c1e7b32631a4676a973b75f1d714409ec8c5584cd89429822",
+      "labeled_sha256": "a286df40f914f095755073f7b6422f660fdfe6303b066658fab0d820e62b51f4",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 142020.62394929188,
+        "bounds_mm": [
+          [
+            -32.75,
+            -93.69436902514067,
+            97.74999999999841
+          ],
+          [
+            32.75,
+            36.364783926841554,
+            256.72331118977394
+          ]
+        ],
+        "face_count": 101
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 142020.62394929188,
+        "bounds_mm": [
+          [
+            -32.75,
+            -93.69436902514067,
+            97.74999999999841
+          ],
+          [
+            32.75,
+            36.364783926841554,
+            256.72331118977394
+          ]
+        ],
+        "face_count": 101
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "a286df40f914f095755073f7b6422f660fdfe6303b066658fab0d820e62b51f4"
+    },
+    {
+      "file": "design/source/edit_table_up/guide_rod_1.step",
+      "baseline_sha256": "73a4112297d346d46f5ebe6dc39b7e593de9ab937501137e58efadc1df41baad",
+      "labeled_sha256": "11adb9cf3302124f1dbbdfb178add3ae7bb46e275a6f67209bb2bb5385370b31",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 2827.4333882308147,
+        "bounds_mm": [
+          [
+            -13.0,
+            -43.538282347239026,
+            171.163390666203
+          ],
+          [
+            -7.0,
+            31.41503645853502,
+            246.116709471977
+          ]
+        ],
+        "face_count": 3
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 2827.4333882308147,
+        "bounds_mm": [
+          [
+            -13.0,
+            -43.538282347239026,
+            171.163390666203
+          ],
+          [
+            -7.0,
+            31.41503645853502,
+            246.116709471977
+          ]
+        ],
+        "face_count": 3
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "11adb9cf3302124f1dbbdfb178add3ae7bb46e275a6f67209bb2bb5385370b31"
+    },
+    {
+      "file": "design/source/edit_table_up/guide_rod_2.step",
+      "baseline_sha256": "64cbda905273a8db8347b1b0a3027db5b07ee757731f2e00540a8f24a6890e81",
+      "labeled_sha256": "20b73f02a779db09afbdeb0f0038da55f3c4f9fdeec44a72599f2b063d39f622",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 2827.4333882308147,
+        "bounds_mm": [
+          [
+            7.0,
+            -43.538282347239026,
+            171.163390666203
+          ],
+          [
+            13.0,
+            31.41503645853502,
+            246.116709471977
+          ]
+        ],
+        "face_count": 3
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 2827.4333882308147,
+        "bounds_mm": [
+          [
+            7.0,
+            -43.538282347239026,
+            171.163390666203
+          ],
+          [
+            13.0,
+            31.41503645853502,
+            246.116709471977
+          ]
+        ],
+        "face_count": 3
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "20b73f02a779db09afbdeb0f0038da55f3c4f9fdeec44a72599f2b063d39f622"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M6_height_bolt.step",
+      "baseline_sha256": "64a242e3d5ef59b16c3d32a3d5988997ea17aa0dcea07dd971074207de70abca",
+      "labeled_sha256": "9355e3bb14c8a33a07f07bb795db7f72fbece2be79258d708afbbfdd66b650e7",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 2325.6135332753884,
+        "bounds_mm": [
+          [
+            -31.6,
+            -35.000000000000014,
+            70.97649730810281
+          ],
+          [
+            42.4,
+            -25.000000000000014,
+            82.52350269189719
+          ]
+        ],
+        "face_count": 10
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 2325.6135332753884,
+        "bounds_mm": [
+          [
+            -31.6,
+            -35.000000000000014,
+            70.97649730810281
+          ],
+          [
+            42.4,
+            -25.000000000000014,
+            82.52350269189719
+          ]
+        ],
+        "face_count": 10
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "9355e3bb14c8a33a07f07bb795db7f72fbece2be79258d708afbbfdd66b650e7"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M6_locknut.step",
+      "baseline_sha256": "a43b0a3be1cd76cc5809af65fdf29cf278efacb3fb28fa2446a59441321a50e8",
+      "labeled_sha256": "6a98a406c29f25b60920d5266339a4b30489e769c272e71b369a2bf3937b0f79",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 349.9692389767607,
+        "bounds_mm": [
+          [
+            27.6,
+            -35.000000000000014,
+            70.97649730810281
+          ],
+          [
+            33.6,
+            -25.000000000000014,
+            82.52350269189719
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 349.9692389767607,
+        "bounds_mm": [
+          [
+            27.6,
+            -35.000000000000014,
+            70.97649730810281
+          ],
+          [
+            33.6,
+            -25.000000000000014,
+            82.52350269189719
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "6a98a406c29f25b60920d5266339a4b30489e769c272e71b369a2bf3937b0f79"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M6_washer_-1.step",
+      "baseline_sha256": "13c4977d58585f174148d3a072114f70f758c39367162648bb63009ed5e0a6c2",
+      "labeled_sha256": "00831d96b6d740ab10026a45303f3778cddbd16ab73ebdd434dd2a9d60878dcf",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 355.6785538688301,
+        "bounds_mm": [
+          [
+            -27.600000000000005,
+            -39.000000000000014,
+            67.75
+          ],
+          [
+            -25.999999999999996,
+            -21.000000000000014,
+            85.75
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 355.6785538688301,
+        "bounds_mm": [
+          [
+            -27.600000000000005,
+            -39.000000000000014,
+            67.75
+          ],
+          [
+            -25.999999999999996,
+            -21.000000000000014,
+            85.75
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "00831d96b6d740ab10026a45303f3778cddbd16ab73ebdd434dd2a9d60878dcf"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M6_washer_1.step",
+      "baseline_sha256": "c42a518d7ae4c5a3de6a189fdc3cec20af15988adb92bdaca6ecd6001eb4732a",
+      "labeled_sha256": "d4740d1fb0fc675246ca95decdeb8cdbb4c0d4840182e06f32a2f51a4f3b2a67",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 355.67855386883014,
+        "bounds_mm": [
+          [
+            25.999999999999996,
+            -39.000000000000014,
+            67.75
+          ],
+          [
+            27.600000000000005,
+            -21.000000000000014,
+            85.75
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 355.67855386883014,
+        "bounds_mm": [
+          [
+            25.999999999999996,
+            -39.000000000000014,
+            67.75
+          ],
+          [
+            27.600000000000005,
+            -21.000000000000014,
+            85.75
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "d4740d1fb0fc675246ca95decdeb8cdbb4c0d4840182e06f32a2f51a4f3b2a67"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_axis_bolt.step",
+      "baseline_sha256": "78769d6f9825fbc13ca8eed9b50e26f14d7ea0baae95e8d9925f9ad99e521fec",
+      "labeled_sha256": "7869f3eab690e8ebee03a6afc6d817b9c8efef0464ea94fd6a1cca3e7c7eb478",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 5802.247199913511,
+        "bounds_mm": [
+          [
+            -36.3,
+            -37.249807965726355,
+            122.50019203427254
+          ],
+          [
+            69.0,
+            -22.75019203427002,
+            136.99980796572427
+          ]
+        ],
+        "face_count": 10
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 5802.247199913511,
+        "bounds_mm": [
+          [
+            -36.3,
+            -37.249807965726355,
+            122.50019203427254
+          ],
+          [
+            69.0,
+            -22.75019203427002,
+            136.99980796572427
+          ]
+        ],
+        "face_count": 10
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "7869f3eab690e8ebee03a6afc6d817b9c8efef0464ea94fd6a1cca3e7c7eb478"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_hub_washer.step",
+      "baseline_sha256": "9be6229b82548846a8919410b75eeb7b90f7a40764a4b3ae5591885411037ea1",
+      "labeled_sha256": "9d9ceafdf9fafcf3ce0f5b58b93b724416996e9f2725fe92d0052e25ed11e00d",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152303,
+        "bounds_mm": [
+          [
+            8.999999999999998,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            11.000000000000002,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152303,
+        "bounds_mm": [
+          [
+            8.999999999999998,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            11.000000000000002,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "9d9ceafdf9fafcf3ce0f5b58b93b724416996e9f2725fe92d0052e25ed11e00d"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_sliding_sleeve.step",
+      "baseline_sha256": "fa4c01dec273be864584b50ae287268480d4369bfd9f50be28fc94ffeaf7b2e5",
+      "labeled_sha256": "11af918333d31e6ecb163c43f505bf203ea7aa4f95e236a50be786affe379dbc",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 1268.9521046380169,
+        "bounds_mm": [
+          [
+            10.999999999999998,
+            -36.0000000000005,
+            123.74999999999841
+          ],
+          [
+            33.0,
+            -24.000000000000497,
+            135.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 1268.9521046380169,
+        "bounds_mm": [
+          [
+            10.999999999999998,
+            -36.0000000000005,
+            123.74999999999841
+          ],
+          [
+            33.0,
+            -24.000000000000497,
+            135.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "11af918333d31e6ecb163c43f505bf203ea7aa4f95e236a50be786affe379dbc"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_star_knob_envelope.step",
+      "baseline_sha256": "43c64dd08472296cb27ed115f9f1294e499573d198b5f1e0a67223d6c045df60",
+      "labeled_sha256": "28b6c733ea1bd4d5a4ccfac1bfcdc198471aaf250849ec6c5055a336af509d00",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 30159.28947446269,
+        "bounds_mm": [
+          [
+            34.99999999999999,
+            -50.0000000000005,
+            109.74999999999841
+          ],
+          [
+            60.00000000000001,
+            -10.000000000000497,
+            149.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 30159.28947446269,
+        "bounds_mm": [
+          [
+            34.99999999999999,
+            -50.0000000000005,
+            109.74999999999841
+          ],
+          [
+            60.00000000000001,
+            -10.000000000000497,
+            149.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "28b6c733ea1bd4d5a4ccfac1bfcdc198471aaf250849ec6c5055a336af509d00"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_washer_1.step",
+      "baseline_sha256": "6a3a3d3958f7a448dc3feba5eeeebfc4ab5add34839053ce2a608d2e9c90dac5",
+      "labeled_sha256": "d2b402d29a1b212b376c86f0e02f489bd4794da0cb8f33ce54688c6b56938b7b",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152304,
+        "bounds_mm": [
+          [
+            -31.000000000000004,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            -28.999999999999996,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152304,
+        "bounds_mm": [
+          [
+            -31.000000000000004,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            -28.999999999999996,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "d2b402d29a1b212b376c86f0e02f489bd4794da0cb8f33ce54688c6b56938b7b"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_M8_washer_2.step",
+      "baseline_sha256": "0ace982bfac783ea5c58164de5c499a4700a5d61e0f37ac2ed96f9998f98c3af",
+      "labeled_sha256": "8d4ec49d2200a1f556f66604179f1e1183697ba28ef1aab18569145d27cd2e95",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152304,
+        "bounds_mm": [
+          [
+            33.0,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            35.0,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 793.9432954152304,
+        "bounds_mm": [
+          [
+            33.0,
+            -42.0000000000005,
+            117.74999999999841
+          ],
+          [
+            35.0,
+            -18.000000000000497,
+            141.7499999999984
+          ]
+        ],
+        "face_count": 4
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "8d4ec49d2200a1f556f66604179f1e1183697ba28ef1aab18569145d27cd2e95"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_compression_spring_1.step",
+      "baseline_sha256": "141a44daa57952faa455e0d08760bfac076582fc757698f790b746b88bd7327d",
+      "labeled_sha256": "0f76e45972aaef370ba7f9b9c43bdd644c56dfb0645821b448544bf82be83898",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 223.37229447408473,
+        "bounds_mm": [
+          [
+            -15.500003294483387,
+            -2.7565052325937014,
+            210.58280985572443
+          ],
+          [
+            -4.499996705516492,
+            23.10831564122298,
+            236.44763072954453
+          ]
+        ],
+        "face_count": 3
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 223.37229447408473,
+        "bounds_mm": [
+          [
+            -15.500003294483387,
+            -2.7565052325937014,
+            210.58280985572443
+          ],
+          [
+            -4.499996705516492,
+            23.10831564122298,
+            236.44763072954453
+          ]
+        ],
+        "face_count": 3
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "0f76e45972aaef370ba7f9b9c43bdd644c56dfb0645821b448544bf82be83898"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_compression_spring_2.step",
+      "baseline_sha256": "00f63a66ece7ff8aa2250d9c62d36f5318b3cd92fd4f5eb8bdf256752700485e",
+      "labeled_sha256": "bab3b3072d7d1a0695db8e95d6006e597ea9726df25b519a5a0fef68cc1e7c4f",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 223.37229447408467,
+        "bounds_mm": [
+          [
+            4.4999967055166135,
+            -2.7565052325937014,
+            210.58280985572443
+          ],
+          [
+            15.500003294483506,
+            23.10831564122298,
+            236.44763072954453
+          ]
+        ],
+        "face_count": 3
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 223.37229447408467,
+        "bounds_mm": [
+          [
+            4.4999967055166135,
+            -2.7565052325937014,
+            210.58280985572443
+          ],
+          [
+            15.500003294483506,
+            23.10831564122298,
+            236.44763072954453
+          ]
+        ],
+        "face_count": 3
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "bab3b3072d7d1a0695db8e95d6006e597ea9726df25b519a5a0fef68cc1e7c4f"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_M3_0.step",
+      "baseline_sha256": "c80ba4b0b6482e5ed565eb859d3a98bf80f13d215545e33b95e506f8fd61a9db",
+      "labeled_sha256": "48d8dfa603b58e22c00e272660716a414afe41a20ffb488f781a531fc2ab94ae",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524198,
+        "bounds_mm": [
+          [
+            -29.0,
+            -24.264718625761926,
+            135.485281374237
+          ],
+          [
+            -14.0,
+            -18.764718625761926,
+            140.985281374237
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524198,
+        "bounds_mm": [
+          [
+            -29.0,
+            -24.264718625761926,
+            135.485281374237
+          ],
+          [
+            -14.0,
+            -18.764718625761926,
+            140.985281374237
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "48d8dfa603b58e22c00e272660716a414afe41a20ffb488f781a531fc2ab94ae"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_M3_120.step",
+      "baseline_sha256": "9c7487b1cb32b73957b5ef236d79e17ac9ea167f93160e895139069bea4ad0e5",
+      "labeled_sha256": "8dc5e3403b21d3114e9c0e3bf014f854127f8eb7992c8c66b3d522122635adfa",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524212,
+        "bounds_mm": [
+          [
+            -29.0,
+            -44.34110991546701,
+            130.10582854122634
+          ],
+          [
+            -14.0,
+            -38.84110991546701,
+            135.60582854122634
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524212,
+        "bounds_mm": [
+          [
+            -29.0,
+            -44.34110991546701,
+            130.10582854122634
+          ],
+          [
+            -14.0,
+            -38.84110991546701,
+            135.60582854122634
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "8dc5e3403b21d3114e9c0e3bf014f854127f8eb7992c8c66b3d522122635adfa"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_M3_240.step",
+      "baseline_sha256": "a55ba15dac54c623f1536255c1d6a3acdacdc83fc4a0a5fb5718a9a40ec39777",
+      "labeled_sha256": "fd736d4de5464fa4616356c8b36ceb707eba933247d7a9a8a07451e7531c1759",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524212,
+        "bounds_mm": [
+          [
+            -29.0,
+            -29.644171458772554,
+            115.40889008453189
+          ],
+          [
+            -14.0,
+            -24.144171458772554,
+            120.90889008453189
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 156.09788497524212,
+        "bounds_mm": [
+          [
+            -29.0,
+            -29.644171458772554,
+            115.40889008453189
+          ],
+          [
+            -14.0,
+            -24.144171458772554,
+            120.90889008453189
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "fd736d4de5464fa4616356c8b36ceb707eba933247d7a9a8a07451e7531c1759"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_nut_0.step",
+      "baseline_sha256": "c535e700071e4987352f207b20509ca1f249b2f060c919746e3893bd03252fcc",
+      "labeled_sha256": "57f54959fdc6d20eb61c797919b66d8bc4bbb1db029a5e8ff388c982f6c3eaed",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529909,
+        "bounds_mm": [
+          [
+            -28.8,
+            -24.581945072799524,
+            135.1680549271994
+          ],
+          [
+            -26.4,
+            -18.44749217872434,
+            141.3025078212746
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529909,
+        "bounds_mm": [
+          [
+            -28.8,
+            -24.581945072799524,
+            135.1680549271994
+          ],
+          [
+            -26.4,
+            -18.44749217872434,
+            141.3025078212746
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "57f54959fdc6d20eb61c797919b66d8bc4bbb1db029a5e8ff388c982f6c3eaed"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_nut_120.step",
+      "baseline_sha256": "689d4be4635105f005e5b63430d222f5222638b4c307d2eb4d4f6c03c4d4165d",
+      "labeled_sha256": "78c0ffad8b1fa5bc9579a9663e2704f78bb6951158774790517f7a7afeb0f571",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529911,
+        "bounds_mm": [
+          [
+            -28.8,
+            -44.6583363625046,
+            129.78860209418878
+          ],
+          [
+            -26.4,
+            -38.523883468429425,
+            135.92305498826394
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529911,
+        "bounds_mm": [
+          [
+            -28.8,
+            -44.6583363625046,
+            129.78860209418878
+          ],
+          [
+            -26.4,
+            -38.523883468429425,
+            135.92305498826394
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "78c0ffad8b1fa5bc9579a9663e2704f78bb6951158774790517f7a7afeb0f571"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_fixed_ring_nut_240.step",
+      "baseline_sha256": "bbc3f504faeb515e03b4a73e2ac399ee1479a38a3d72103e7576d1cf85134951",
+      "labeled_sha256": "7ea283d1068c4956df954042c5f96713367256cc2d157405d7aa6ab1bd3b704d",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398543102,
+        "bounds_mm": [
+          [
+            -28.8,
+            -29.961397905810145,
+            115.09166363748723
+          ],
+          [
+            -26.4,
+            -23.826945011727894,
+            121.2261165315695
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398543102,
+        "bounds_mm": [
+          [
+            -28.8,
+            -29.961397905810145,
+            115.09166363748723
+          ],
+          [
+            -26.4,
+            -23.826945011727894,
+            121.2261165315695
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "7ea283d1068c4956df954042c5f96713367256cc2d157405d7aa6ab1bd3b704d"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_M3_180.step",
+      "baseline_sha256": "3b6b6aa51755bf661b63c90c38cd0de4ecc85bd40eac7419536dbc3e03a6e5d3",
+      "labeled_sha256": "1c4132abac955f8d8078dcd12891fc148dd64f4bec14cab2c558543e0c48c831",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985719,
+        "bounds_mm": [
+          [
+            -15.0,
+            -41.235281374239065,
+            118.51471862575984
+          ],
+          [
+            8.0,
+            -35.735281374239065,
+            124.01471862575984
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985719,
+        "bounds_mm": [
+          [
+            -15.0,
+            -41.235281374239065,
+            118.51471862575984
+          ],
+          [
+            8.0,
+            -35.735281374239065,
+            124.01471862575984
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "1c4132abac955f8d8078dcd12891fc148dd64f4bec14cab2c558543e0c48c831"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_M3_300.step",
+      "baseline_sha256": "aeea03f7d63c18ad8ce6a6ee22bfdcde495de2606663d98d36fe93bb5f92f971",
+      "labeled_sha256": "21ec934be350bebe361787ffcebc0e2a64d69f789a6ac4bf9945b4b268d6ef5e",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985753,
+        "bounds_mm": [
+          [
+            -15.0,
+            -21.158890084533986,
+            123.89417145877047
+          ],
+          [
+            8.0,
+            -15.658890084533986,
+            129.39417145877047
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985753,
+        "bounds_mm": [
+          [
+            -15.0,
+            -21.158890084533986,
+            123.89417145877047
+          ],
+          [
+            8.0,
+            -15.658890084533986,
+            129.39417145877047
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "21ec934be350bebe361787ffcebc0e2a64d69f789a6ac4bf9945b4b268d6ef5e"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_M3_60.step",
+      "baseline_sha256": "7f3192ec38f22f67c914394bbca52feb78227f74d3b4a3a9c384801a840906a5",
+      "labeled_sha256": "5f27eeecf87c272319c491705332ec78f1b1dbc63b505934b1854cb553255c1c",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985753,
+        "bounds_mm": [
+          [
+            -15.0,
+            -35.85582854122844,
+            138.59110991546493
+          ],
+          [
+            8.0,
+            -30.35582854122844,
+            144.09110991546493
+          ]
+        ],
+        "face_count": 5
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 212.64655273985753,
+        "bounds_mm": [
+          [
+            -15.0,
+            -35.85582854122844,
+            138.59110991546493
+          ],
+          [
+            8.0,
+            -30.35582854122844,
+            144.09110991546493
+          ]
+        ],
+        "face_count": 5
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "5f27eeecf87c272319c491705332ec78f1b1dbc63b505934b1854cb553255c1c"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_nut_180.step",
+      "baseline_sha256": "995f1b5ee25953af278f3336367613e7d6c14be911bb18205f7a9089edabbb1c",
+      "labeled_sha256": "24b353c0e0210ffbb6731dd1519618e5efd21c9198f9625d716626fad50e90f6",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529903,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -41.55250782127666,
+            118.19749217872224
+          ],
+          [
+            7.400000000000001,
+            -35.41805492720148,
+            124.33194507279744
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529903,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -41.55250782127666,
+            118.19749217872224
+          ],
+          [
+            7.400000000000001,
+            -35.41805492720148,
+            124.33194507279744
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "24b353c0e0210ffbb6731dd1519618e5efd21c9198f9625d716626fad50e90f6"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_nut_300.step",
+      "baseline_sha256": "8854f52df4ca1649a879d6c27c4f3b68dedbf01eed6c56ca4a71e0322c72501a",
+      "labeled_sha256": "b5113f902a51277829b6b9e82396da2706fad8a425b1f7ea6da8299425c2cfd7",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.908843985430956,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -21.476116531571574,
+            123.5769450117258
+          ],
+          [
+            7.400000000000001,
+            -15.341663637489326,
+            129.71139790580804
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.908843985430956,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -21.476116531571574,
+            123.5769450117258
+          ],
+          [
+            7.400000000000001,
+            -15.341663637489326,
+            129.71139790580804
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "b5113f902a51277829b6b9e82396da2706fad8a425b1f7ea6da8299425c2cfd7"
+    },
+    {
+      "file": "design/source/edit_table_up/hardware_moving_ring_nut_60.step",
+      "baseline_sha256": "6b42d0d8f0ea6c5dee3bd30dcab878a71c216dc0a2a16f2a700fa940ab18c78b",
+      "labeled_sha256": "eb4735ed915e299d753fe10a92cbc9a636e90f5a588dba0cc80d93bef39acb9b",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529906,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -36.17305498826603,
+            138.27388346842736
+          ],
+          [
+            7.400000000000001,
+            -30.038602094190857,
+            144.4083363625025
+          ]
+        ],
+        "face_count": 9
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 45.90884398529906,
+        "bounds_mm": [
+          [
+            4.999999999999999,
+            -36.17305498826603,
+            138.27388346842736
+          ],
+          [
+            7.400000000000001,
+            -30.038602094190857,
+            144.4083363625025
+          ]
+        ],
+        "face_count": 9
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "eb4735ed915e299d753fe10a92cbc9a636e90f5a588dba0cc80d93bef39acb9b"
+    },
+    {
+      "file": "design/source/edit_table_up/hirth_fixed.step",
+      "baseline_sha256": "26dbaa952ebe94178f36d30f3ac6445fc6b5467f1aae1f158264f4be39dca0bf",
+      "labeled_sha256": "326ca506f7f9c701938d96aa4b786eb908ae5e94394d75cfbf4882f3cf64a0bb",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 16046.932093766336,
+        "bounds_mm": [
+          [
+            -21.000000000000007,
+            -64.0000000000005,
+            95.74999999999841
+          ],
+          [
+            -14.203305569239484,
+            3.9999999999995026,
+            163.7499999999984
+          ]
+        ],
+        "face_count": 943
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 16046.932093766336,
+        "bounds_mm": [
+          [
+            -21.000000000000007,
+            -64.0000000000005,
+            95.74999999999841
+          ],
+          [
+            -14.203305569239484,
+            3.9999999999995026,
+            163.7499999999984
+          ]
+        ],
+        "face_count": 943
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "326ca506f7f9c701938d96aa4b786eb908ae5e94394d75cfbf4882f3cf64a0bb"
+    },
+    {
+      "file": "design/source/edit_table_up/hirth_moving.step",
+      "baseline_sha256": "2ea9ae4301d2b52ca1cf4a795cdd2c93284e23f9a034c5f11e26026837ba8938",
+      "labeled_sha256": "d7875f5e975c1c8519fcb1cfd9089b6b2728392d611891389ac92c4915a24dd7",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 17646.6627335564,
+        "bounds_mm": [
+          [
+            -16.800000000010517,
+            -64.0000000000005,
+            95.74999999999841
+          ],
+          [
+            -8.999999999999993,
+            3.9999999999995026,
+            163.7499999999984
+          ]
+        ],
+        "face_count": 984
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 17646.6627335564,
+        "bounds_mm": [
+          [
+            -16.800000000010517,
+            -64.0000000000005,
+            95.74999999999841
+          ],
+          [
+            -8.999999999999993,
+            3.9999999999995026,
+            163.7499999999984
+          ]
+        ],
+        "face_count": 984
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "d7875f5e975c1c8519fcb1cfd9089b6b2728392d611891389ac92c4915a24dd7"
+    },
+    {
+      "file": "design/source/edit_table_up/pad_back.step",
+      "baseline_sha256": "f0a8fc7bd1290a7cec6f8bd64a462cf062ec530cf119a91fa343f1dd2a0e9ba8",
+      "labeled_sha256": "a4ac9f76bb13f6cc245e127b6c372ca8c8dd875e6d5f0d9dbfdfed0af7f8e79f",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 1479.9999999999993,
+        "bounds_mm": [
+          [
+            -20.0,
+            -36.929791844401535,
+            221.25841258553
+          ],
+          [
+            20.0,
+            -21.73643660977705,
+            236.9595759232492
+          ]
+        ],
+        "face_count": 6
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 1479.9999999999993,
+        "bounds_mm": [
+          [
+            -20.0,
+            -36.929791844401535,
+            221.25841258553
+          ],
+          [
+            20.0,
+            -21.73643660977705,
+            236.9595759232492
+          ]
+        ],
+        "face_count": 6
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "a4ac9f76bb13f6cc245e127b6c372ca8c8dd875e6d5f0d9dbfdfed0af7f8e79f"
+    },
+    {
+      "file": "design/source/edit_table_up/pad_lower_jaw.step",
+      "baseline_sha256": "68f29f4cf9d9e60792786648a92e9897b5e6d4347e35f6cb5b05ed83f93e068f",
+      "labeled_sha256": "1e83d6d11f832f14b9fea1afabbb35224e9f435d4088922aaa240ad5f02fdcdd",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 2116.3999999999996,
+        "bounds_mm": [
+          [
+            -26.0,
+            -81.56748772779405,
+            196.77379559244
+          ],
+          [
+            26.0,
+            -64.70299099649489,
+            213.63829232373917
+          ]
+        ],
+        "face_count": 6
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 2116.3999999999996,
+        "bounds_mm": [
+          [
+            -26.0,
+            -81.56748772779405,
+            196.77379559244
+          ],
+          [
+            26.0,
+            -64.70299099649489,
+            213.63829232373917
+          ]
+        ],
+        "face_count": 6
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "1e83d6d11f832f14b9fea1afabbb35224e9f435d4088922aaa240ad5f02fdcdd"
+    },
+    {
+      "file": "design/source/edit_table_up/pad_upper_jaw.step",
+      "baseline_sha256": "f3686192321a7eaa1640bb209830a1d5523c8ccb7561290906c98724bb9c636d",
+      "labeled_sha256": "f264d630c758a43b3e89597f6ed723279f4638f1a5097af71c0203cc73dc5037",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 580.6237139339796,
+        "bounds_mm": [
+          [
+            -18.0,
+            -31.076670764775205,
+            259.2854278356254
+          ],
+          [
+            18.0,
+            -21.990348626528064,
+            268.37174997387257
+          ]
+        ],
+        "face_count": 8
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 580.6237139339796,
+        "bounds_mm": [
+          [
+            -18.0,
+            -31.076670764775205,
+            259.2854278356254
+          ],
+          [
+            18.0,
+            -21.990348626528064,
+            268.37174997387257
+          ]
+        ],
+        "face_count": 8
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "f264d630c758a43b3e89597f6ed723279f4638f1a5097af71c0203cc73dc5037"
+    },
+    {
+      "file": "design/source/edit_table_up/slider_upper_jaw.step",
+      "baseline_sha256": "b2a8c6ff57642f755af411eac81b9aa7102fceb8065efc4157dd51e0655e80af",
+      "labeled_sha256": "ab00582c19356b069f5d9932779e45963e4566e7da2f2f28804fa96d7816ca3f",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 48634.82209852536,
+        "bounds_mm": [
+          [
+            -20.0000001,
+            -38.23498148833923,
+            179.64867204044026
+          ],
+          [
+            20.0000001,
+            10.642629325231113,
+            278.3773109276622
+          ]
+        ],
+        "face_count": 41
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 48634.82209852536,
+        "bounds_mm": [
+          [
+            -20.0000001,
+            -38.23498148833923,
+            179.64867204044026
+          ],
+          [
+            20.0000001,
+            10.642629325231113,
+            278.3773109276622
+          ]
+        ],
+        "face_count": 41
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "ab00582c19356b069f5d9932779e45963e4566e7da2f2f28804fa96d7816ca3f"
+    },
+    {
+      "file": "design/source/print/column_sleeve.step",
+      "baseline_sha256": "0d2f31112b19d2c35b98196ed16b6a662069c928b619040870a0cbb70e0a8e30",
+      "labeled_sha256": "428fbbaec11ca467194fee9d812ab42e569653b7711f8a572171ca448999574b",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 104854.53030517722,
+        "bounds_mm": [
+          [
+            -7.54951656745e-15,
+            0.0,
+            1.1686097468332243e-15
+          ],
+          [
+            58.00000000000001,
+            68.0,
+            137.0000001
+          ]
+        ],
+        "face_count": 382
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 104854.53030517722,
+        "bounds_mm": [
+          [
+            -7.54951656745e-15,
+            0.0,
+            1.1686097468332243e-15
+          ],
+          [
+            58.00000000000001,
+            68.0,
+            137.0000001
+          ]
+        ],
+        "face_count": 382
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "428fbbaec11ca467194fee9d812ab42e569653b7711f8a572171ca448999574b"
+    },
+    {
+      "file": "design/source/print/cradle_lower_jaw.step",
+      "baseline_sha256": "386d9141df8494feb770210290e14ebffd3f9e30215ee3da6b6770f1f6dc3203",
+      "labeled_sha256": "db88646501c0d516712864682fca1d2a8366c7e41532c19c5e77afa05565c65f",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 142020.62394929194,
+        "bounds_mm": [
+          [
+            0.0,
+            4.988010005035903e-12,
+            0.0
+          ],
+          [
+            138.85670062535002,
+            154.710678218655,
+            65.5
+          ]
+        ],
+        "face_count": 101
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 142020.62394929194,
+        "bounds_mm": [
+          [
+            0.0,
+            4.988010005035903e-12,
+            0.0
+          ],
+          [
+            138.85670062535002,
+            154.710678218655,
+            65.5
+          ]
+        ],
+        "face_count": 101
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "db88646501c0d516712864682fca1d2a8366c7e41532c19c5e77afa05565c65f"
+    },
+    {
+      "file": "design/source/print/hirth_fixed.step",
+      "baseline_sha256": "697fa96d2dc1f7576e8b8736e1460940baef7217c954f6bd196af93c88f83d83",
+      "labeled_sha256": "13d7898272a56415f178dc7b8b3a03e557fa9dbe65942554001caee195133ebe",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 16046.932093766347,
+        "bounds_mm": [
+          [
+            0.0,
+            4.995115432393504e-12,
+            -2.4868995751603507e-14
+          ],
+          [
+            68.0,
+            68.000000000005,
+            6.796694430760491
+          ]
+        ],
+        "face_count": 943
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 16046.932093766347,
+        "bounds_mm": [
+          [
+            0.0,
+            4.995115432393504e-12,
+            -2.4868995751603507e-14
+          ],
+          [
+            68.0,
+            68.000000000005,
+            6.796694430760491
+          ]
+        ],
+        "face_count": 943
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "13d7898272a56415f178dc7b8b3a03e557fa9dbe65942554001caee195133ebe"
+    },
+    {
+      "file": "design/source/print/hirth_moving.step",
+      "baseline_sha256": "dbc7b2df1d5a2d8500509ae823125d333cd24a4e92acd5c8f9295b21eac4c33d",
+      "labeled_sha256": "8d1945293d330973a809f0372c7dbbeb598a5774526e02179df86cec98a7b122",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 17646.662733556386,
+        "bounds_mm": [
+          [
+            0.0,
+            4.995115432393504e-12,
+            -3.28626015289025e-14
+          ],
+          [
+            68.0,
+            67.994705470125,
+            7.800000000010494
+          ]
+        ],
+        "face_count": 984
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 17646.662733556386,
+        "bounds_mm": [
+          [
+            0.0,
+            4.995115432393504e-12,
+            -3.28626015289025e-14
+          ],
+          [
+            68.0,
+            67.994705470125,
+            7.800000000010494
+          ]
+        ],
+        "face_count": 984
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "8d1945293d330973a809f0372c7dbbeb598a5774526e02179df86cec98a7b122"
+    },
+    {
+      "file": "design/source/print/slider_upper_jaw.step",
+      "baseline_sha256": "b440ade95aa53f49bbc4d2510b7d84862f82f4606c0088f289cbb14d9700674e",
+      "labeled_sha256": "febcca5d8f7f319d8cd002c4f8b842f47beaad32e5e8c9b13ec52116389f6eb6",
+      "name_tokens_changed": 6,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "NEXT_ASSEMBLY_USAGE_OCCURRENCE",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 1,
+        "volume_mm3": 48634.822098525365,
+        "bounds_mm": [
+          [
+            1.1686097468332243e-15,
+            0.0,
+            -7.105427357601002e-15
+          ],
+          [
+            40.0000002,
+            76.0,
+            63.623380108945
+          ]
+        ],
+        "face_count": 41
+      },
+      "current": {
+        "solid_count": 1,
+        "volume_mm3": 48634.822098525365,
+        "bounds_mm": [
+          [
+            1.1686097468332243e-15,
+            0.0,
+            -7.105427357601002e-15
+          ],
+          [
+            40.0000002,
+            76.0,
+            63.623380108945
+          ]
+        ],
+        "face_count": 41
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "febcca5d8f7f319d8cd002c4f8b842f47beaad32e5e8c9b13ec52116389f6eb6"
+    },
+    {
+      "file": "design/source/reference/controller_table_up.step",
+      "baseline_sha256": "ebacf151b2f9ca672a4ab924c747b8386d89593efa5235e882dbd15ccb77b195",
+      "labeled_sha256": "505df751838482e27b8a07261b7a0deb0c380be948350bc5a78131afe7a7810b",
+      "name_tokens_changed": 3,
+      "changed_name_entities": [
+        "FILE_NAME",
+        "PRODUCT"
+      ],
+      "all_non_name_bytes_identical": true,
+      "baseline": {
+        "solid_count": 0,
+        "volume_mm3": 246.01201508408866,
+        "bounds_mm": [
+          [
+            -76.63578033447,
+            -83.90810394287,
+            165.57754516600926
+          ],
+          [
+            76.36421966552871,
+            0.663839161396,
+            269.25640869140295
+          ]
+        ],
+        "face_count": 6846
+      },
+      "current": {
+        "solid_count": 0,
+        "volume_mm3": 246.01201508408866,
+        "bounds_mm": [
+          [
+            -76.63578033447,
+            -83.90810394287,
+            165.57754516600926
+          ],
+          [
+            76.36421966552871,
+            0.663839161396,
+            269.25640869140295
+          ]
+        ],
+        "face_count": 6846
+      },
+      "volume_error_mm3": 0.0,
+      "bounds_error_mm": 0.0,
+      "current_sha256": "505df751838482e27b8a07261b7a0deb0c380be948350bc5a78131afe7a7810b"
+    }
+  ],
+  "authorized_geometry_changes": [
+    "design/source/edit_table_up/column_lower.step",
+    "design/source/edit_table_up/hardware_base_M5_0.step",
+    "design/source/edit_table_up/hardware_base_M5_1.step",
+    "design/source/edit_table_up/hardware_base_M5_2.step",
+    "design/source/edit_table_up/hardware_base_M5_3.step",
+    "design/source/print/column_lower.step"
+  ],
+  "STL_checks": [
+    {
+      "file": "design/source/coupons/guide_pin/guide_pin_coupon.stl",
+      "byte_identical": true,
+      "header_changed_for_CJK": false,
+      "sha256": "73aea2b6b02d315d837d06bbeb4f00af70fe41384b3ac9f6c7e2fb845ac07ebc",
+      "baseline_header_contains_CJK": false
+    },
+    {
+      "file": "design/source/print/column_lower.stl",
+      "byte_identical": false,
+      "reason": "Authorized option B geometry revision",
+      "baseline_header_contains_CJK": false
+    },
+    {
+      "file": "design/source/print/column_sleeve.stl",
+      "byte_identical": true,
+      "header_changed_for_CJK": false,
+      "sha256": "e97c193e3791625f507d597b52e346c6a82ec526ca5a3542b548f92a8bcf5e28",
+      "baseline_header_contains_CJK": false
+    },
+    {
+      "file": "design/source/print/cradle_lower_jaw.stl",
+      "byte_identical": true,
+      "header_changed_for_CJK": false,
+      "sha256": "e4153cfcb2b5d83eb931b17bcc4f7923db2dc3ff33498d2ee942b22483957653",
+      "baseline_header_contains_CJK": false
+    },
+    {
+      "file": "design/source/print/hirth_fixed.stl",
+      "byte_identical": true,
+      "header_changed_for_CJK": false,
+      "sha256": "d77d6643e8805d24aed47f6a7793b0be9087058afa3a76c08789d1f87a816683",
+      "baseline_header_contains_CJK": false
+    },
+    {
+      "file": "design/source/print/hirth_moving.stl",
+      "byte_identical": true,
+      "header_changed_for_CJK": false,
+      "sha256": "bc510fa1b681a12749a30e90fb0d0d5c344015ebe8b1691d6409be03d4a1fa7f",
+      "baseline_header_contains_CJK": false
+    },
+    {
+      "file": "design/source/print/slider_upper_jaw.stl",
+      "byte_identical": true,
+      "header_changed_for_CJK": false,
+      "sha256": "0c7d37f6cb39d4e69a9b6a8f9e3c8a6e9685403879489df94c519a6e03d3ddae",
+      "baseline_header_contains_CJK": false
+    },
+    {
+      "file": "design/source/reference/controller_table_up.stl",
+      "byte_identical": true,
+      "header_changed_for_CJK": false,
+      "sha256": "0b9fb22f0d84eb1da38faacec3235229a8a6a575a862508ba4195293ec82b817",
+      "baseline_header_contains_CJK": false
+    }
+  ],
+  "all_six_print_registrations": {
+    "hirth_fixed": {
+      "matrix": [
+        [
+          2.22044604925e-16,
+          0.7071067811865476,
+          -0.7071067811865476,
+          146.9603082945502
+        ],
+        [
+          0.0,
+          0.7071067811865476,
+          0.7071067811865476,
+          -36.53390142335165
+        ],
+        [
+          1.0,
+          -1.5700924586835538e-16,
+          1.5700924586835538e-16,
+          20.999999999999957
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_error_mm": 0.0,
+      "volume_error_mm3": 0.0,
+      "face_metric_error": 0.0,
+      "edge_sample_error_mm": 0.0,
+      "edge_samples": 10335,
+      "boolean_common_volume_mm3": 16046.932093766347,
+      "boolean_diagnostic_reliable": true,
+      "method": "Native-location candidate verified by bounds, volume, face counts/areas/centroids/bounds and bidirectional five-point-per-edge samples",
+      "previous_manifest_transform": [
+        [
+          2.220446049250313e-16,
+          -0.0,
+          -1.0,
+          -46.85670062535611
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          81.71067811865476
+        ],
+        [
+          1.0,
+          0.0,
+          2.220446049250313e-16,
+          21.000000000000018
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "manifest_was_stale": true
+    },
+    "hirth_moving": {
+      "matrix": [
+        [
+          2.22044604925e-16,
+          -0.7071067811865476,
+          0.7071067811865476,
+          -78.96030829455022
+        ],
+        [
+          0.0,
+          0.7071067811865476,
+          0.7071067811865476,
+          -36.53390142335165
+        ],
+        [
+          -1.0,
+          -1.5700924586835538e-16,
+          1.5700924586835538e-16,
+          -9.000000000000043
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_error_mm": 0.0,
+      "volume_error_mm3": 0.0,
+      "face_metric_error": 0.0,
+      "edge_sample_error_mm": 0.0,
+      "edge_samples": 12195,
+      "boolean_common_volume_mm3": 17646.662733556386,
+      "boolean_diagnostic_reliable": true,
+      "method": "Native-location candidate verified by bounds, volume, face counts/areas/centroids/bounds and bidirectional five-point-per-edge samples",
+      "previous_manifest_transform": [
+        [
+          2.220446049250313e-16,
+          0.0,
+          1.0,
+          114.85670062535611
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          81.71067811865476
+        ],
+        [
+          -1.0,
+          0.0,
+          2.220446049250313e-16,
+          -8.999999999999968
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "manifest_was_stale": true
+    },
+    "cradle_lower_jaw": {
+      "matrix": [
+        [
+          2.22044604925e-16,
+          -0.7071067811865476,
+          0.7071067811865476,
+          -80.96030829455022
+        ],
+        [
+          0.0,
+          0.7071067811865476,
+          0.7071067811865476,
+          -38.53390142335165
+        ],
+        [
+          -1.0,
+          -1.5700924586835538e-16,
+          1.5700924586835538e-16,
+          32.74999999999996
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_error_mm": 0.0,
+      "volume_error_mm3": 0.0,
+      "face_metric_error": 0.0,
+      "edge_sample_error_mm": 0.0,
+      "edge_samples": 1370,
+      "boolean_common_volume_mm3": 142020.62394929194,
+      "boolean_diagnostic_reliable": true,
+      "method": "Native-location candidate verified by bounds, volume, face counts/areas/centroids/bounds and bidirectional five-point-per-edge samples",
+      "previous_manifest_transform": [
+        [
+          2.220446049250313e-16,
+          0.0,
+          1.0,
+          112.85670062535611
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          79.71067811865476
+        ],
+        [
+          -1.0,
+          0.0,
+          2.220446049250313e-16,
+          32.75
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "manifest_was_stale": true
+    },
+    "slider_upper_jaw": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.0000001
+        ],
+        [
+          0.0,
+          -0.7071067811865475,
+          0.7071067811865477,
+          -143.81700891990022
+        ],
+        [
+          0.0,
+          -0.7071067811865477,
+          -0.7071067811865475,
+          173.8679596509516
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_error_mm": 0.0,
+      "volume_error_mm3": 0.0,
+      "face_metric_error": 0.0,
+      "edge_sample_error_mm": 0.0,
+      "edge_samples": 560,
+      "boolean_common_volume_mm3": 0.0,
+      "boolean_diagnostic_reliable": false,
+      "method": "Native-location candidate verified by bounds, volume, face counts/areas/centroids/bounds and bidirectional five-point-per-edge samples",
+      "previous_manifest_transform": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          20.0000001
+        ],
+        [
+          0.0,
+          2.220446049250313e-16,
+          1.0,
+          50.00000000000682
+        ],
+        [
+          -0.0,
+          -1.0,
+          2.220446049250313e-16,
+          55.6233801089388
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "manifest_was_stale": true
+    },
+    "column_sleeve": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          29.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.00000000000001
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -26.7499999
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_error_mm": 0.0,
+      "volume_error_mm3": 0.0,
+      "face_metric_error": 0.0,
+      "edge_sample_error_mm": 0.0,
+      "edge_samples": 4795,
+      "boolean_common_volume_mm3": 104854.53030517722,
+      "boolean_diagnostic_reliable": true,
+      "method": "Native-location candidate verified by bounds, volume, face counts/areas/centroids/bounds and bidirectional five-point-per-edge samples",
+      "previous_manifest_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          29.000000000000007
+        ],
+        [
+          0.0,
+          0.7071067811865475,
+          -0.7071067811865476,
+          10.562222716149606
+        ],
+        [
+          0.0,
+          0.7071067811865476,
+          0.7071067811865475,
+          193.9108654492692
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "manifest_was_stale": true
+    },
+    "column_lower": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          45.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          55.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -10.75
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_error_mm": 0.0,
+      "volume_error_mm3": 5.820766091346741e-11,
+      "face_metric_error": 9.123368727159686e-12,
+      "edge_sample_error_mm": 0.0,
+      "edge_samples": 805,
+      "boolean_common_volume_mm3": 141386.69645264532,
+      "boolean_diagnostic_reliable": true,
+      "method": "Native-location candidate verified by bounds, volume, face counts/areas/centroids/bounds and bidirectional five-point-per-edge samples",
+      "previous_manifest_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          45.0
+        ],
+        [
+          0.0,
+          0.7071067811865475,
+          -0.7071067811865476,
+          1.5622227161495914
+        ],
+        [
+          0.0,
+          0.7071067811865476,
+          0.7071067811865475,
+          203.91086534926922
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "manifest_was_stale": true
+    }
+  },
+  "historical_parameter_keys": {
+    "installation.printed_base_thickness": 16.0,
+    "installation.aluminum_base": false,
+    "installation.aluminum_thickness": 8.0,
+    "installation.flange_thickness": 8.0,
+    "hardware.base_insert_pilot": 6.4,
+    "hardware.base_insert_od": 7.0,
+    "hardware.base_insert_length": 8.0,
+    "hardware.base_insert_pilot_depth": 9.0,
+    "hardware.aluminum_tap_drill_d": 4.2,
+    "hardware.aluminum_tap_depth": 6.5,
+    "hardware.aluminum_base_bolt_length": 12.0,
+    "installation.ear_inner_x": 21.0,
+    "installation.ear_outer_x": 29.0,
+    "installation.ear_radius": 34.0
+  },
+  "derivation": {
+    "rev": "v3.4-B",
+    "source_sha256": "ee5a93280780f4f56bc1ec0b9929fdb92a9a93829d28abaca966640be255e18b",
+    "operations": [
+      "Union box X -45..45, Y -55..-5, Z 10.75..16.75",
+      "Extend four diameter 5.5 holes through Z 10.75..16.75",
+      "Cut four diameter 10.4 flat counterbores Z 18.75..24.75"
+    ],
+    "source_volume_mm3": 116425.46439426384,
+    "expected_volume_mm3": 141386.6964257902,
+    "exported_volume_mm3": 141386.69645264538,
+    "volume_error_mm3": 2.6855181204155087e-05,
+    "bounds_mm": [
+      [
+        -45.0,
+        -55.000000000000014,
+        10.75
+      ],
+      [
+        45.0,
+        -4.999999999999986,
+        86.75
+      ]
+    ],
+    "sections": [
+      {
+        "z_mm": 24.8,
+        "source_area_mm2": 2574.0862714890477,
+        "revised_area_mm2": 2574.0862714890472
+      },
+      {
+        "z_mm": 31.677777777777777,
+        "source_area_mm2": 1839.0327813271072,
+        "revised_area_mm2": 1839.0327813271072
+      },
+      {
+        "z_mm": 38.55555555555556,
+        "source_area_mm2": 1544.4839292094496,
+        "revised_area_mm2": 1544.4839292094496
+      },
+      {
+        "z_mm": 45.43333333333334,
+        "source_area_mm2": 1424.3957457879487,
+        "revised_area_mm2": 1424.395745787949
+      },
+      {
+        "z_mm": 52.31111111111112,
+        "source_area_mm2": 1304.3075623664479,
+        "revised_area_mm2": 1304.3075623664479
+      },
+      {
+        "z_mm": 59.1888888888889,
+        "source_area_mm2": 1184.219378944947,
+        "revised_area_mm2": 1184.219378944947
+      },
+      {
+        "z_mm": 66.06666666666666,
+        "source_area_mm2": 1064.1356613755836,
+        "revised_area_mm2": 1064.1356613755836
+      },
+      {
+        "z_mm": 72.94444444444444,
+        "source_area_mm2": 1018.7204938270684,
+        "revised_area_mm2": 1018.7204938270684
+      },
+      {
+        "z_mm": 79.82222222222222,
+        "source_area_mm2": 847.1204566439735,
+        "revised_area_mm2": 847.1204566439735
+      },
+      {
+        "z_mm": 86.7,
+        "source_area_mm2": 927.8901587300381,
+        "revised_area_mm2": 927.8901587300381
+      }
+    ],
+    "source_minus_revised_above_flange_mm3": 0.0,
+    "revised_minus_source_above_flange_mm3": 0.0,
+    "registered_source_print_transform": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          45.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          55.000000000000014
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -16.75
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_error_mm": 0.0,
+      "volume_error_mm3": 0.0,
+      "symmetric_difference_mm3": 0.0,
+      "method": "Translation fitted to bounds; full bidirectional Boolean feature comparison"
+    },
+    "revised_print_translation_mm": [
+      45.0,
+      55.000000000000014,
+      -10.75
+    ],
+    "print_note": "Axes unchanged; bed origin reset by +6 mm Z after flange extension. Counterbores open upward, floor at print Z 8; no counterbore roof bridging. Confirm toolpath and floor quality in slicer; no physical print test."
+  },
+  "implementation_fix_log": [
+    "Registration probe fix 1: Matrix.transform_shape rejected gp_GTrsf as non-orthogonal. Switched to a rigid Location.",
+    "Registration probe fix 2: default Location Euler ordering differs from SciPy xyz. Used gp_Trsf.SetValues directly to preserve the tested matrix.",
+    "Registration probe fix 3: displaying an empty Boolean common raised AttributeError on None.volume. Used the existing empty-shape volume helper."
+  ],
+  "slider_boolean_diagnostic": "Coincident registered slider solids have identical 41 face metrics and 560 edge samples, but OCCT common can return zero. C3 uses independent feature registration, bounds and volume; no slider geometry was changed."
+}

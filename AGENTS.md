@@ -4,10 +4,12 @@ Maintain this independent gamepad fixture project. Source STEP inputs live in
 `design/source`; generated delivery packages belong in ignored `build/` and
 GitHub Releases. Keep public README links pointed at Release downloads.
 
-Current design uses a16mm cast-PMMA base, six PETG printing parts, and the accepted
-upper assembly. Keep its original component IDs and Chinese labels. The panels
-beside the inner column are斜板; do not rename them to ears. The owner-edited
-slider geometry is an authoritative source CAD input.
+Current design uses a 10 mm aluminum base with wire thread inserts, a revised
+`column_lower` (option B, derived by script into the source), six PETG prints, and the accepted
+upper assembly. Part display names are English with original IDs kept. The
+panels beside the inner column are "gusset plates" (斜板), never "ears".
+The owner-edited slider geometry is authoritative and may be changed only on owner instruction.
+The build copies the English source STEP files; it does not derive the column again.
 
 Use millimetres for CAD. Read actual exported solids when checking dimensions.
 Distinguish nominal geometry/static calculations from physical strength tests.

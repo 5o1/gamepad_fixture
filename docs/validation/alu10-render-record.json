@@ -1,0 +1,238 @@
+{
+  "blender": "4.5.9 LTS",
+  "engine": "CYCLES",
+  "device": "CPU",
+  "threads": 32,
+  "denoise": true,
+  "scene_sha256": "1ff81e02d4d41dc22e59f14b181d2119851e913c3c955628f74f3d2a0aaa210b",
+  "view_transform": "Standard",
+  "look": "None",
+  "exposure": 0.0,
+  "gamma": 1.0,
+  "controller_parts": 16,
+  "controller_materials_preserved": true,
+  "printed_part_colors": {
+    "column_lower": "#329d94",
+    "column_sleeve": "#588ac5",
+    "cradle_lower_jaw": "#dba165",
+    "slider_upper_jaw": "#d67e79",
+    "hirth_fixed": "#9a80b5",
+    "hirth_moving": "#d9bd5f"
+  },
+  "palette_sha256": "8786b58757ea98ff581c4d20431f9a0d551d44c8c7c57959a7123f18f1f43fa9",
+  "world": "Approved Boiler Room, strength1.0; no new light objects",
+  "composition_changes": "New fixture meshes, floor, presentation camera, base-only annotation discs and transparent film; controller materials/UV/maps untouched",
+  "base_annotations": {
+    "positions": 8,
+    "blue": "4 active column mounts; Y -14 / -46 mm",
+    "orange": "4 spare rear-shift positions; Y -78 / -110 mm",
+    "diameter_mm": 10,
+    "filled": true,
+    "opaque": true,
+    "height_above_plate_mm": 0.08,
+    "active_positions_mm": [
+      [
+        -35.0,
+        -14.0
+      ],
+      [
+        -35.0,
+        -46.0
+      ],
+      [
+        35.0,
+        -14.0
+      ],
+      [
+        35.0,
+        -46.0
+      ]
+    ],
+    "spare_positions_mm": [
+      [
+        -35.0,
+        -78.0
+      ],
+      [
+        -35.0,
+        -110.0
+      ],
+      [
+        35.0,
+        -78.0
+      ],
+      [
+        35.0,
+        -110.0
+      ]
+    ],
+    "note": "Illustrative annotations, not paint or manufactured geometry"
+  },
+  "round": 3,
+  "renders": [
+    {
+      "mode": "overview",
+      "eye": [
+        -0.46895915269851685,
+        -0.5594460368156433,
+        0.3878770172595978
+      ],
+      "target": [
+        0.025757640600204468,
+        -0.037842489778995514,
+        0.11363189667463303
+      ],
+      "resolution": [
+        2000,
+        2000
+      ],
+      "samples": 64,
+      "projection_bounds": [
+        0.21681125462055206,
+        0.7598837018013,
+        0.09946582466363907,
+        0.853759229183197
+      ],
+      "render_seconds": 38.988845897023566
+    },
+    {
+      "mode": "mounted",
+      "eye": [
+        0.4518822133541107,
+        -0.5620704293251038,
+        0.40830540657043457
+      ],
+      "target": [
+        -0.020164854824543,
+        -0.04281865060329437,
+        0.11458723992109299
+      ],
+      "resolution": [
+        2000,
+        2000
+      ],
+      "samples": 64,
+      "projection_bounds": [
+        0.2383890300989151,
+        0.7828014492988586,
+        0.09929151833057404,
+        0.8593874573707581
+      ],
+      "render_seconds": 53.22922334598843
+    },
+    {
+      "mode": "base",
+      "eye": [
+        0.26176509261131287,
+        -0.29560256004333496,
+        0.27000802755355835
+      ],
+      "target": [
+        0.0,
+        -0.06499999761581421,
+        0.005750004202127457
+      ],
+      "resolution": [
+        2000,
+        1440
+      ],
+      "samples": 64,
+      "projection_bounds": [
+        0.1902291625738144,
+        0.8683167695999146,
+        0.10051380097866058,
+        0.7472637295722961
+      ],
+      "render_seconds": 30.34329633699963
+    }
+  ],
+  "design_revision": "v3.4-alu10",
+  "render_date": "2026-11-18",
+  "scene_provenance": "Approved scene copy, sha 1ff81e02d4d41dc22e59f14b181d2119851e913c3c955628f74f3d2a0aaa210b",
+  "threads_change": "32 CPU threads; increased from the documented historical value of 8",
+  "composition": {
+    "location": "Local",
+    "font": "DejaVu Sans",
+    "font_substitution": false,
+    "font_sha256": "690243adfefe0ce154b547db6205794bd30ac4277275179517a90994f4980648"
+  },
+  "camera_settings": {
+    "type": "PERSP",
+    "vertical_angle_degrees": 35,
+    "sensor_fit": "VERTICAL",
+    "clip_start_m": 0.0001,
+    "clip_end_m": 100
+  },
+  "critical_gates": {
+    "scene_sha_match": true,
+    "blender_version_match": true,
+    "controller_count_16": true,
+    "all_projection_bounds_pass": true,
+    "render_exit_code": 0,
+    "render_errors": false
+  },
+  "input_sha256": {
+    "payload.json": "a435bebad6217e6224c715aee8a55b5843945259331a4625efd4e7a866717cd0",
+    "meshes.npz": "6671d8f566c9156bb9ac7221d2dfd39297d9bfa6fbe18ed8c20899db5570c077",
+    "render_scene.py": "140e7d52682888c9c86808b490e676d3980772d942204c66296f4c958ca8fc56",
+    "compose_renders.py": "b38b93bec08961649f82888d3c43966bb47e30e2bab2508e44d273a3a1f2fe07",
+    "colors.json": "8786b58757ea98ff581c4d20431f9a0d551d44c8c7c57959a7123f18f1f43fa9"
+  },
+  "original_input_zip_sha256": "129fe0a29316196432241ea2de5ae3d80e311a52dec891213fc1cfda6d8a6aca",
+  "output_png_sha256": {
+    "raw/overview.png": "2f15783c0de4169135cc77a72286e65c5a51fc83fed1c0c70c2a1603928cc578",
+    "raw/mounted.png": "fab049760a5603bea3e7f6ab5e858703caa5afbcbf2fd87449faacccec163621",
+    "raw/base.png": "baae6a3d2fea05757753eeea13c4d1ed35e86f4d0366ad19369a0a49a352282c",
+    "composed/overview.png": "6247f0e192daef64426dadca933beedac7a8aadb9c84821ec049e590513a3104",
+    "composed/mounted.png": "42eb08e585922924abccd186ceac31ecc702c716bb28c7456d24476b11391067",
+    "composed/base.png": "cd950a3d0fc26f9a7172bb15811a2de1ee4cfe6e9924bec0e129132d24baf178"
+  },
+  "readme_png_sha256": {
+    "docs/media/overview.png": "6247f0e192daef64426dadca933beedac7a8aadb9c84821ec049e590513a3104",
+    "docs/media/mounted.png": "42eb08e585922924abccd186ceac31ecc702c716bb28c7456d24476b11391067",
+    "docs/media/base.png": "cd950a3d0fc26f9a7172bb15811a2de1ee4cfe6e9924bec0e129132d24baf178"
+  },
+  "inspection": {
+    "overview": "Opaque gray aluminum plate with visible thickness; teal thickened column flange and gusset plates; recessed base bolt heads; six printed-part colors match the legend. Entire fixture fits within the image. The controller is intentionally hidden. The counterbores and washer stacks are recessed and partly occluded; individual washers cannot be counted reliably in this view.",
+    "mounted": "Opaque reflective aluminum base, thickened teal flange and recessed base bolt heads. The white controller is mounted in the orange cradle under the coral slider, with black sticks and D-pad, colored lettered buttons and the Xbox logo visible. Approved PBR materials and texture data are preserved. The entire controller and base fit within the image. The legend matches the printed-part colors and gray purchased-parts category; metal surfaces vary with the approved lighting. Three washers under each base bolt are confirmed by exported-solid tests, not independently countable in this image.",
+    "base": "Opaque aluminum plate with full outline and thickness visible. Four solid blue discs mark the active column mounts at Y -14 / -46 mm, and four solid orange discs mark spare rear-shift positions at Y -78 / -110 mm. All eight markers and both colors are clearly visible at full delivery resolution and in a 960-pixel-wide preview. The role legend matches the discs, the common line gives the identical insert specification for all eight positions, and the notes identify colors as annotations only and defer machining details to drawings and STEP. No clipped geometry or text."
+  },
+  "geometry_evidence": "All 8 repository unit tests passed, including exported STEP checks: four column flange counterbores diameter 10.4 mm and depth 6 mm at Z 18.75..24.75 mm; three 1 mm washers per base bolt at Z 18.75..21.75 mm. These are nominal CAD checks, not physical tests.",
+  "validation_scope": "Rendering and unit tests executed. CAD inputs and render-input generator were unchanged, so no build or scripts/validate.py rerun was required or performed.",
+  "output_png_files": {
+    "raw/overview.png": "build/alu10/render/round3/overview.png",
+    "raw/mounted.png": "build/alu10/render/round3/mounted.png",
+    "raw/base.png": "build/alu10/render/ruling1/round3/base.png",
+    "composed/overview.png": "build/alu10/render/round3/composed/overview.png",
+    "composed/mounted.png": "build/alu10/render/round3/composed/mounted.png",
+    "composed/base.png": "build/alu10/render/ruling1/round3/composed/base.png"
+  },
+  "input_sha256_scope": "Initial three-view render; revised base inputs are recorded in base_revision.input_sha256.",
+  "base_revision": {
+    "ruling": "Ruling 1: base image annotations",
+    "reviewer_design_change": "The reviewer identified the original bore/insert two-color scheme as their own task design. The orange rings were nearly invisible and two colors at the same location carried no position-role information. Replace them with one solid color per position role.",
+    "render_only": "base",
+    "raw_record": "build/alu10/render/ruling1/round3/record.json",
+    "raw_record_sha256": "67bc074d50b27a43a3bc8601af0e9fdf3083de65d6a9ed36a1e290557444bded",
+    "render_seconds": 30.34329633699963,
+    "input_sha256": {
+      "render_scene.py": "e81b6f05b4434cfd9b4cca94f556e503ed0fae5599adebc0ea5c7d1f71a4b12f",
+      "compose_renders.py": "4214f97052d1d0f9b5332a07df8006c861e52bfc24132223ea4002e64fb6bd07",
+      "colors.json": "8786b58757ea98ff581c4d20431f9a0d551d44c8c7c57959a7123f18f1f43fa9",
+      "payload.json": "a435bebad6217e6224c715aee8a55b5843945259331a4625efd4e7a866717cd0",
+      "meshes.npz": "6671d8f566c9156bb9ac7221d2dfd39297d9bfa6fbe18ed8c20899db5570c077"
+    },
+    "critical_gates": {
+      "scene_sha_match": true,
+      "blender_version_match": true,
+      "controller_count_16": true,
+      "all_projection_bounds_pass": true,
+      "render_exit_code": 0,
+      "render_errors": false
+    },
+    "accepted_overview_and_mounted_unchanged": true,
+    "composition_only": "base",
+    "font_substitution": false,
+    "render_errors": false
+  }
+}
